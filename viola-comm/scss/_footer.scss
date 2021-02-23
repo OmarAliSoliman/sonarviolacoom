@@ -1,0 +1,163 @@
+footer {
+    background: #fff;
+    padding-top: 60px;
+
+    h6 {
+
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 12px;
+        color: $black;
+
+    }
+
+    .locationsList {
+        margin-right: 110px;
+        margin-top: 70px;
+
+        li {
+            margin-right: 30px;
+            flex: 1;
+
+            h6 {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+
+
+    .subscribe {
+
+        margin-top: 20px;
+
+        .form-group {
+            position: relative;
+
+            input {
+                height: 75px;
+                border-radius: 11px;
+                background: #fff;
+                border: 2px solid #301464;
+                line-height: 75px;
+                color: $black;
+                padding: 0 40px;
+                font-weight: bold;
+                font-size: 20px;
+
+
+            }
+
+            .subscribe-button {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                font-size: 40px;
+                margin-top: -28px;
+
+            }
+        }
+    }
+
+    .social {
+        flex-grow: 1;
+
+        li {
+            padding: 15px 0;
+        }
+
+        img {
+            height: 45px;
+            width: auto;
+
+        }
+    }
+
+    a {
+
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 50px;
+        color: $black;
+
+        &.mapLink {
+
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 25px;
+            color: $main_color;
+            opacity: 1;
+
+        }
+    }
+
+    .copy {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 60px;
+        color: $black;
+        margin-bottom: 0;
+    }
+
+    .sub-menu {
+        width: 270px;
+
+        a {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 50px;
+            text-align: left;
+            color: #16092c;
+            opacity: 0.6;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        padding-top: 87px;
+
+        .locationsList {
+            flex-direction: column;
+            margin-top: 20px;
+            margin-right: 0;
+
+            li {
+                margin-bottom: 30px;
+                margin-right: 0;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                h6 {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        h6 {
+            font-size: 16px;
+        }
+
+        a {
+            font-size: 16px;
+
+            &.mapLink {
+                font-size: 14px;
+            }
+        }
+
+        .socialFooter {
+            flex-direction: column;
+            align-items: flex-start !important;
+            margin-top: 30px;
+
+            .social {
+                width: 70%;
+            }
+        }
+
+        .subscribe .form-group .subscribe-button {
+            font-size: 30px;
+        }
+    }
+}

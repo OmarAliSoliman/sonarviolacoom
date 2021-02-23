@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<partial src="head.html" title="Viola Communication | Work"></partial>
+
+
+<body class="project">
+    <partial src="header.html" title="Nested partial"></partial>
+    <partial src="icons.html" title="Nested partial"></partial>
+
+    <div class="projectFullPage">
+
+        <section class="project section">
+            <div class="d-flex pt-200 mb-30 flex-wrap flex-xs-column">
+
+                <div class="col-md-6 d-flex flex-column justify-content-center align-items-center desc ">
+                    <h2 class='text-left animate__animated d-none '>
+                        Morocco in
+                        Abu Dhabi 2019
+                    </h2>
+                    <p class='animate__animated d-none animate__delay-1s'>
+                        For the last 4 consecutive years, Viola Communications created a unique event consisting of 3
+                        different parts: the main exhibition and museum in ADNEC, a 2-day concert on the Corniche, and
+                        mall stands around the UAE.<br />
+                        The objective was to further strengthen the historically strong ties between the UAE and the
+                        Kingdom of Morocco, as well as showcase Moroccan culture to UAE nationals as part of efforts to
+                        bring the
+                        two nations and people closer together.
+                    </p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end align-items-center px-0">
+                    <img class='innerVideoImage' src="img/project1-vid.jpg" />
+                </div>
+                <div class="col-12 d-flex flex-column justify-content-center align-items-baseline statisticsContainer ">
+                    <h2 class='statisticsTitle animate__animated d-none '>
+                        ROI
+                    </h2>
+                    <div
+                        class="d-flex flex-xs-column align-items-center align-items-xs-start justify-content-start statistics animate__animated d-none animate__delay-1s">
+                        <div>
+                            <h3>+<span class="counter">12.6</span> million<br> <span>
+                                    impressions
+                                </span></h3>
+
+                        </div>
+                        <div>
+                            <h3>AED <span class="counter">19,000,00</span><br /> million<span>
+                                    editorial value
+                                </span></h3>
+
+                        </div>
+                        <div>
+                            <h3><span>More thane</span><br><span class="counter">23,000</span><br><span>visitor</span>
+                            </h3>
+
+                        </div>
+                        <div>
+                            <h3><span class="counter">14</span> million<br>
+                                <span>
+                                    engagments
+                                </span>
+                            </h3>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section class=" project-details section">
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center px-8">
+
+                <p class="animate__animated d-none">
+                    The main event was designed around key elements of Moroccan identity. Guests were immersed in an
+                    iconic experience inspired by the history of Moroccan architecture. Live cooking, music and
+                    traditional fashion took guests on a virtual journey through Morocco.
+                </p>
+                <div class="d-flex justify-content-around flex-wrap logos animate__animated d-none animate__delay-1s">
+                    <svg class='d-none'>
+                        <use xlink:href="#events" />
+                    </svg>
+                    <svg class='d-none'>
+                        <use xlink:href="#interactive" />
+                    </svg>
+                    <svg class='d-none'>
+                        <use xlink:href="#adv" />
+                    </svg>
+                    <svg class='d-none'>
+                        <use xlink:href="#outdoor" />
+                    </svg>
+                    <svg class='d-none'>
+                        <use xlink:href="#pr" />
+                    </svg>
+                    <svg class='d-none'>
+                        <use xlink:href="#producers" />
+                    </svg>
+                </div>
+                <div class="project-navigation d-flex justify-content-between align-items-center w-100  ">
+                    <a href="project1.html" class="nav-button prev d-flex align-items-center">
+                        <img src="img/ArrowPrevGray.svg"> Previous
+                    </a>
+                    <a href="project3.html" class="nav-button next d-flex align-items-center">
+                        Next<img src="img/ArrowNextGray.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="projectImages col-md-6 d-flex justify-content-center align-items-center flex-wrap px-0">
+                <img class="logo w-50" src="img/MoroccoinAD/_FMD3279.jpg" />
+                <img class="logo w-50" src="img/MoroccoinAD/_67A4382.jpg" />
+                <img class="logo w-50" src="img/MoroccoinAD/BAL_0364.jpg" />
+                <img class="logo w-50" src="img/MoroccoinAD/3.jpg" />
+                <img class="logo w-50" src="img/MoroccoinAD/2.jpg" />
+                <img class="logo w-50" src="img/MoroccoinAD/1.jpg" />
+            </div>
+        </section>
+
+    </div>
+
+    <partial src="scripts.html"></partial>
+    <script>
+        $('.projectFullPage').fullpage({
+            //options here
+            autoScrolling: true,
+            scrollHorizontally: true,
+            responsiveWidth: 700,
+            onLeave: function (origin, destination, direction) {
+                //it won't scroll if the destination is the 3rd section
+
+                if (destination.index !== 0) {
+                    $('.back-to-top').css('opacity', 1);
+
+                    $('header > .logo img').attr('src', 'img/V-beta.svg');
+                }
+                if (destination.index !== 0 || origin.index == 0) {
+                    $('.back-to-top').css('opacity', 0);
+                    $('header > .logo img').attr('src', 'img/V-beta-white.svg');
+
+                }
+
+
+                // var curTime = new Date().getTime();
+
+
+                $('header > .logo img').attr('src', 'img/V-beta.svg');
+            },
+            afterLoad: function (origin, destination, direction) {
+                $('header > .logo img').attr('src', 'img/V-beta.svg');
+                // $('.active svg').removeClass('d-none');
+                $('.active .animate__animated').addClass('animate__fadeInLeft d-block').removeClass(
+                    'd-none');
+
+                $(".active svg").attr("class", " d-block");
+            },
+        });
+    </script>
+    <a href="" class="back-to-top">
+        <span>☝🏽</span>
+        <br />
+        Take me to top
+    </a>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+@keyframes rot {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    25% {
+        transform: rotate(90deg)
+    }
+
+    50% {
+        transform: rotate(180deg)
+    }
+
+    75% {
+        transform: rotate(270deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes float {
+    0% {
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        transform: translatey(0px);
+    }
+
+    50% {
+        /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+        transform: translatey(-20px);
+    }
+
+    100% {
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        transform: translatey(0px);
+    }
+}
+
+@keyframes floatCoffee {
+    0% {
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        transform: translate(-35%, 0px);
+    }
+
+    50% {
+        /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+        transform: translate(-35%, -20px);
+    }
+
+    100% {
+        /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+        transform: translate(-35%, 0px);
+    }
+}
