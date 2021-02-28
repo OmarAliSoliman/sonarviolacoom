@@ -100,12 +100,12 @@ $(document).ready(function () {
 });
 
 $(window).load(function () {
-    $('.overlay').fadeOut();
     // $('body').css('overflow', 'visible');
     setTimeout(function () {
+        $('.overlay').fadeOut();
         $('.banner .animate__animated').addClass('animate__fadeInLeft');
         $('.banner ').addClass('animate-banner');
-    }, 500);
+    }, 3000);
     if (window.location.href.indexOf("contact") > -1) {
         $('.contact .animate__animated').addClass('animate__fadeInLeft');
     }
