@@ -405,7 +405,16 @@ header .logo {
   top: 35px;
   left: 35px;
 }
-
+#lottie{
+  background-color:#581DC9;
+  width:300px;
+  height:300px;
+  display:block;
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+  text-align: center;
+  opacity: 1;
+}
 header #nav-icon {
   width: 80px;
   height: 80px;
