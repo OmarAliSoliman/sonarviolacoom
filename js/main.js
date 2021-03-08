@@ -2917,6 +2917,9 @@ $(document).ready(function () {
                 items: 1
             },
             600: {
+                items: 1
+            },
+            800: {
                 items: 3
             },
             960: {

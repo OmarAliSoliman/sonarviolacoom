@@ -2251,9 +2251,19 @@ section.work .owl-carousel .owl-item .details .title {
   line-height: 58px;
   text-align: left;
   color: #581dc9;
+ 
+}
+@media only screen and (max-width: 1200px) {
+  section.work .owl-carousel .owl-item .details .title {
+    font-size:28px;
+    line-height: 44px;
+  }
+    section.work .owl-carousel .owl-item .details  {
+    left: 55%;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
   section.work .owl-carousel .owl-item .details {
     width: 220px;
   }
@@ -2263,8 +2273,8 @@ section.work .owl-carousel .owl-item .details .title {
   }
 
   section.work .owl-carousel .owl-item .details .title {
-    font-size: 30px;
-    line-height: 1.4;
+    font-size: 20px;
+    line-height: 27px;
   }
 }
 
