@@ -642,7 +642,7 @@ header .menu .secondary-links li a {
 }
 
 header .menu .coffee {
-  display: block;
+  display: none;
   position: absolute;
   left: 50%;
   transform: translateX(-35%);
@@ -3300,4 +3300,10 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     -ms-flex-align: start !important;
     align-items: flex-start !important;
   }
+}
+
+
+
+.visiable{
+  display: block !important;
 }
