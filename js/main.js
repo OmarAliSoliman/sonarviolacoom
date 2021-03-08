@@ -2920,12 +2920,13 @@ $(document).ready(function () {
                 items: 1
             },
             800: {
-                items: 3
+                items: 1
             },
-            960: {
-                items: 3
+            1024:{
+                items: 1
+
             },
-            1200: {
+            1025: {
                 items: 3
             }
         }
@@ -2945,26 +2946,7 @@ $(document).ready(function () {
         e.preventDefault();
         fullpage_api.moveTo(1);
     });
-    $('#slick1').slick({
-        rows: 4,
-        dots: true,
-        arrows: false,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        responsive: [
-
-            {
-                breakpoint: 600,
-                settings: {
-
-                    dots: false
-                }
-            }
-        ]
-    });
+   
     if (window.matchMedia("(max-width: 768px)").matches) {
         /* the viewport is less than 768 pixels wide */
         $('.projectImages').slick({

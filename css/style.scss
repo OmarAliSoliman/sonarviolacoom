@@ -2485,18 +2485,20 @@ section.project.fp-section .fp-tableCell .innerVideoImage {
   height: auto;
   max-height: 560px;
   width: auto;
-  @media only screen and (min-width: 1000px) and (max-width:1400px){
-    max-height: 380px;
+  @media only screen and (min-width: 1300px) and (max-width:1700px){
+    max-height: 397px;
   }
-  @media only screen and (min-width: 600px) and (max-width:1000px){
-    max-height: 280px;
+  @media only screen and (min-width: 1024px) and (max-width:1300px){
+    max-height: 320px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  max-height: 220px;
   }
   @media only screen and (max-width: 768px) {
-    max-height: 388px;
-    height: auto;
-    width:auto;
-    margin: 30px auto;
-  }
+    max-width: 80%;
+  margin: 30px auto;
+  max-height: auto !important;
+    }
 }
 
 section.project.fp-section .fp-tableCell .desc p {
@@ -2520,13 +2522,13 @@ section.project.fp-section .fp-tableCell .desc p {
 
 
 
-@media only screen and (max-width: 600px) {
-  section.project.fp-section .fp-tableCell .innerVideoImage {
-    width: 100%;
-    height: auto;
-    margin: 30px 0;
-  }
-}
+// @media only screen and (max-width: 600px) {
+//   section.project.fp-section .fp-tableCell .innerVideoImage {
+//     width: 100%;
+//     height: auto;
+//     margin: 30px 0;
+//   }
+// }
 
 section.project.fp-section .fp-tableCell .statisticsTitle {
   font-family: Roboto;
@@ -2536,7 +2538,7 @@ section.project.fp-section .fp-tableCell .statisticsTitle {
   line-height: 50px;
   text-align: left;
   color: #301464;
-  margin-bottom: 16px;
+  margin-bottom: 25px;
   @media screen and (max-width:1200px) {
       font-size: 36px;
   }
@@ -2563,15 +2565,6 @@ section.project.fp-section .fp-tableCell .statistics>div {
   align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
-  section.project.fp-section .fp-tableCell .statistics>div {
-    margin-bottom: 25px;
-    padding-right: 0;
-    margin-right: 0;
-    height: auto;
-  }
-}
-
 section.project.fp-section .fp-tableCell .statistics>div:after {
   content: '';
   height: 130px;
@@ -2583,7 +2576,7 @@ section.project.fp-section .fp-tableCell .statistics>div:after {
   top: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   section.project.fp-section .fp-tableCell .statistics>div:after {
     display: none;
   }
@@ -2605,10 +2598,25 @@ section.project.fp-section .fp-tableCell .statistics span {
   font-size: 30px;
   line-height: 40px;
   text-align: left;
+  display: block;
   color: #16092c;
   @media screen and (max-width:1200px){
-  line-height: 10px;
-  font-size: 14px;
+  line-height: 30px;
+  font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  section.project.fp-section .fp-tableCell .statistics{
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  section.project.fp-section .fp-tableCell .statistics>div {
+    margin-bottom: 25px;
+    padding-right: 0;
+    margin-right: 0;
+    height: auto;
   }
 }
 
@@ -2627,6 +2635,7 @@ section.project.fp-section .fp-tableCell .statistics span.counter {
   line-height: 55px;
   text-align: left;
   color: #581dc9;
+  
 }
 @media screen and (max-width:768px) {
   section.project.fp-section .fp-tableCell .statistics h3{
@@ -2696,7 +2705,12 @@ section.project-details.fp-section .fp-tableCell p {
       line-height: 25px;
   }
 }
-
+section.project.fp-section .fp-tableCell .statistics h3,
+ section.project.fp-section .fp-tableCell .statistics span.counter{
+  display: block;
+  line-height: 35px;
+  font-size: 35px;
+}
 @media only screen and (max-width: 600px) {
   section.project-details.fp-section .fp-tableCell p {
     margin-top: 0;
@@ -3474,3 +3488,8 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   display: flex !important;
 }
 
+
+
+.mrt-60{
+  margin-top: 60px;
+}
