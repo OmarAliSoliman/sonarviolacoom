@@ -582,6 +582,12 @@ header .menu.open {
 
 header .menu .main-links {
   margin-bottom: 100px;
+  @media screen and (max-width:1024px){
+    top: 5rem;
+   margin-right: 158px;
+   margin-left: 20px;
+   position: relative;
+  }
 }
 
 header .menu .main-links li {
@@ -601,6 +607,10 @@ header .menu .main-links li a {
   letter-spacing: -0.05em;
   line-height: 90px;
   position: relative;
+  @media screen and (max-width:1024px){
+   font-size: 60px;
+   line-height: 69px;
+}
 }
 
 header .menu .main-links li a:after {
@@ -659,6 +669,15 @@ header .menu .coffee {
   transform: translateX(-35%);
   z-index: 1;
   animation: floatCoffee 2s ease-in-out infinite;
+  @media screen and (max-width:1024px){
+    left: 53%;
+    top: 9%;
+  }
+  img{
+    @media screen and (max-width:1024px){
+      width: 400px;
+    }
+  }
 }
 
 header .menu .coffee map area {
@@ -688,10 +707,18 @@ header .menu .locationsList {
   margin-top: -160px;
   position: relative;
   z-index: 2;
+
+  @media screen and (max-width:1024px){
+    top: 7rem;
+}
+
 }
 
 header .menu .locationsList li {
   margin-bottom: 80px;
+  @media screen and (max-width:1024px){
+      margin-bottom: 40px;
+  }
 }
 
 header .menu .locationsList li:last-child {
@@ -715,6 +742,9 @@ header .menu .locationsList h6 {
   letter-spacing: -0.05em;
   text-align: left;
   color: #fff;
+  @media screen and (max-width:1024px){
+    font-size: 25px;
+  }
 }
 
 header .menu .locationsList a {
@@ -725,6 +755,10 @@ header .menu .locationsList a {
   text-align: left;
   color: #fff;
   opacity: 0.8;
+  @media screen and (max-width:1024px){
+    font-size: 14px;
+    line-height: 17px;
+}
 }
 
 header .menu p {
@@ -3267,7 +3301,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   @media screen and (max-width:376px) {
     font-size: 15px;
     line-height: 18px;
-    margin-top: 30px;
+    margin-top:10px;
   }
   @media screen and (min-width:768px) and (max-width:992px) {
     font-size: 15px;
@@ -3291,9 +3325,9 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
   border-radius: 50%;
   margin-right: 26px;
-  @media screen and (max-width:376px) {
-    width: 40px;
-    height: 40px;
+  @media screen and (max-width:400px) {
+    width: 35px;
+    height: 35px;
   }
 }
 

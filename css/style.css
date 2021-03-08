@@ -580,6 +580,15 @@ header .menu .main-links {
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 1024px) {
+  header .menu .main-links {
+    top: 5rem;
+    margin-right: 158px;
+    margin-left: 20px;
+    position: relative;
+  }
+}
+
 header .menu .main-links li {
   margin-bottom: 20px;
 }
@@ -598,6 +607,13 @@ header .menu .main-links li a {
   letter-spacing: -0.05em;
   line-height: 90px;
   position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  header .menu .main-links li a {
+    font-size: 60px;
+    line-height: 69px;
+  }
 }
 
 header .menu .main-links li a:after {
@@ -666,6 +682,19 @@ header .menu .coffee {
           animation: floatCoffee 2s ease-in-out infinite;
 }
 
+@media screen and (max-width: 1024px) {
+  header .menu .coffee {
+    left: 53%;
+    top: 9%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header .menu .coffee img {
+    width: 400px;
+  }
+}
+
 header .menu .coffee map area {
   outline: none;
 }
@@ -696,8 +725,20 @@ header .menu .locationsList {
   z-index: 2;
 }
 
+@media screen and (max-width: 1024px) {
+  header .menu .locationsList {
+    top: 7rem;
+  }
+}
+
 header .menu .locationsList li {
   margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  header .menu .locationsList li {
+    margin-bottom: 40px;
+  }
 }
 
 header .menu .locationsList li:last-child {
@@ -723,6 +764,12 @@ header .menu .locationsList h6 {
   color: #fff;
 }
 
+@media screen and (max-width: 1024px) {
+  header .menu .locationsList h6 {
+    font-size: 25px;
+  }
+}
+
 header .menu .locationsList a {
   font-weight: 500;
   font-size: 20px;
@@ -731,6 +778,13 @@ header .menu .locationsList a {
   text-align: left;
   color: #fff;
   opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px) {
+  header .menu .locationsList a {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 
 header .menu p {
@@ -3495,7 +3549,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   .blog-list .blogMainItem .overlay h1 {
     font-size: 15px;
     line-height: 18px;
-    margin-top: 30px;
+    margin-top: 10px;
   }
 }
 
@@ -3532,10 +3586,10 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   margin-right: 26px;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 400px) {
   .blog-list .blogMainItem .overlay .authDetails img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
 }
 
