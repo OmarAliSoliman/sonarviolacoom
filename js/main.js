@@ -2868,6 +2868,7 @@ var animationData = {
         "fFamily": "SciFly"
     }]
 };
+
 var params = {
     container: document.getElementById('lottie'),
     renderer: 'svg',
@@ -2879,6 +2880,19 @@ var params = {
 var anim;
 
 anim = lottie.loadAnimation(params);
+
+
+var params2 = {
+    container: document.getElementById('lottie2'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    animationData: animationData
+};
+var anim2;
+anim2 = lottie.loadAnimation(params2);
+
+
 
 $(document).ready(function () {
     var owl = $('.owl-carousel');
