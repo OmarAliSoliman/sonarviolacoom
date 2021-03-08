@@ -655,11 +655,15 @@ header .menu .secondary-links {
 
 header .menu .secondary-links li a {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 0.1em;
-  line-height: 50px;
+  line-height: 20px;
   color: #fff;
   text-transform: uppercase;
+  @media screen and (max-width:1024px){
+  font-size: 12px;
+    
+  }
 }
 
 header .menu .coffee {
@@ -670,12 +674,15 @@ header .menu .coffee {
   z-index: 1;
   animation: floatCoffee 2s ease-in-out infinite;
   @media screen and (max-width:1024px){
-    left: 53%;
+    left: 57%;
     top: 9%;
   }
   img{
     @media screen and (max-width:1024px){
       width: 400px;
+    }
+    @media screen and (max-width:500px){
+      width: 200px;
     }
   }
 }
@@ -692,7 +699,7 @@ header .menu .coffee span {
   color: #fff;
   position: absolute;
   top: 50%;
-  left: 2%;
+  left: -3%;
   opacity: 0;
   transition: all .6s;
 }
@@ -2425,7 +2432,7 @@ section.work .owl-carousel .owl-item.active:hover:nth-child(even) .bubble {
 section.work .owl-carousel .owl-item.active:hover .details {
   left: 40%;
   margin-left: 0;
-  bottom: 60px;
+  bottom: 160px;
   top: auto;
 }
 
@@ -3484,7 +3491,8 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   header .menu .secondary-links {
     flex-direction: column;
     margin-top: 0;
-    bottom: 90px;
+    bottom: 75px;
+    left: 45px;
   }
 
   header .withLove {
