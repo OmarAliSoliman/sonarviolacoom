@@ -2597,6 +2597,20 @@ section.project.fp-section .fp-tableCell .desc h2 {
   }
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  section.project.fp-section .fp-tableCell .desc h2 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  section.project.fp-section .fp-tableCell .desc h2 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 section.project.fp-section .fp-tableCell .desc p {
   font-weight: 500;
   font-size: 20px;
@@ -2613,8 +2627,44 @@ section.project.fp-section .fp-tableCell .desc p {
 }
 
 section.project.fp-section .fp-tableCell .innerVideoImage {
-  height: 560px;
+  height: auto;
+  max-height: 560px;
   width: auto;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  section.project.fp-section .fp-tableCell .innerVideoImage {
+    max-height: 380px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  section.project.fp-section .fp-tableCell .innerVideoImage {
+    max-height: 280px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section.project.fp-section .fp-tableCell .innerVideoImage {
+    max-height: 388px;
+    height: auto;
+    width: auto;
+    margin: 30px auto;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  section.project.fp-section .fp-tableCell .desc p {
+    line-height: 20px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  section.project.fp-section .fp-tableCell .desc p {
+    line-height: 18px;
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -2634,6 +2684,12 @@ section.project.fp-section .fp-tableCell .statisticsTitle {
   text-align: left;
   color: #301464;
   margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  section.project.fp-section .fp-tableCell .statisticsTitle {
+    font-size: 36px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -2706,6 +2762,13 @@ section.project.fp-section .fp-tableCell .statistics span {
   color: #16092c;
 }
 
+@media screen and (max-width: 1200px) {
+  section.project.fp-section .fp-tableCell .statistics span {
+    line-height: 10px;
+    font-size: 14px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   section.project.fp-section .fp-tableCell .statistics span {
     font-size: 16px;
@@ -2721,6 +2784,20 @@ section.project.fp-section .fp-tableCell .statistics span.counter {
   line-height: 55px;
   text-align: left;
   color: #581dc9;
+}
+
+@media screen and (max-width: 768px) {
+  section.project.fp-section .fp-tableCell .statistics h3 {
+    line-height: normal;
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section.project.fp-section .fp-tableCell .statistics h3 {
+    line-height: normal;
+    font-size: 34px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -2777,6 +2854,13 @@ section.project-details.fp-section .fp-tableCell p {
   text-align: left;
   color: #16092c;
   margin-top: 150px;
+}
+
+@media screen and (max-width: 1024px) {
+  section.project-details.fp-section .fp-tableCell p {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -2837,6 +2921,12 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1024px) {
+  section.project-details.fp-section .fp-tableCell .project-navigation .nav-button {
+    font-size: 18px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   section.project-details.fp-section .fp-tableCell .project-navigation .nav-button {
     font-size: 16px;
@@ -2858,8 +2948,20 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   margin-right: 15px;
 }
 
+@media screen and (max-width: 1024px) {
+  section.project-details.fp-section .fp-tableCell .project-navigation .nav-button.prev img {
+    width: 20px;
+  }
+}
+
 section.project-details.fp-section .fp-tableCell .project-navigation .nav-button.next img {
   margin-left: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  section.project-details.fp-section .fp-tableCell .project-navigation .nav-button.next img {
+    width: 20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
