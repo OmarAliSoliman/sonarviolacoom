@@ -1124,10 +1124,27 @@ section.banner .fp-tableCell .contactButton {
     font-size: 16px;
   }
   section.banner .fp-tableCell .contactButton {
-    left: 25%;
+    left: 6%;
     right: auto;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  section.banner .fp-tableCell .contactButton {
+    padding: 0 14px;
+    font-size: 11px;
+    line-height: 35px;
+    right: 111px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  section.banner .fp-tableCell .contactButton {
+    padding: 0 14px;
+    font-size: 11px;
+    line-height: 35px;
   }
 }
 
@@ -1758,6 +1775,18 @@ section.network .fp-tableCell .circle-container .service.producers .centerLogo {
   section.network .fp-tableCell .circle-container {
     font-size: 11px;
   }
+  .circle-container .mainCenter {
+    width: 12em;
+  }
+  .circle-container .service.outdoor .mainCenter {
+    width: 8em;
+  }
+  .circle-container .service.producers .mainCenter {
+    width: 9em;
+  }
+  .circle-container .service.events .mainCenter {
+    width: 8em;
+  }
   section.network .fp-tableCell .circle-container .service .model {
     width: 14em;
   }
@@ -1949,6 +1978,13 @@ section.about h2 {
   margin-bottom: 16px;
 }
 
+@media screen and (min-width: 600px) and (max-width: 1250px) {
+  section.about h2 {
+    font-size: 44px;
+    line-height: 49px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   section.about h2 {
     font-size: 32px;
@@ -1966,6 +2002,13 @@ section.about p {
   line-height: 50px;
   text-align: left;
   color: #918e9f;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1250px) {
+  section.about p {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1989,6 +2032,13 @@ section.about p {
 section.about .col-md-6:first-child {
   padding-left: 160px;
   padding-right: 90px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1250px) {
+  section.about .col-md-6:first-child {
+    padding-left: 36px;
+    padding-right: 20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -2134,10 +2184,6 @@ section.about:nth-of-type(4) .filter a.active {
   background: linear-gradient(#581dc9 0%, #301464 100%);
 }
 
-section.about:nth-of-type(4) .col-md-6:last-child {
-  padding: calc((100vh - 580px) / 5) 160px;
-}
-
 @media only screen and (max-width: 600px) {
   section.about:nth-of-type(4) .col-md-6:last-child {
     padding: 0 30px;
@@ -2146,6 +2192,12 @@ section.about:nth-of-type(4) .col-md-6:last-child {
 
 section.about:nth-of-type(4) .col-md-6:last-child .slick-wrapper {
   width: calc((100vw/2) - 320px);
+}
+
+@media screen and (min-width: 600px) and (max-width: 1250px) {
+  section.about:nth-of-type(4) .col-md-6:last-child .slick-wrapper {
+    width: calc((100vw/2) - 120px);
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -2255,10 +2307,6 @@ section.about:nth-of-type(4) .col-md-6:last-child .ul li:nth-child(3n+0) {
 
 section.about:nth-of-type(5) .row {
   width: 100% !important;
-}
-
-section.about:nth-of-type(5) .col-md-6:first-child {
-  padding: 0 160px;
 }
 
 @media only screen and (max-width: 600px) {
