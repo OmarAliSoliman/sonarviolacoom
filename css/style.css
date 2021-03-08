@@ -541,6 +541,7 @@ header .menu {
   background: url(../img/menu-bg.png) center no-repeat;
   background-size: cover;
   width: 100vw;
+  display: none;
   height: 100vh;
   left: 0;
   top: 0;
@@ -3528,5 +3529,11 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .visiable {
   display: block !important;
+}
+
+.flexVisiable {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 /*# sourceMappingURL=style.css.map */

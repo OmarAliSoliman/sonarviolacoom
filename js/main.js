@@ -2889,6 +2889,7 @@ $(document).ready(function () {
     $('#nav-icon').click(function () {
         $(this).toggleClass('open');
         $('.menu').toggleClass('open');
+        $('.menu').toggleClass('flexVisiable');
         $('.coffee').toggleClass('visiable')
 
     });
