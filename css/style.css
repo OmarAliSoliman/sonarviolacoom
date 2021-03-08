@@ -549,9 +549,6 @@ header .menu {
   z-index: 0;
   transition: all .5s linear;
   -webkit-transition: all .5s linear;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   overflow: hidden;
   border-radius: 0;
   opacity: 0;
@@ -2931,6 +2928,10 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   margin-bottom: 100px;
 }
 
+.blog .blog-post .articleDetails .socialBlog li a img {
+  width: 30px;
+}
+
 .blog .blog-post .articleDetails .authorImage {
   width: 80px;
   height: 80px;
@@ -2941,9 +2942,13 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   margin-right: 32px;
 }
 
+.blog .blogContentContainer {
+  padding: 0 25px;
+}
+
 .blog .blog-post .articleDetails h3 {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 24px;
   letter-spacing: -0.05em;
   line-height: 75px;
   text-align: left;
@@ -2989,9 +2994,16 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 }
 
 .blog .blog-list li img {
-  width: 222px;
-  height: auto;
+  width: auto;
+  height: 180px;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .blog .blog-list li img {
+    width: auto;
+    height: 110px;
+  }
 }
 
 .blog .blog-list li h3 {
@@ -3000,6 +3012,19 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   line-height: 30px;
   text-align: left;
   color: #16092c;
+}
+
+@media screen and (max-width: 600px) {
+  .blog .blog-list li h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blog .blog-list li h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .blog .blog-list li .author {
@@ -3033,8 +3058,9 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     font-size: 40px;
   }
   .blog .blog-post h1 {
-    font-size: 40px;
-    line-height: 1.3;
+    font-size: 21px;
+    line-height: 20px;
+    margin-bottom: 25px;
   }
   .blog .blog-post .articleDetails {
     -ms-flex-wrap: wrap;
@@ -3083,6 +3109,14 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     width: 100%;
     height: auto;
     margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .blog .blog-post h1 {
+    font-size: 32px;
+    line-height: 30px;
+    margin-bottom: 25px;
   }
 }
 
@@ -3232,6 +3266,10 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .blog-list .mainTitle {
