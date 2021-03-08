@@ -1038,6 +1038,42 @@
 
 
         });
+        $('#slick1').slick({
+        rows: 4,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+
+            {
+                breakpoint: 600,
+                settings: {
+
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 1441,
+                settings: {
+                    dots: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
     </script>
 </body>
 

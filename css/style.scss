@@ -2270,10 +2270,10 @@ section.work .owl-carousel .owl-item.active:nth-child(3) {
 section.work .owl-carousel .owl-item .details {
   width: 370px;
   position: absolute;
-  left: 50%;
+  left: 40%;
   transform: translateX(-50%);
   top: 55%;
-  transition: all .5s;
+  transition: all 0.5s ease-in-out;
   z-index: 6;
 }
 
@@ -2433,7 +2433,7 @@ section.work .owl-carousel .owl-item.active:hover .details {
   left: 40%;
   margin-left: 0;
   bottom: 160px;
-  top: auto;
+  top: 74%;
 }
 
 section.work .owl-carousel .owl-item.active:hover .details .title {
