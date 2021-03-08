@@ -3245,6 +3245,8 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog-list .blogMainItem {
   position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .blog-list .blogMainItem img {
@@ -3268,11 +3270,50 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog-list .blogMainItem .overlay h1 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 36px;
   line-height: 45px;
   text-align: left;
   color: #fff;
   margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .blog-list .blogMainItem .overlay h1 {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 72px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog-list .blogMainItem .overlay h1 {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .blog-list .blogMainItem .overlay h1 {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .blog-list .blogMainItem .overlay h1 {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 72px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1250px) {
+  .blog-list .blogMainItem .overlay h1 {
+    font-size: 25px;
+    line-height: 31px;
+  }
 }
 
 .blog-list .blogMainItem .overlay .authDetails {
@@ -3293,12 +3334,25 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   margin-right: 26px;
 }
 
+@media screen and (max-width: 376px) {
+  .blog-list .blogMainItem .overlay .authDetails img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .blog-list .blogMainItem .overlay .authDetails h6 {
   font-weight: 500;
   font-size: 23px;
   letter-spacing: -0.05em;
   text-align: left;
   color: #918e9f;
+}
+
+@media screen and (max-width: 376px) {
+  .blog-list .blogMainItem .overlay .authDetails h6 {
+    font-size: 18px;
+  }
 }
 
 .blog-list .blog-list-item {
@@ -3364,10 +3418,6 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   .blog-list .col-md-6 .blogMainItem .overlay {
     padding: 15px;
     height: 200px;
-  }
-  .blog-list .col-md-6 .blogMainItem .overlay h1 {
-    font-size: 24px;
-    line-height: 1.5;
   }
   .blog-list .col-md-6:last-child .overlay {
     height: 160px;

@@ -3047,6 +3047,8 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog-list .blogMainItem {
   position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .blog-list .blogMainItem img {
@@ -3069,11 +3071,36 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog-list .blogMainItem .overlay h1 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 36px;
   line-height: 45px;
   text-align: left;
   color: #fff;
   margin-bottom: 25px;
+
+  @media screen and (max-width:768px) {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 72px;
+  }
+  @media screen and (max-width:600px) {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 40px;
+  }
+  @media screen and (max-width:376px) {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 30px;
+  }
+  @media screen and (min-width:768px) and (max-width:992px) {
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 72px;
+  }
+  @media screen and (min-width:992px) and (max-width:1250px) {
+    font-size: 25px;
+    line-height: 31px;
+  }
 }
 
 .blog-list .blogMainItem .overlay .authDetails {
@@ -3087,6 +3114,10 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.16);
   border-radius: 50%;
   margin-right: 26px;
+  @media screen and (max-width:376px) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .blog-list .blogMainItem .overlay .authDetails h6 {
@@ -3095,6 +3126,10 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   letter-spacing: -0.05em;
   text-align: left;
   color: #918e9f;
+  @media screen and (max-width:376px) {
+    font-size: 18px;
+
+  }
 }
 
 .blog-list .blog-list-item {
@@ -3158,10 +3193,10 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     height: 200px;
   }
 
-  .blog-list .col-md-6 .blogMainItem .overlay h1 {
-    font-size: 24px;
-    line-height: 1.5;
-  }
+  // .blog-list .col-md-6 .blogMainItem .overlay h1 {
+  //   font-size: 24px;
+  //   line-height: 1.5;
+  // }
 
   .blog-list .col-md-6:last-child .overlay {
     height: 160px;
