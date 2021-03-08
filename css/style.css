@@ -2933,8 +2933,8 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 }
 
 .blog .blog-post .articleDetails .authorImage {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
@@ -2948,7 +2948,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog .blog-post .articleDetails h3 {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 13px;
   letter-spacing: -0.05em;
   line-height: 75px;
   text-align: left;
@@ -2995,7 +2995,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog .blog-list li img {
   width: auto;
-  height: 180px;
+  height: 90px;
   margin-right: 20px;
 }
 
@@ -3035,8 +3035,9 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: -0.05em;
+  margin-top: 15px !important;
   text-align: left;
   color: #918e9f;
 }
@@ -3068,8 +3069,8 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     margin-bottom: 50px;
   }
   .blog .blog-post .articleDetails .authorImage {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
   }
   .blog .blog-post .articleDetails h3 {
     font-size: 20px;
