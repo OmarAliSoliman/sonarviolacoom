@@ -1289,6 +1289,9 @@ section.network .fp-tableCell p {
     display: flex;
     align-items: center;
     justify-content: center;
+    // in 1920*1080 screen res
+    font-size: 18.7px;
+
   }
 
   section.network .fp-tableCell .circle-container>* {
@@ -1368,8 +1371,8 @@ section.network .fp-tableCell .circle-container .service * {
 section.network .fp-tableCell .circle-container .service p {
   width: 100%;
   font-weight: normal;
-  font-size: 1.1rem;
-  line-height: 25px;
+  font-size: 1.37rem;
+  line-height: 20px;
   text-align: center;
   color: #16092c;
   margin-bottom: 10px;
@@ -1395,7 +1398,7 @@ section.network .fp-tableCell .circle-container .service a {
 }
 
 section.network .fp-tableCell .circle-container .service .centerLogo {
-  width: 85px;
+  width: 100px;
   height: auto;
   opacity: 0;
   position: absolute;
@@ -1464,8 +1467,8 @@ section.network .fp-tableCell .circle-container .service:hover a {
 
 section.network .fp-tableCell .circle-container .service:hover .centerLogo {
   margin-bottom: 30px;
-  top: 30px;
-  left: 35px;
+  top: 53px;
+  left: 47px;
   transform: none;
   opacity: 1;
 }
@@ -2244,6 +2247,7 @@ section.about:nth-of-type(5) ul li a div {
 section.about:nth-of-type(5) .col-md-6:last-child {
   background: url(../img/Viola-Office.gif) no-repeat 0 center;
   background-size: cover;
+  right: -2rem;
 }
 
 section.work .social {
@@ -2874,16 +2878,16 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog .blog-post h1 {
   font-weight: 900;
-  font-size: 3.6rem;
+  font-size: 4rem;
   letter-spacing: -0.05em;
-  line-height: 36px;
+  line-height: 5rem;
   text-align: left;
   color: #301464;
 }
 
 .blog .blog-post p {
   font-weight: normal;
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 35px;
   text-align: left;
   color: #16092c;
@@ -2932,7 +2936,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 }
 .blog .blog-post .articleDetails h3 {
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 2rem;
   letter-spacing: -0.05em;
   line-height: 75px;
   text-align: left;
@@ -2949,7 +2953,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog .blog-list-title {
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: -0.05em;
   line-height: 40px;
   text-align: left;
@@ -2986,10 +2990,11 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog .blog-list li h3 {
   font-weight: bold;
-  font-size: 2.5rem;
-  line-height: 30px;
+  font-size: 1.6rem;
+  line-height: 2rem;
   text-align: left;
   color: #16092c;
+  max-width: 61%;
   @media screen and (max-width:600px){
       font-size: 2rem;
   }
@@ -3011,8 +3016,8 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 }
 
 .blog .blog-list li .author img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
   margin-right: 18px;
@@ -3280,7 +3285,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 }
 
 .blog-list .blogMainItem .overlay {
-  height: 300px;
+  height: auto;
   width: 100%;
   border-radius: 0px 0px 10px 10px;
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, #1c1c1c 100%);
