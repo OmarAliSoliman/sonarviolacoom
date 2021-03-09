@@ -1,5 +1,5 @@
 html{
-  font-size: 10px;
+  font-size: 10px !important;
 }
 /*
 html5doctor.com Reset Stylesheet
@@ -219,7 +219,7 @@ footer {
 
 footer h6 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
   margin-bottom: 12px;
   color: #16092c;
 }
@@ -255,14 +255,14 @@ footer .subscribe .form-group input {
   color: #16092c;
   padding: 0 40px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 footer .subscribe .form-group .subscribe-button {
   position: absolute;
   right: 20px;
   top: 50%;
-  font-size: 40px;
+  font-size: 4rem;
   margin-top: -28px;
 }
 
@@ -281,14 +281,14 @@ footer .social img {
 
 footer a {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 50px;
   color: #16092c;
 }
 
 footer a.mapLink {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 25px;
   color: #581dc9;
   opacity: 1;
@@ -296,7 +296,7 @@ footer a.mapLink {
 
 footer .copy {
   font-weight: normal;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 60px;
   color: #16092c;
   margin-bottom: 0;
@@ -308,7 +308,7 @@ footer .sub-menu {
 
 footer .sub-menu a {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 50px;
   text-align: left;
   color: #16092c;
@@ -340,15 +340,15 @@ footer .sub-menu a {
   }
 
   footer h6 {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   footer a {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   footer a.mapLink {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 
   footer .socialFooter {
@@ -362,7 +362,7 @@ footer .sub-menu a {
   }
 
   footer .subscribe .form-group .subscribe-button {
-    font-size: 30px;
+    font-size: 3rem;
   }
 }
 
@@ -606,12 +606,12 @@ header .menu .main-links li a {
   transition: all .2s, transform .5s ease;
   transition: all .2s, transform .5s ease;
   font-weight: 900;
-  font-size: 90px;
+  font-size: 9rem;
   letter-spacing: -0.05em;
   line-height: 90px;
   position: relative;
   @media screen and (max-width:1024px){
-   font-size: 60px;
+   font-size: 6rem;
    line-height: 69px;
 }
 }
@@ -658,13 +658,13 @@ header .menu .secondary-links {
 
 header .menu .secondary-links li a {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
   letter-spacing: 0.1em;
   line-height: 20px;
   color: #fff;
   text-transform: uppercase;
   @media screen and (max-width:1024px){
-  font-size: 12px;
+  font-size: 1.2rem;
     
   }
 }
@@ -696,7 +696,7 @@ header .menu .coffee map area {
 
 header .menu .coffee span {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 28px;
   text-align: left;
   color: #fff;
@@ -740,7 +740,7 @@ header .menu .locationsList li button {
   border-radius: 42px;
   background: #16092c;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 85px;
   text-align: left;
   color: #fff;
@@ -748,25 +748,25 @@ header .menu .locationsList li button {
 
 header .menu .locationsList h6 {
   font-weight: 900;
-  font-size: 30px;
+  font-size: 3rem;
   letter-spacing: -0.05em;
   text-align: left;
   color: #fff;
   @media screen and (max-width:1024px){
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 }
 
 header .menu .locationsList a {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 2rem;
   letter-spacing: 0.03em;
   line-height: 25px;
   text-align: left;
   color: #fff;
   opacity: 0.8;
   @media screen and (max-width:1024px){
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 17px;
 }
 }
@@ -776,7 +776,7 @@ header .menu p {
   right: 150px;
   bottom: 25px;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 1.2rem;
   text-align: right;
   color: #fff;
 }
@@ -1029,7 +1029,7 @@ section.banner .fp-tableCell .scrollDown {
 
 section.banner .fp-tableCell h1 {
   font-weight: 900;
-  font-size: 45px;
+  font-size: 4.5rem;
   letter-spacing: -0.05em;
   text-transform: uppercase;
   text-align: left;
@@ -1040,7 +1040,7 @@ section.banner .fp-tableCell h1 {
 
 section.banner .fp-tableCell h3 {
   font-weight: 300;
-  font-size: 39px;
+  font-size: 3.9rem;
   letter-spacing: -0.01em;
   line-height: 39px;
   text-align: left;
@@ -1052,7 +1052,7 @@ section.banner .fp-tableCell h3 {
 
 section.banner .fp-tableCell p {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 30px;
   text-align: left;
   color: #fff;
@@ -1065,7 +1065,7 @@ section.banner .fp-tableCell .contactButton {
   border-radius: 24px;
   background: #fff;
   font-weight: 900;
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 42px;
   text-align: left;
   color: #301464;
@@ -1082,15 +1082,15 @@ section.banner .fp-tableCell .contactButton {
   }
 
   section.banner .fp-tableCell h1 {
-    font-size: 30px;
+    font-size: 3rem;
   }
 
   section.banner .fp-tableCell h3 {
-    font-size: 25px;
+    font-size: 2.5rem;
   }
 
   section.banner .fp-tableCell p {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   section.banner .fp-tableCell .contactButton {
@@ -1103,13 +1103,13 @@ section.banner .fp-tableCell .contactButton {
   section.banner .fp-tableCell .contactButton {
     @media only screen and (min-width: 600px) and (max-width:768px){
       padding: 0 14px;
-      font-size: 11px;
+      font-size: 1.1rem;
       line-height: 35px;
       right: 111px;
     }
     @media only screen and (max-width:450px){
       padding: 0 14px;
-      font-size: 11px;
+      font-size: 1.1rem;
       line-height: 35px;
     }
   }
@@ -1242,7 +1242,7 @@ section.network .fp-tableCell {
 
 section.network .fp-tableCell h2 {
   font-weight: 900;
-  font-size: 70px;
+  font-size: 7rem;
   letter-spacing: -0.04em;
   text-align: left;
   color: #fff;
@@ -1256,13 +1256,13 @@ section.network .fp-tableCell h2 span {
 
 @media only screen and (max-width: 1100px) {
   section.network .fp-tableCell h2 {
-    font-size: 50px;
+    font-size: 5rem;
   }
 }
 
 section.network .fp-tableCell p {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 35px;
   text-align: left;
   color: #fff;
@@ -1270,7 +1270,7 @@ section.network .fp-tableCell p {
 
 @media only screen and (max-width: 1100px) {
   section.network .fp-tableCell p {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.4;
     margin-bottom: 100px;
   }
@@ -1285,6 +1285,7 @@ section.network .fp-tableCell p {
     padding: 0;
     list-style: none;
     flex-grow: 1;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1367,7 +1368,7 @@ section.network .fp-tableCell .circle-container .service * {
 section.network .fp-tableCell .circle-container .service p {
   width: 100%;
   font-weight: normal;
-  font-size: 11px;
+  font-size: 1.1rem;
   line-height: 25px;
   text-align: center;
   color: #16092c;
@@ -1378,7 +1379,7 @@ section.network .fp-tableCell .circle-container .service p {
 
 section.network .fp-tableCell .circle-container .service a {
   font-weight: 900;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-align: left;
   color: #fff;
   line-height: 46px;
@@ -1688,7 +1689,7 @@ section.network .fp-tableCell .circle-container .service.producers .centerLogo {
 
 @media only screen and (min-width: 1100px) and (max-width:1700px) {
   section.network .fp-tableCell .circle-container {
-      font-size: 11px;
+      font-size: 1.1rem;
   }
   .circle-container .mainCenter{
     width: 12em;
@@ -1727,7 +1728,7 @@ section.network .fp-tableCell .circle-container .service.producers .centerLogo {
   }
 
   section.network .fp-tableCell .circle-container .service a {
-    font-size: 10px;
+    font-size: 1rem;
     line-height: 3.6em;
     padding: 0 25px;
     position: relative;
@@ -1763,7 +1764,7 @@ section.contact form .form-group {
 
 section.contact form .form-group h2 {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 40px;
   text-align: left;
   color: #fff;
@@ -1773,7 +1774,7 @@ section.contact form .form-group h2 {
 section.contact form input,
 section.contact form textarea {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 3rem;
   text-align: left;
   background: transparent;
   color: #fff;
@@ -1825,7 +1826,7 @@ section.contact form button {
   box-shadow: 0px 10px 30px rgba(22, 9, 44, 0.45);
   line-height: 70px;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 30px;
   text-align: center;
   color: #16092c;
@@ -1843,14 +1844,14 @@ section.contact form button {
   }
 
   section.contact form .form-group h2 {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.3;
     margin-bottom: 20px;
   }
 
   section.contact form .form-group input,
   section.contact form .form-group textarea {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   section.contact form .form-group button {
@@ -1882,21 +1883,21 @@ section.about.fp-section .fp-tableCell {
 
 section.about h2 {
   font-weight: 900;
-  font-size: 75px;
+  font-size: 7.5rem;
   line-height: 80px;
   text-align: left;
   color: #301464;
   align-self: baseline;
   margin-bottom: 16px;
   @media screen and (min-width:600px) and (max-width:1250px){
-    font-size: 44px;
+    font-size: 4.4rem;
     line-height: 49px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   section.about h2 {
-    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 1.5;
     text-align: center;
     display: block !important;
@@ -1907,19 +1908,19 @@ section.about h2 {
 
 section.about p {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 3rem;
   line-height: 50px;
   text-align: left;
   color: #918e9f;
   @media screen and (min-width:600px) and (max-width:1250px){
-      font-size: 18px;
+      font-size: 1.8rem;
       line-height: 27px;
   }
 }
 
 @media only screen and (max-width: 600px) {
   section.about p {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 20px;
     text-align: center;
   }
@@ -2067,7 +2068,7 @@ section.about:nth-of-type(4) .filter a {
   background: transparent;
   border: 1px solid #301464;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 2rem;
   text-align: center;
   color: #301464;
   transition: all .7s;
@@ -2106,7 +2107,7 @@ section.about:nth-of-type(4) .col-md-6:last-child .slick-wrapper {
 }
 
 section.about:nth-of-type(4) .col-md-6:last-child .slick-wrapper .slick-dots li button:before {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -2223,7 +2224,7 @@ section.about:nth-of-type(5) ul {
 
 section.about:nth-of-type(5) ul li a {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 3rem;
   line-height: 80px;
   text-align: center;
   color: #301464;
@@ -2231,7 +2232,7 @@ section.about:nth-of-type(5) ul li a {
 
 @media only screen and (max-width: 600px) {
   section.about:nth-of-type(5) ul li a {
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 
@@ -2282,7 +2283,7 @@ section.work .owl-carousel .owl-item .details {
 
 section.work .owl-carousel .owl-item .details .number {
   font-weight: 900;
-  font-size: 30px;
+  font-size: 3rem;
   letter-spacing: -0.05em;
   text-align: left;
   color: #d24fcb;
@@ -2290,7 +2291,7 @@ section.work .owl-carousel .owl-item .details .number {
 
 section.work .owl-carousel .owl-item .details .title {
   font-weight: 900;
-  font-size: 56px;
+  font-size: 5.6rem;
   letter-spacing: -0.05em;
   line-height: 58px;
   text-align: left;
@@ -2313,11 +2314,11 @@ section.work .owl-carousel .owl-item .details .title {
   }
 
   section.work .owl-carousel .owl-item .details .number {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   section.work .owl-carousel .owl-item .details .title {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 27px;
   }
 }
@@ -2477,7 +2478,7 @@ section.project.fp-section .fp-tableCell .desc {
 
 section.project.fp-section .fp-tableCell .desc h2 {
   font-weight: 900;
-  font-size: 80px;
+  font-size: 8rem;
   letter-spacing: -0.05em;
   line-height: 75px;
   text-align: left;
@@ -2487,7 +2488,7 @@ section.project.fp-section .fp-tableCell .desc h2 {
 
 @media only screen and (max-width: 600px) {
   section.project.fp-section .fp-tableCell .desc h2 {
-    font-size: 34px;
+    font-size: 3.4rem;
     line-height: 1.4;
   }
 }
@@ -2495,11 +2496,11 @@ section.project.fp-section .fp-tableCell .desc h2 {
 
 section.project.fp-section .fp-tableCell .desc h2 {
   @media only screen and (min-width: 1000px) and (max-width:1400px){
-    font-size: 40px;
+    font-size: 4rem;
     line-height: 46px;
   }
   @media only screen and (min-width: 600px) and (max-width:1000px){
-    font-size: 36px;
+    font-size: 3.6rem;
     line-height: 36px;
   }
   // @media only screen and (max-width: 600px) {
@@ -2512,7 +2513,7 @@ section.project.fp-section .fp-tableCell .desc h2 {
 
 section.project.fp-section .fp-tableCell .desc p {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 30px;
   text-align: left;
   color: #16092c;
@@ -2520,7 +2521,7 @@ section.project.fp-section .fp-tableCell .desc p {
 
 @media only screen and (max-width: 600px) {
   section.project.fp-section .fp-tableCell .desc p {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.4;
   }
 }
@@ -2548,11 +2549,11 @@ section.project.fp-section .fp-tableCell .innerVideoImage {
 section.project.fp-section .fp-tableCell .desc p {
   @media only screen and (min-width: 1000px) and (max-width:1400px){
     line-height: 20px;
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   @media only screen and (min-width: 600px) and (max-width:1000px){
     line-height: 18px;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
 }
@@ -2577,20 +2578,20 @@ section.project.fp-section .fp-tableCell .desc p {
 section.project.fp-section .fp-tableCell .statisticsTitle {
   font-family: Roboto;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 6rem;
   letter-spacing: -0.05em;
   line-height: 50px;
   text-align: left;
   color: #301464;
   margin-bottom: 25px;
   @media screen and (max-width:1200px) {
-      font-size: 36px;
+      font-size: 3.6rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
   section.project.fp-section .fp-tableCell .statisticsTitle {
-    font-size: 40px;
+    font-size: 4rem;
     line-height: 1.4;
     margin-bottom: 20px;
   }
@@ -2639,14 +2640,14 @@ section.project.fp-section .fp-tableCell .statistics>div:last-child:after {
 section.project.fp-section .fp-tableCell .statistics span {
   font-family: Roboto;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 3rem;
   line-height: 40px;
   text-align: left;
   display: block;
   color: #16092c;
   @media screen and (max-width:1200px){
   line-height: 30px;
-  font-size: 24px;
+  font-size: 2.4rem;
   }
 }
 
@@ -2666,7 +2667,7 @@ section.project.fp-section .fp-tableCell .statistics span {
 
 @media only screen and (max-width: 600px) {
   section.project.fp-section .fp-tableCell .statistics span {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.4;
   }
 }
@@ -2675,7 +2676,7 @@ section.project.fp-section .fp-tableCell .statistics h3,
 section.project.fp-section .fp-tableCell .statistics span.counter {
   font-family: Roboto;
   font-weight: bold;
-  font-size: 55px;
+  font-size: 5.5rem;
   line-height: 55px;
   text-align: left;
   color: #581dc9;
@@ -2684,21 +2685,21 @@ section.project.fp-section .fp-tableCell .statistics span.counter {
 @media screen and (max-width:768px) {
   section.project.fp-section .fp-tableCell .statistics h3{
   line-height: normal;
-  font-size: 25px;
+  font-size: 2.5rem;
   }
 
 }
 @media screen and (min-width:768px) and (max-width:1024px){
   section.project.fp-section .fp-tableCell .statistics h3{
   line-height: normal;
-  font-size: 34px;
+  font-size: 3.4rem;
   }
 }
 @media only screen and (max-width: 600px) {
 
   section.project.fp-section .fp-tableCell .statistics h3,
   section.project.fp-section .fp-tableCell .statistics span.counter {
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 1.4;
   }
 }
@@ -2739,13 +2740,13 @@ section.project-details.fp-section .fp-tableCell .projectImages .slick-arrow {
 section.project-details.fp-section .fp-tableCell p {
   font-family: Roboto;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 2.5rem;
   line-height: 45px;
   text-align: left;
   color: #16092c;
   margin-top: 150px;
   @media screen and (max-width:1024px) {
-      font-size: 16px;
+      font-size: 1.6rem;
       line-height: 25px;
   }
 }
@@ -2753,12 +2754,12 @@ section.project.fp-section .fp-tableCell .statistics h3,
  section.project.fp-section .fp-tableCell .statistics span.counter{
   display: block;
   line-height: 35px;
-  font-size: 35px;
+  font-size: 3.5rem;
 }
 @media only screen and (max-width: 600px) {
   section.project-details.fp-section .fp-tableCell p {
     margin-top: 0;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.4;
   }
 }
@@ -2805,21 +2806,21 @@ section.project-details.fp-section .fp-tableCell .project-navigation {
 
 section.project-details.fp-section .fp-tableCell .project-navigation .nav-button {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 3rem;
   letter-spacing: -0.05em;
   line-height: 30px;
   text-align: right;
   color: #c3c3c3;
   text-transform: uppercase;
   @media screen  and (max-width:1024px){
-    font-size: 18px;
+    font-size: 1.8rem;
     
   }
 }
 
 @media only screen and (max-width: 600px) {
   section.project-details.fp-section .fp-tableCell .project-navigation .nav-button {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 
@@ -2873,7 +2874,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog .blog-post h1 {
   font-weight: 900;
-  font-size: 36px;
+  font-size: 3.6rem;
   letter-spacing: -0.05em;
   line-height: 36px;
   text-align: left;
@@ -2882,7 +2883,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog .blog-post p {
   font-weight: normal;
-  font-size: 25px;
+  font-size: 2.5rem;
   line-height: 35px;
   text-align: left;
   color: #16092c;
@@ -2891,7 +2892,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog .blog-post h2 {
   font-weight: 900;
-  font-size: 40px;
+  font-size: 4rem;
   letter-spacing: -0.05em;
   line-height: 40px;
   text-align: left;
@@ -2931,7 +2932,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 }
 .blog .blog-post .articleDetails h3 {
   font-weight: 500;
-  font-size: 13px;
+  font-size: 1.3rem;
   letter-spacing: -0.05em;
   line-height: 75px;
   text-align: left;
@@ -2948,7 +2949,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog .blog-list-title {
   font-weight: 900;
-  font-size: 30px;
+  font-size: 3rem;
   letter-spacing: -0.05em;
   line-height: 40px;
   text-align: left;
@@ -2985,15 +2986,15 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog .blog-list li h3 {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 2.5rem;
   line-height: 30px;
   text-align: left;
   color: #16092c;
   @media screen and (max-width:600px){
-      font-size: 20px;
+      font-size: 2rem;
   }
   @media screen and (max-width:400px){
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 20px;
 }
 }
@@ -3002,7 +3003,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.4rem;
   letter-spacing: -0.05em;    
   margin-top: 15px !important;
   text-align: left;
@@ -3023,11 +3024,11 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   }
 
   .blog h1 {
-    font-size: 40px;
+    font-size: 4rem;
   }
 
   .blog .blog-post h1 {
-    font-size: 21px;
+    font-size: 2.1rem;
     line-height: 20px;
     margin-bottom: 25px;
   }
@@ -3043,7 +3044,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   }
 
   .blog .blog-post .articleDetails h3 {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 60px;
   }
 
@@ -3053,7 +3054,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   }
 
   .blog .blog-post p {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   .blog .position-fixed {
@@ -3090,7 +3091,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 @media only screen and (min-width: 500px) and (max-width:600px) {
   
   .blog .blog-post h1 {
-    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 30px;
     margin-bottom: 25px;
   }
@@ -3181,7 +3182,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .csrFullpage .fp-tableCell h1 {
   font-weight: 900;
-  font-size: 75px;
+  font-size: 7.5rem;
   line-height: 80px;
   text-align: left;
   color: #fff;
@@ -3193,7 +3194,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 .csrFullpage .fp-tableCell p {
   width: 958px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 30px;
   text-align: left;
   color: #fff;
@@ -3217,13 +3218,13 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   }
 
   .csrFullpage .fp-tableCell .intro h1 {
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 1.3;
   }
 
   .csrFullpage .fp-tableCell .intro p {
     width: 100%;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.2;
   }
 
@@ -3237,13 +3238,13 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     padding: 0 20px;
   }
   .csrFullpage .fp-tableCell .intro h1 {
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.3;
   }
 
   .csrFullpage .fp-tableCell .intro p {
     width: 100%;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 1.2;
   }
 
@@ -3258,7 +3259,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog-list .mainTitle {
   font-weight: 900;
-  font-size: 80px;
+  font-size: 8rem;
   letter-spacing: -0.05em;
   line-height: 75px;
   text-align: left;
@@ -3292,34 +3293,34 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog-list .blogMainItem .overlay h1 {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 3.6rem;
   line-height: 45px;
   text-align: left;
   color: #fff;
   margin-bottom: 25px;
 
   @media screen and (max-width:768px) {
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 18px;
     margin-top: 72px;
   }
   @media screen and (max-width:600px) {
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 18px;
     margin-top: 40px;
   }
   @media screen and (max-width:376px) {
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 18px;
     margin-top:10px;
   }
   @media screen and (min-width:768px) and (max-width:992px) {
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 18px;
     margin-top: 72px;
   }
   @media screen and (min-width:992px) and (max-width:1250px) {
-    font-size: 25px;
+    font-size: 2.5rem;
     line-height: 31px;
   }
 }
@@ -3343,12 +3344,12 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog-list .blogMainItem .overlay .authDetails h6 {
   font-weight: 500;
-  font-size: 23px;
+  font-size: 2.3rem;
   letter-spacing: -0.05em;
   text-align: left;
   color: #918e9f;
   @media screen and (max-width:376px) {
-    font-size: 18px;
+    font-size: 1.8rem;
 
   }
 }
@@ -3366,7 +3367,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 .blog-list .blog-list-item h3,
 .blog-list .blog-list-item h3 a {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 2.5rem;
   line-height: 30px;
   text-align: left;
   color: #16092c;
@@ -3389,7 +3390,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .blog-list .blog-list-item .authDetails h6 {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   letter-spacing: -0.05em;
   text-align: left;
   color: #918e9f;
@@ -3402,7 +3403,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   }
 
   .blog-list .mainTitle {
-    font-size: 60px;
+    font-size: 6rem;
   }
 
   .blog-list .col-md-6 .blogMainItem {
@@ -3415,7 +3416,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   }
 
   // .blog-list .col-md-6 .blogMainItem .overlay h1 {
-  //   font-size: 24px;
+  //   font-size: 2.4rem;
   //   line-height: 1.5;
   // }
 
@@ -3426,7 +3427,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .back-to-top {
   font-weight: 900;
-  font-size: 30px;
+  font-size: 3rem;
   letter-spacing: -0.05em;
   text-align: center;
   color: #301464;
