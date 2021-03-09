@@ -219,7 +219,7 @@ footer {
 
 footer h6 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 12px;
   color: #16092c;
 }
@@ -267,7 +267,7 @@ footer .subscribe .form-group .subscribe-button {
 }
 
 footer .social {
-  flex-grow: 1;
+  flex-grow: 0.6;
 }
 
 footer .social li {
@@ -275,7 +275,7 @@ footer .social li {
 }
 
 footer .social img {
-  height: 45px;
+  height: 35px;
   width: auto;
 }
 
@@ -2532,7 +2532,7 @@ section.project.fp-section .fp-tableCell .desc p {
 
 section.project.fp-section .fp-tableCell .innerVideoImage {
   height: auto;
-  max-height: 560px;
+  max-height: 636px;
   width: auto;
   @media only screen and (min-width: 1300px) and (max-width:1700px){
     max-height: 397px;
@@ -2686,6 +2686,13 @@ section.project.fp-section .fp-tableCell .statistics span.counter {
   color: #581dc9;
   
 }
+.font-size-74rem{
+  font-size: 4.7rem;
+}
+.left--50{
+  left: -50px;
+  position: relative;
+}
 @media screen and (max-width:768px) {
   section.project.fp-section .fp-tableCell .statistics h3{
   line-height: normal;
@@ -2756,8 +2763,8 @@ section.project-details.fp-section .fp-tableCell p {
 }
 section.project.fp-section .fp-tableCell .statistics h3,
  section.project.fp-section .fp-tableCell .statistics span.counter{
-  display: block;
-  line-height: 35px;
+   display: inline;
+  line-height: 55px;
   font-size: 3.5rem;
 }
 @media only screen and (max-width: 600px) {
@@ -3543,4 +3550,13 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .mrt-60{
   margin-top: 60px;
+}
+
+
+.project .roi{
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 90% !important; 
+
 }

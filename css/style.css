@@ -222,7 +222,7 @@ footer {
 
 footer h6 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.6rem;
   margin-bottom: 12px;
   color: #16092c;
 }
@@ -272,9 +272,9 @@ footer .subscribe .form-group .subscribe-button {
 }
 
 footer .social {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-flex: 0.6;
+      -ms-flex-positive: 0.6;
+          flex-grow: 0.6;
 }
 
 footer .social li {
@@ -282,7 +282,7 @@ footer .social li {
 }
 
 footer .social img {
-  height: 45px;
+  height: 35px;
   width: auto;
 }
 
@@ -2723,7 +2723,7 @@ section.project.fp-section .fp-tableCell .desc p {
 
 section.project.fp-section .fp-tableCell .innerVideoImage {
   height: auto;
-  max-height: 560px;
+  max-height: 636px;
   width: auto;
 }
 
@@ -2891,6 +2891,15 @@ section.project.fp-section .fp-tableCell .statistics span.counter {
   color: #581dc9;
 }
 
+.font-size-74rem {
+  font-size: 4.7rem;
+}
+
+.left--50 {
+  left: -50px;
+  position: relative;
+}
+
 @media screen and (max-width: 768px) {
   section.project.fp-section .fp-tableCell .statistics h3 {
     line-height: normal;
@@ -2970,8 +2979,8 @@ section.project-details.fp-section .fp-tableCell p {
 
 section.project.fp-section .fp-tableCell .statistics h3,
 section.project.fp-section .fp-tableCell .statistics span.counter {
-  display: block;
-  line-height: 35px;
+  display: inline;
+  line-height: 55px;
   font-size: 3.5rem;
 }
 
@@ -3811,5 +3820,18 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .mrt-60 {
   margin-top: 60px;
+}
+
+.project .roi {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  width: 90% !important;
 }
 /*# sourceMappingURL=style.css.map */
