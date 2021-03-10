@@ -5,7 +5,14 @@
 
 }
 
+
+
 @media only screen and (min-width: 1025px) and (max-width: 1199px){
+    // @import './stylesheets/large';
+}
+
+@media only screen and (max-width: 1099px){
+    @import './stylesheets/large';
 
 }
 
