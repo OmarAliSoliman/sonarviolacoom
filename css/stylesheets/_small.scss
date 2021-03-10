@@ -38,3 +38,34 @@
 
 
     }
+
+    .section.about p{
+        font-size: 1.8rem;
+        line-height: 27px;
+    }
+
+    section.about .col-md-6:first-child {
+        padding-left: 36px;
+        padding-right: 20px;
+    }
+
+    section.about:nth-of-type(4) .col-md-6:last-child .slick-wrapper{
+        width: calc((100vw/2) - 120px);
+    }
+
+.blog-list .blogMainItem .overlay h1 {
+    font-size: 1.5rem;
+    line-height: 18px;
+    margin-top: 72px;
+
+}
+section.project.fp-section .fp-tableCell .innerVideoImage {
+    max-height: 220px;
+
+}
+
+
+section.project.fp-section .fp-tableCell .statistics h3{
+    line-height: normal;
+    font-size: 3.4rem;
+    }

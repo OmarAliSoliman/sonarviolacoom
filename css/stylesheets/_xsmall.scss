@@ -469,6 +469,25 @@
     bottom: 5%;
   }
 
+  .blog-list .blogMainItem .overlay h1 {
+    font-size: 1.5rem;
+    line-height: 18px;
+    margin-top: 72px;
+
+  }
+
+  section.project.fp-section .fp-tableCell .innerVideoImage {
+    max-width: 80%;
+    margin: 30px auto;
+    max-height: auto !important;
+}
 
 
+section.banner .fp-tableCell .contactButton {
+
+  padding: 0 14px;
+      font-size: 1.1rem;
+      line-height: 35px;
+      right: 111px;
+}
   // End point of this Media query

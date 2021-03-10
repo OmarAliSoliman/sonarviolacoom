@@ -1059,23 +1059,6 @@ section.banner .fp-tableCell .contactButton {
   bottom: 30px;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-  section.banner .fp-tableCell .contactButton {
-    padding: 0 14px;
-    font-size: 1.1rem;
-    line-height: 35px;
-    right: 111px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  section.banner .fp-tableCell .contactButton {
-    padding: 0 14px;
-    font-size: 1.1rem;
-    line-height: 35px;
-  }
-}
-
 section.banner.animate-banner img.cloud-left {
   top: 35%;
   -webkit-animation: float 6s ease-in-out infinite;
@@ -1775,23 +1758,9 @@ section.about p {
   color: #918e9f;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1250px) {
-  section.about p {
-    font-size: 1.8rem;
-    line-height: 27px;
-  }
-}
-
 section.about .col-md-6:first-child {
   padding-left: 160px;
   padding-right: 90px;
-}
-
-@media screen and (min-width: 600px) and (max-width: 1250px) {
-  section.about .col-md-6:first-child {
-    padding-left: 36px;
-    padding-right: 20px;
-  }
 }
 
 section.about .col-md-6:last-child {
@@ -1848,12 +1817,6 @@ section.about:nth-of-type(4) .filter a.active {
 
 section.about:nth-of-type(4) .col-md-6:last-child .slick-wrapper {
   width: calc((100vw/2) - 320px);
-}
-
-@media screen and (min-width: 600px) and (max-width: 1250px) {
-  section.about:nth-of-type(4) .col-md-6:last-child .slick-wrapper {
-    width: calc((100vw/2) - 120px);
-  }
 }
 
 section.about:nth-of-type(4) .col-md-6:last-child .slick-wrapper .slick-dots li button:before {
@@ -2254,26 +2217,6 @@ section.project.fp-section .fp-tableCell .innerVideoImage {
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1300px) {
-  section.project.fp-section .fp-tableCell .innerVideoImage {
-    max-height: 320px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  section.project.fp-section .fp-tableCell .innerVideoImage {
-    max-height: 220px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  section.project.fp-section .fp-tableCell .innerVideoImage {
-    max-width: 80%;
-    margin: 30px auto;
-    max-height: auto !important;
-  }
-}
-
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
   section.project.fp-section .fp-tableCell .desc p {
     line-height: 20px;
@@ -2410,13 +2353,6 @@ section.project.fp-section .fp-tableCell .statistics span.counter {
   section.project.fp-section .fp-tableCell .statistics h3 {
     line-height: normal;
     font-size: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  section.project.fp-section .fp-tableCell .statistics h3 {
-    line-height: normal;
-    font-size: 3.4rem;
   }
 }
 
@@ -2921,37 +2857,6 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   margin-bottom: 25px;
 }
 
-@media screen and (max-width: 768px) {
-  .blog-list .blogMainItem .overlay h1 {
-    font-size: 1.5rem;
-    line-height: 18px;
-    margin-top: 72px;
-  }
-}
-
-@media screen and (max-width: 376px) {
-  .blog-list .blogMainItem .overlay h1 {
-    font-size: 1.5rem;
-    line-height: 18px;
-    margin-top: 10px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .blog-list .blogMainItem .overlay h1 {
-    font-size: 1.5rem;
-    line-height: 18px;
-    margin-top: 72px;
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1250px) {
-  .blog-list .blogMainItem .overlay h1 {
-    font-size: 2.5rem;
-    line-height: 31px;
-  }
-}
-
 .blog-list .blogMainItem .overlay .authDetails {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3100,6 +3005,27 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   width: 90% !important;
 }
 
+@media only screen and (min-width: 1100px) and (max-width: 1249px) {
+  .section.about p {
+    font-size: 1.8rem;
+    line-height: 27px;
+  }
+  section.about .col-md-6:first-child {
+    padding-left: 36px;
+    padding-right: 20px;
+  }
+  section.about:nth-of-type(4) .col-md-6:last-child .slick-wrapper {
+    width: calc((100vw/2) - 120px);
+  }
+  .blog-list .blogMainItem .overlay h1 {
+    font-size: 2.5rem;
+    line-height: 31px;
+  }
+  section.project.fp-section .fp-tableCell .innerVideoImage {
+    max-height: 320px;
+  }
+}
+
 @media only screen and (max-width: 1099px) {
   section.network {
     height: auto !important;
@@ -3213,6 +3139,25 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(61, 59, 67, 0)), to(#3d3b43));
     background: linear-gradient(rgba(61, 59, 67, 0) 0%, #3d3b43 100%);
   }
+  .section.about p {
+    font-size: 1.8rem;
+    line-height: 27px;
+  }
+  section.about .col-md-6:first-child {
+    padding-left: 36px;
+    padding-right: 20px;
+  }
+  section.about:nth-of-type(4) .col-md-6:last-child .slick-wrapper {
+    width: calc((100vw/2) - 120px);
+  }
+  .blog-list .blogMainItem .overlay h1 {
+    font-size: 1.5rem;
+    line-height: 18px;
+    margin-top: 72px;
+  }
+  section.project.fp-section .fp-tableCell .innerVideoImage {
+    max-height: 320px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -3245,6 +3190,29 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   header .menu .locationsList a {
     font-size: 1.4rem;
     line-height: 17px;
+  }
+  .section.about p {
+    font-size: 1.8rem;
+    line-height: 27px;
+  }
+  section.about .col-md-6:first-child {
+    padding-left: 36px;
+    padding-right: 20px;
+  }
+  section.about:nth-of-type(4) .col-md-6:last-child .slick-wrapper {
+    width: calc((100vw/2) - 120px);
+  }
+  .blog-list .blogMainItem .overlay h1 {
+    font-size: 1.5rem;
+    line-height: 18px;
+    margin-top: 72px;
+  }
+  section.project.fp-section .fp-tableCell .innerVideoImage {
+    max-height: 220px;
+  }
+  section.project.fp-section .fp-tableCell .statistics h3 {
+    line-height: normal;
+    font-size: 3.4rem;
   }
 }
 
@@ -3647,6 +3615,40 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     width: 70px;
     height: 70px;
     bottom: 5%;
+  }
+  .blog-list .blogMainItem .overlay h1 {
+    font-size: 1.5rem;
+    line-height: 18px;
+    margin-top: 72px;
+  }
+  section.project.fp-section .fp-tableCell .innerVideoImage {
+    max-width: 80%;
+    margin: 30px auto;
+    max-height: auto !important;
+  }
+  section.banner .fp-tableCell .contactButton {
+    padding: 0 14px;
+    font-size: 1.1rem;
+    line-height: 35px;
+    right: 111px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .blog-list .blogMainItem .overlay h1 {
+    font-size: 1.5rem;
+    line-height: 18px;
+    margin-top: 10px;
+  }
+  section.project.fp-section .fp-tableCell .innerVideoImage {
+    max-width: 80%;
+    margin: 30px auto;
+    max-height: auto !important;
+  }
+  section.banner .fp-tableCell .contactButton {
+    padding: 0 14px;
+    font-size: 1.1rem;
+    line-height: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */
