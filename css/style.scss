@@ -587,12 +587,12 @@ header .menu.open {
 
 header .menu .main-links {
   margin-bottom: 100px;
-  @media screen and (max-width:1024px){
-    top: 5rem;
-    margin-right: 158px;
-    margin-left: 20px;
-    position: relative;
-  }
+  // @media screen and (max-width:1024px){
+  //   top: 5rem;
+  //   margin-right: 158px;
+  //   margin-left: 20px;
+  //   position: relative;
+  // }
 }
 
 header .menu .main-links li {
@@ -612,10 +612,10 @@ header .menu .main-links li a {
   letter-spacing: -0.05em;
   line-height: 90px;
   position: relative;
-  @media screen and (max-width:1024px){
-   font-size: 6rem;
-   line-height: 69px;
-}
+//   @media screen and (max-width:1024px){
+//    font-size: 6rem;
+//    line-height: 69px;
+// }
 }
 
 header .menu .main-links li a:after {
@@ -665,10 +665,9 @@ header .menu .secondary-links li a {
   line-height: 20px;
   color: #fff;
   text-transform: uppercase;
-  @media screen and (max-width:1024px){
-  font-size: 1.2rem;
-    
-  }
+  // @media screen and (max-width:1024px){
+  // font-size: 1.2rem;
+  // }
 }
 
 header .menu .coffee {
@@ -678,14 +677,14 @@ header .menu .coffee {
   transform: translateX(-35%);
   z-index: 1;
   animation: floatCoffee 2s ease-in-out infinite;
-  @media screen and (max-width:1024px){
-    left: 57%;
-    top: 9%;
-  }
+  // @media screen and (max-width:1024px){
+  //   left: 57%;
+  //   top: 9%;
+  // }
   img{
-    @media screen and (max-width:1024px){
-      width: 400px;
-    }
+    // @media screen and (max-width:1024px){
+    //   width: 400px;
+    // }
     @media screen and (max-width:500px){
       width: 200px;
     }
@@ -728,9 +727,9 @@ header .menu .locationsList {
 
 header .menu .locationsList li {
   margin-bottom: 80px;
-  @media screen and (max-width:1024px){
-      margin-bottom: 40px;
-  }
+  // @media screen and (max-width:1024px){
+  //     margin-bottom: 40px;
+  // }
 }
 
 header .menu .locationsList li:last-child {
@@ -754,9 +753,9 @@ header .menu .locationsList h6 {
   letter-spacing: -0.05em;
   text-align: left;
   color: #fff;
-  @media screen and (max-width:1024px){
-    font-size: 2.5rem;
-  }
+  // @media screen and (max-width:1024px){
+  //   font-size: 2.5rem;
+  // }
 }
 
 header .menu .locationsList a {
@@ -767,10 +766,10 @@ header .menu .locationsList a {
   text-align: left;
   color: #fff;
   opacity: 0.8;
-  @media screen and (max-width:1024px){
-    font-size: 1.4rem;
-    line-height: 17px;
-}
+//   @media screen and (max-width:1024px){
+//     font-size: 1.4rem;
+//     line-height: 17px;
+// }
 }
 
 header .menu p {
@@ -2671,12 +2670,12 @@ section.project.fp-section .fp-tableCell .statistics span {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  section.project.fp-section .fp-tableCell .statistics span {
-    font-size: 1.6rem;
-    line-height: 1.4;
-  }
-}
+// @media only screen and (max-width: 600px) {
+//   section.project.fp-section .fp-tableCell .statistics span {
+//     font-size: 1.6rem;
+//     line-height: 1.4;
+//   }
+// }
 
 section.project.fp-section .fp-tableCell .statistics h3,
 section.project.fp-section .fp-tableCell .statistics span.counter {
@@ -2991,10 +2990,10 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   width: auto;
   height: 90px;
   margin-right: 20px;
-  @media screen and (max-width:600px){
-    width: auto;
-    height: 110px;
-}
+//   @media screen and (max-width:600px){
+//     width: auto;
+//     height: 110px;
+// }
 }
 
 .blog .blog-list li h3 {
@@ -3004,9 +3003,9 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   text-align: left;
   color: #16092c;
   max-width: 61%;
-  @media screen and (max-width:600px){
-      font-size: 2rem;
-  }
+  // @media screen and (max-width:600px){
+  //     font-size: 2rem;
+  // }
   @media screen and (max-width:400px){
     font-size: 1.4rem;
     line-height: 20px;
@@ -3318,11 +3317,11 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     line-height: 18px;
     margin-top: 72px;
   }
-  @media screen and (max-width:600px) {
-    font-size: 1.5rem;
-    line-height: 18px;
-    margin-top: 40px;
-  }
+  // @media screen and (max-width:600px) {
+  //   font-size: 1.5rem;
+  //   line-height: 18px;
+  //   margin-top: 40px;
+  // }
   @media screen and (max-width:376px) {
     font-size: 1.5rem;
     line-height: 18px;
@@ -3410,34 +3409,34 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   color: #918e9f;
 }
 
-@media only screen and (max-width: 600px) {
-  .blog-list {
-    padding-top: 100px;
-    align-items: start;
-  }
+// @media only screen and (max-width: 600px) {
+//   .blog-list {
+//     padding-top: 100px;
+//     align-items: start;
+//   }
 
-  .blog-list .mainTitle {
-    font-size: 6rem;
-  }
+//   .blog-list .mainTitle {
+//     font-size: 6rem;
+//   }
 
-  .blog-list .col-md-6 .blogMainItem {
-    margin-bottom: 30px;
-  }
+//   .blog-list .col-md-6 .blogMainItem {
+//     margin-bottom: 30px;
+//   }
 
-  .blog-list .col-md-6 .blogMainItem .overlay {
-    padding: 15px;
-    height: 200px;
-  }
+//   .blog-list .col-md-6 .blogMainItem .overlay {
+//     padding: 15px;
+//     height: 200px;
+//   }
 
-  // .blog-list .col-md-6 .blogMainItem .overlay h1 {
-  //   font-size: 2.4rem;
-  //   line-height: 1.5;
-  // }
+//   // .blog-list .col-md-6 .blogMainItem .overlay h1 {
+//   //   font-size: 2.4rem;
+//   //   line-height: 1.5;
+//   // }
 
-  .blog-list .col-md-6:last-child .overlay {
-    height: 160px;
-  }
-}
+//   .blog-list .col-md-6:last-child .overlay {
+//     height: 160px;
+//   }
+// }
 
 .back-to-top {
   font-weight: 900;
@@ -3565,4 +3564,5 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 
 
-@import './stylesheets/small'
+@import './stylesheets/small';
+@import './stylesheets/xsmall';
