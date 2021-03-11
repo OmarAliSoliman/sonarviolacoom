@@ -1,9 +1,3 @@
-// function sleep(miliseconds) {
-//     var currentTime = new Date().getTime();
-
-//     while (currentTime + miliseconds >= new Date().getTime()) {
-//     }
-// }
 var animationData = {
     "v": "5.6.8",
     "fr": 24,
@@ -2878,40 +2872,9 @@ var params = {
 };
 
 var anim;
-anim = lottie.loadAnimation(params);
-var params2 = {
-    container: document.getElementById('lottie2'),
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    animationData: animationData
-};
-var anim2;
-anim2 = lottie.loadAnimation(params2);
-$(document).ready(function () {
-    $('#nav-icon').click(function () {
-        $(this).toggleClass('open');
-        $('.menu').toggleClass('open');
-        $('.menu').toggleClass('flexVisiable');
-        $('.coffee').toggleClass('visiable')
-    });
-    $(".back-to-top").click(function (e) {
-        e.preventDefault();
-        console.log('clicked');
-        fullpage_api.moveTo(1);
-    });
-   
-    $(document).on('click', '.muted', function () {
-        var useElement = this.getElementsByTagName("use")[0];
-        $('.videoItem').get(0).muted = !$('.videoItem').get(0).muted
-        if ($('.videoItem').get(0).muted === true) {
-            useElement.href.baseVal = "#mute";
-        } else {
-            useElement.href.baseVal = "#unmute";
-        }
-    });
 
-});
+anim = lottie.loadAnimation(params);
+
 
 $(window).load(function () {
     // $('body').css('overflow', 'visible');
@@ -2923,12 +2886,13 @@ $(window).load(function () {
     if (window.location.href.indexOf("contact") > -1) {
         $('.contact .animate__animated').addClass('animate__fadeInLeft');
     }
+
+    $(document).on('click', '.owl-item', function () {
+        n = $(this).index();
+        console.log(n)
+        window.location.href = "project" + (n + 1) + ".html";
+
+    });
+    // fullpage_api.setMouseWheelScrolling(true);
+    // fullpage_api.setAllowScrolling(true);
 });
-function showTest() {
-    $('.coffee').addClass('hover')
-}
-function hideText() {
-    $('.coffee').removeClass('hover')
-}
-
-
