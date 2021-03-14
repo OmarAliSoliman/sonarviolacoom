@@ -2942,7 +2942,12 @@ for (var i = 0; i < getAllDropdowns.length; i++) {
         $('.menu').toggleClass('flexVisiable');
         $('.coffee').toggleClass('visiable')
         $("#siteContainer").load('pages/'+getPageId.selector+".html");
-    })
+    });
 }
-// $("#siteContainer").load('pages/homepage.html');
+// $(window).ready(function(){
+//     $("#siteContainer").load("pages/aboutpage.html")
+// })
 
+$(document).ready(function() {
+    $("#siteContainer").load("pages/homepage.html")
+});

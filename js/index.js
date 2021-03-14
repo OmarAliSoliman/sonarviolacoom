@@ -2,6 +2,7 @@ var delay = 800; //milliseconds
 var timeoutId;
 var isWaiting = false;
 var animationIsFinished = false;
+
 $('.fullPage').fullpage({
     // fadingEffect: true,
     // fadingEffectKey: 'dmlvbGEuYWVfRzBiWm1Ga2FXNW5SV1ptWldOMGR6RQ==',
