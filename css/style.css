@@ -2,6 +2,23 @@ html {
   font-size: 10px !important;
 }
 
+#aboutpage {
+  position: relative;
+  width: 100vw;
+  height: 100vw;
+}
+
+#workpage {
+  position: fixed;
+  width: 100vw;
+  height: 100vw;
+  background-color: red;
+  top: 0;
+  display: none;
+  left: 0;
+  z-index: 22;
+}
+
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -3760,5 +3777,13 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   header .menu .coffee img {
     width: 200px;
   }
+}
+
+*:target ~ * {
+  display: none !important;
+}
+
+*:target {
+  display: block !important;
 }
 /*# sourceMappingURL=style.css.map */

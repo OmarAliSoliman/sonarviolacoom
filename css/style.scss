@@ -1,6 +1,21 @@
 html{
   font-size: 10px !important;
 }
+#aboutpage{
+  position: relative;
+  width: 100vw;
+  height: 100vw;
+}
+#workpage{
+  position: fixed;
+  width: 100vw;
+  height: 100vw;
+  background-color: red;
+  top: 0;
+  display: none;
+  left: 0;
+  z-index: 22;
+}
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -553,7 +568,6 @@ header .menu .main-links li a {
   letter-spacing: -0.05em;
   line-height: 90px;
   position: relative;
-
 }
 
 header .menu .main-links li a:after {
@@ -2580,3 +2594,11 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   width: 90% !important; 
 }
 @import './mediaQueries';
+
+
+*:target ~ * {
+  display: none !important;
+}
+ *:target {
+  display: block !important;
+}

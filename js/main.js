@@ -2868,7 +2868,6 @@ var animationData = {
         "fFamily": "SciFly"
     }]
 };
-
 var params = {
     container: document.getElementById('lottie'),
     renderer: 'svg',
@@ -2931,4 +2930,19 @@ function hideText() {
     $('.coffee').removeClass('hover')
 }
 
+
+let getAllDropdowns = document.querySelectorAll('a');
+for (var i = 0; i < getAllDropdowns.length; i++) {
+    getAllDropdowns[i].addEventListener('click', function () {
+        let getAttr = this.getAttribute('data-link-to-page');
+        let getPageId = $(getAttr);
+        console.log(getPageId);
+        $('#nav-icon').toggleClass('open');
+        $('.menu').toggleClass('open');
+        $('.menu').toggleClass('flexVisiable');
+        $('.coffee').toggleClass('visiable')
+        $("#siteContainer").load('pages/'+getPageId.selector+".html");
+    })
+}
+// $("#siteContainer").load('pages/homepage.html');
 

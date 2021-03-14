@@ -25,18 +25,14 @@ owl.owlCarousel({
     }
 });
 owl.on('mousewheel', '.owl-stage', function (e) {
-    console.log(e.deltaY)
     e.preventDefault();
     if (e.deltaY > 0) {
-        console.log("next")
         owl.trigger('next.owl');
     } else {
-        console.log("prev")
         owl.trigger('prev.owl');
     }
 });
 $(".back-to-top").click(function (e) {
     e.preventDefault();
-    console.log('clicked');
     fullpage_api.moveTo(1);
 });
