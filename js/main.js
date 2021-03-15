@@ -2941,6 +2941,7 @@ for (var i = 0; i < getAllDropdowns.length; i++) {
         $('.menu').toggleClass('open');
         $('.menu').toggleClass('flexVisiable');
         $('.coffee').toggleClass('visiable')
+        $.fn.fullpage.destroy('all');
         $("#siteContainer").load('pages/'+getPageId.selector+".html");
     });
 }
