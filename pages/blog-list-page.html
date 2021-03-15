@@ -10,7 +10,8 @@
             </div>
             <div class="col-md-6">
                 <div class="blogMainItem">
-                    <img src="img/content.jpg" /> <a href="blog1.html" class="overlay d-flex flex-column">
+                    <img src="img/content.jpg" /> 
+                    <a href="#" class="overlay d-flex flex-column hyperLink" data-link-to-page='blog1'>
 
                     <h1>
 
@@ -57,3 +58,14 @@
         </div>
     </div>
 </section>
+<script>
+//     let getAllDropdowns = document.querySelectorAll('.hyperLink');
+//     for (var i = 0; i < getAllDropdowns.length; i++) {
+//         getAllDropdowns[i].addEventListener('click', function () {
+//             let getAttr = this.getAttribute('data-link-to-page');
+//             let getPageId = $(getAttr);
+//             $.fn.fullpage.destroy('all');
+//             $("#siteContainer").load('pages/'+getPageId.selector+".html");
+//     });
+// }
+</script>

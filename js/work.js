@@ -36,3 +36,16 @@ $(".back-to-top").click(function (e) {
     e.preventDefault();
     fullpage_api.moveTo(1);
 });
+
+
+
+// let getAllDropdowns = document.querySelectorAll('.hyperLink');
+// for (var i = 0; i < getAllDropdowns.length; i++) {
+//     getAllDropdowns[i].addEventListener('click', function () {
+//         let getAttr = this.getAttribute('data-link-to-page');
+//         let getPageId = $(getAttr);
+//         $("#siteContainer").load('pages/'+getPageId.selector+".html");
+//         $.fn.fullpage.destroy('all');
+//         console.log('worked in wokrJS File');
+//     });
+// }

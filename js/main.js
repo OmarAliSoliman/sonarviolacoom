@@ -2930,12 +2930,11 @@ function hideText() {
     $('.coffee').removeClass('hover')
 }
 
-let getAllDropdowns = document.querySelectorAll('a');
+let getAllDropdowns = document.querySelectorAll('.hyperLink');
 for (var i = 0; i < getAllDropdowns.length; i++) {
     getAllDropdowns[i].addEventListener('click', function () {
         let getAttr = this.getAttribute('data-link-to-page');
         let getPageId = $(getAttr);
-        console.log(getPageId);
         $('#nav-icon').toggleClass('open');
         $('.menu').toggleClass('open');
         $('.menu').toggleClass('flexVisiable');
@@ -2944,4 +2943,5 @@ for (var i = 0; i < getAllDropdowns.length; i++) {
         $("#siteContainer").load('pages/'+getPageId.selector+".html");
     });
 }
-$("#siteContainer").load("pages/homepage.html")
+        $("#siteContainer").load("pages/homepage.html")
+
