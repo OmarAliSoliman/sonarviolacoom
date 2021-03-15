@@ -2930,18 +2930,43 @@ function hideText() {
     $('.coffee').removeClass('hover')
 }
 
-let getAllDropdowns = document.querySelectorAll('.hyperLink');
-for (var i = 0; i < getAllDropdowns.length; i++) {
-    getAllDropdowns[i].addEventListener('click', function () {
-        let getAttr = this.getAttribute('data-link-to-page');
-        let getPageId = $(getAttr);
+
+
+// let getAllDropdowns = document.querySelectorAll('.hyperLink');
+
+//     function loopLinks(){
+//         for (var i = 0; i < getAllDropdowns.length; i++) {
+//             getAllDropdowns[i].addEventListener('click', function () {
+//                 let getAttr = this.getAttribute('data-link-to-page');
+//                 let getPageId = $(getAttr);
+//             });
+//         }
+//     }
+
+    $('.hyperLink').on('click',function(){
+        let getAttr = $(this).attr('data-link-to-page');
         $('#nav-icon').toggleClass('open');
         $('.menu').toggleClass('open');
         $('.menu').toggleClass('flexVisiable');
         $('.coffee').toggleClass('visiable')
+        loadPage(getAttr)
+    })
+
+
+    function loadPage(getAttr){
         $.fn.fullpage.destroy('all');
-        $("#siteContainer").load('pages/'+getPageId.selector+".html");
-    });
-}
+        $("#siteContainer").load('pages/'+getAttr+".html",function(){
+            $('.hyperLink').on('click',function(){
+                getAttr = $(this).attr('data-link-to-page');
+                loadPage(getAttr)
+                console.log(getAttr);
+            })
+        });
+    }
+  
+
+
+
+
         $("#siteContainer").load("pages/homepage.html")
 
