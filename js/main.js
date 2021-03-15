@@ -2900,15 +2900,15 @@ $(document).ready(function () {
         fullpage_api.moveTo(1);
     });
    
-    $(document).on('click', '.muted', function () {
-        var useElement = this.getElementsByTagName("use")[0];
-        $('.videoItem').get(0).muted = !$('.videoItem').get(0).muted
-        if ($('.videoItem').get(0).muted === true) {
-            useElement.href.baseVal = "#mute";
-        } else {
-            useElement.href.baseVal = "#unmute";
-        }
-    });
+    // $(document).on('click', '.muted', function () {
+    //     var useElement = this.getElementsByTagName("use")[0];
+    //     $('.videoItem').get(0).muted = !$('.videoItem').get(0).muted
+    //     if ($('.videoItem').get(0).muted === true) {
+    //         useElement.href.baseVal = "#mute";
+    //     } else {
+    //         useElement.href.baseVal = "#unmute";
+    //     }
+    // });
 
 });
 
@@ -2948,6 +2948,6 @@ for (var i = 0; i < getAllDropdowns.length; i++) {
 //     $("#siteContainer").load("pages/aboutpage.html")
 // })
 
-$(document).ready(function() {
+    console.log('docuent ready');
+  
     $("#siteContainer").load("pages/homepage.html")
-});

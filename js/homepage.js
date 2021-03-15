@@ -2,7 +2,6 @@ var delay = 800; //milliseconds
 var timeoutId;
 var isWaiting = false;
 var animationIsFinished = false;
-
 $('.fullPage').fullpage({
     // fadingEffect: true,
     // fadingEffectKey: 'dmlvbGEuYWVfRzBiWm1Ga2FXNW5SV1ptWldOMGR6RQ==',
@@ -56,4 +55,14 @@ $('.fullPage').fullpage({
 });
 $(document).on('click', '.scrollDown', function () {
     fullpage_api.moveTo('page2', 1);
+});
+
+$(document).on('click', '.muted', function () {
+    var useElement = this.getElementsByTagName("use")[0];
+    $('.videoItem').get(0).muted = !$('.videoItem').get(0).muted
+    if ($('.videoItem').get(0).muted === true) {
+        useElement.href.baseVal = "#mute";
+    } else {
+        useElement.href.baseVal = "#unmute";
+    }
 });

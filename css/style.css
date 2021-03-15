@@ -2,23 +2,6 @@ html {
   font-size: 10px !important;
 }
 
-#aboutpage {
-  position: relative;
-  width: 100vw;
-  height: 100vw;
-}
-
-#workpage {
-  position: fixed;
-  width: 100vw;
-  height: 100vw;
-  background-color: red;
-  top: 0;
-  display: none;
-  left: 0;
-  z-index: 22;
-}
-
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
