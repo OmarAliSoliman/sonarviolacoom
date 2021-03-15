@@ -2944,6 +2944,7 @@ function hideText() {
 //     }
 
     $('.hyperLink').on('click',function(){
+        $.fn.fullpage.destroy('all');
         let getAttr = $(this).attr('data-link-to-page');
         $('#nav-icon').toggleClass('open');
         $('.menu').toggleClass('open');
@@ -2954,9 +2955,8 @@ function hideText() {
 
 
     function loadPage(getAttr){
-        $.fn.fullpage.destroy('all');
         $("#siteContainer").load('pages/'+getAttr+".html",function(){
-            $('.hyperLink').on('click',function(){
+            $('.hyperLinkInner').on('click',function(){
                 getAttr = $(this).attr('data-link-to-page');
                 loadPage(getAttr)
                 console.log(getAttr);
