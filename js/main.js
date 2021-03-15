@@ -2930,7 +2930,6 @@ function hideText() {
     $('.coffee').removeClass('hover')
 }
 
-
 let getAllDropdowns = document.querySelectorAll('a');
 for (var i = 0; i < getAllDropdowns.length; i++) {
     getAllDropdowns[i].addEventListener('click', function () {
@@ -2945,10 +2944,4 @@ for (var i = 0; i < getAllDropdowns.length; i++) {
         $("#siteContainer").load('pages/'+getPageId.selector+".html");
     });
 }
-// $(window).ready(function(){
-//     $("#siteContainer").load("pages/aboutpage.html")
-// })
-
-    console.log('docuent ready');
-  
-    $("#siteContainer").load("pages/homepage.html")
+$("#siteContainer").load("pages/homepage.html")
