@@ -2967,29 +2967,27 @@ function hideText() {
     
     
 
-    function loadPagefromURL(value) {
-        window.history.pushState(value, {}, "?"+value);
-        let getPage = window.history.state;
-        loadPage(getPage)
-    } 
-    window.addEventListener('popstate', function (event) {
-        $.fn.fullpage.destroy('all');
-        event.state === null ? $("#siteContainer").load("pages/homepage.html") : loadPage(event.state)
-    });
-
-
-    function loadPage(getAttr){
-        $("#siteContainer").load('pages/'+getAttr+".html",function(){
-            $('.hyperLinkInner').on('click',function(){
-                getAttr = $(this).attr('data-link-to-page');
-                loadPage(getAttr)
-                console.log(getAttr);
-             
-            })
+        function loadPagefromURL(value) {
+            window.history.pushState(value, {}, "?"+value);
+            let getPage = window.history.state;
+            loadPage(getPage)
+        } 
+        window.addEventListener('popstate', function (event) {
+            $.fn.fullpage.destroy('all');
+            event.state === null ? $("#siteContainer").load("pages/homepage.html") : loadPage(event.state)
         });
-    }
 
 
+        function loadPage(getAttr){
+            $("#siteContainer").load('pages/'+getAttr+".html",function(){
+                $('.hyperLinkInner').on('click',function(){
+                    getAttr = $(this).attr('data-link-to-page');
+                    loadPage(getAttr)
+                    console.log(getAttr);
+                
+                })
+            });
+        }
 
         $("#siteContainer").load("pages/homepage.html");
     
