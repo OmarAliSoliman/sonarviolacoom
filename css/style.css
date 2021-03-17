@@ -339,7 +339,7 @@ header .logo .cls-4 {
   fill: #722282;
 }
 
-header .overlay {
+.overlay {
   position: fixed;
   left: 0;
   top: 0;
@@ -355,10 +355,10 @@ header .overlay {
       -ms-flex-align: center;
           align-items: center;
   background: #581DC9;
-  z-index: 20;
+  z-index: 9999;
 }
 
-header .overlay h3 {
+.overlay h3 {
   color: #fff;
 }
 
@@ -371,10 +371,33 @@ header .logo {
   left: 35px;
 }
 
+#lottieInnerSection {
+  width: 600px;
+  height: 600px;
+  display: block;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  text-align: center;
+  opacity: 1;
+}
+
+#lottieInnerPage {
+  background-color: #581DC9;
+  width: 400px;
+  height: 400px;
+  display: block;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  text-align: center;
+  opacity: 1;
+}
+
 #lottie {
   background-color: #581DC9;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   display: block;
   overflow: hidden;
   -webkit-transform: translate3d(0, 0, 0);
@@ -438,6 +461,11 @@ header #nav-icon span:nth-child(2) {
   top: 38px;
   -webkit-transform-origin: left center;
   transform-origin: left center;
+}
+
+#siteContainer {
+  position: relative;
+  z-index: 2;
 }
 
 header #nav-icon span:nth-child(3) {

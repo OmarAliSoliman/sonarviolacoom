@@ -1,3 +1,5 @@
+console.log('init HOMEPAGE fullpage.js');
+
 var delay = 800; //milliseconds
 var timeoutId;
 var isWaiting = false;
