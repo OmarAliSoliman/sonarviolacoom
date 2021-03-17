@@ -1,25 +1,25 @@
-$(window).resize(function () {
-    if (window.matchMedia("(max-width: 768px)").matches) {
-        /* the viewport is less than 768 pixels wide */
-        $('.projectImages').slick({
-            autoplay: true,
-            arrows: true,
-            autoplaySpeed: 800,
-        });
-    } else {
-        $('.projectImages').slick('unslick');
-    }
-})
-if (window.matchMedia("(max-width: 768px)").matches) {
-    /* the viewport is less than 768 pixels wide */
-    $('.projectImages').slick({
-        autoplay: true,
-        arrows: true,
-        autoplaySpeed: 800,
-    });
-} else {
-    $('.projectImages').slick('unslick');
-}
+// $(window).resize(function () {
+//     if (window.matchMedia("(max-width: 768px)").matches) {
+//         /* the viewport is less than 768 pixels wide */
+//         $('.projectImages').slick({
+//             autoplay: true,
+//             arrows: true,
+//             autoplaySpeed: 800,
+//         });
+//     } else {
+//         $('.projectImages').slick('unslick');
+//     }
+// })
+// if (window.matchMedia("(max-width: 768px)").matches) {
+//     /* the viewport is less than 768 pixels wide */
+//     $('.projectImages').slick({
+//         autoplay: true,
+//         arrows: true,
+//         autoplaySpeed: 800,
+//     });
+// } else {
+//     $('.projectImages').slick('unslick');
+// }
 
 // $('.counter').counterUp({
 //     delay: 10,

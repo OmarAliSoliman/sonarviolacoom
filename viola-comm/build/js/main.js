@@ -71,16 +71,7 @@ $(document).ready(function () {
             }
         ]
     });
-    if (window.matchMedia("(max-width: 768px)").matches) {
-        /* the viewport is less than 768 pixels wide */
-        $('.projectImages').slick({
-            autoplay: true,
-            arrows: true,
-            autoplaySpeed: 800,
-        });
-    } else {
-        $('.projectImages').slick('unslick');
-    }
+   
     $('.counter').counterUp({
         delay: 10,
         time: 2000
@@ -126,18 +117,6 @@ function hideText() {
     $('.coffee').removeClass('hover')
 }
 
-$(window).resize(function () {
-    if (window.matchMedia("(max-width: 768px)").matches) {
-        /* the viewport is less than 768 pixels wide */
-        $('.projectImages').slick({
-            autoplay: true,
-            arrows: true,
-            autoplaySpeed: 800,
-        });
-    } else {
-        $('.projectImages').slick('unslick');
-    }
-})
 
 // function sendEmail() {
 //     var name = $('#contactForm').find('input[name="name"]').val();
