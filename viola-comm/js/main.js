@@ -28,36 +28,36 @@ $(document).ready(function () {
         $(this).toggleClass('open');
         $('.menu').toggleClass('open')
     });
-    owl.owlCarousel({
-        loop: false,
-        nav: false,
-        slideBy: 3,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            960: {
-                items: 3
-            },
-            1200: {
-                items: 3
-            }
-        }
-    });
-    owl.on('mousewheel', '.owl-stage', function (e) {
-        console.log(e.deltaY)
-        e.preventDefault();
-        if (e.deltaY > 0) {
-            console.log("next")
-            owl.trigger('next.owl');
-        } else {
-            console.log("prev")
-            owl.trigger('prev.owl');
-        }
-    });
+    // owl.owlCarousel({
+    //     loop: false,
+    //     nav: false,
+    //     slideBy: 3,
+    //     responsive: {
+    //         0: {
+    //             items: 1
+    //         },
+    //         600: {
+    //             items: 3
+    //         },
+    //         960: {
+    //             items: 3
+    //         },
+    //         1200: {
+    //             items: 3
+    //         }
+    //     }
+    // });
+    // owl.on('mousewheel', '.owl-stage', function (e) {
+    //     console.log(e.deltaY)
+    //     e.preventDefault();
+    //     if (e.deltaY > 0) {
+    //         console.log("next")
+    //         owl.trigger('next.owl');
+    //     } else {
+    //         console.log("prev")
+    //         owl.trigger('prev.owl');
+    //     }
+    // });
 });
 
 $(window).load(function () {
