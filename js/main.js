@@ -98,9 +98,15 @@
             let s = window.location.search.replace('?','');
             s === '' ? $("#siteContainer").load("pages/homepage.html") : loadPage(s)
             // pages.includes(s) ?  loadPage(s) : $("#siteContainer").load("pages/404.html")
-           }else {
-                console.log('have hash');
-            }
+          
+           }
+        //    else if(window.location.search){
+        //     // var matches = window.location.hash.match(/^#page([0-9]+)$/);
+        //     // $("#siteContainer").load("pages/homepage.html"+matches[0])
+        //     console.log(window.location);
+        //    }else{
+        //        console.log('not container');
+        //    }
         });
 
 
