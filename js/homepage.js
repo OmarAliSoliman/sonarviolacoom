@@ -18,27 +18,32 @@ $('.fullPage').fullpage({
         timeoutId = setTimeout(function () {
             animationIsFinished = true;
             // fullpage_api.moveTo(destination.index + 1);
-            console.log('redned');
+            //console.log('redned');
         }, delay);
 
-        if (destination.index == 4) {
+        //console.log(destination);
+
+        if (destination == 4) {
             $('.withLove').addClass('d-none');
             $('header .social').addClass('d-none');
         } else {
             $('.withLove').removeClass('d-none');
             $('header .social').removeClass('d-none');
         }
-        if (destination.index !== 0) {
+        if (destination > 1) {
             $('.back-to-top').css('opacity', 1);
         } else {
             $('.back-to-top').css('opacity', 0);
         }
 
-        if (destination.index == 3) {
+        if (destination == 3) {
             $('.contact .animate__animated').addClass('animate__fadeInLeft');
         }
-        if (destination.index == 2) {
+        if (destination == 2) {
             $('.network .animate__animated').addClass('animate__fadeInLeft');
+            $('#home-video').get(0).play();
+        } else {
+            $('#home-video').get(0).pause();
         }
         // $('.videoItem').get(0).pause()
 
