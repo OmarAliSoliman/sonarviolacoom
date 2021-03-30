@@ -2114,6 +2114,11 @@ section.work .owl-carousel .owl-item.active:hover .details {
   top: 74%;
 }
 
+.invertColor {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
 section.work .owl-carousel .owl-item.active:hover .details .title {
   color: #fff;
 }
@@ -2835,7 +2840,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
           align-items: center;
   position: fixed;
   bottom: 10%;
-  right: 20px;
+  right: 35px;
   z-index: 9;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -2867,6 +2872,64 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
       -ms-flex-align: center !important;
           align-items: center !important;
   width: 90% !important;
+}
+
+@media only screen and (min-width: 1250px) and (max-width: 1440px) {
+  section.network .fp-tableCell .circle-container .service .model {
+    width: 10em;
+    height: 190px;
+    right: -10px;
+  }
+  section.network .fp-tableCell .circle-container .service .model img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  section.network .fp-tableCell .circle-container .service p {
+    font-size: 10px;
+    line-height: 1.5em;
+    top: -35px;
+    position: relative;
+  }
+  section.project.fp-section .fp-tableCell .desc h2 {
+    font-size: 6rem;
+    letter-spacing: -0.05em;
+    line-height: 59px;
+  }
+  section.work .owl-carousel .owl-item .details .title {
+    font-size: 3.6rem;
+    line-height: 40px;
+  }
+  section.work .owl-carousel .owl-item.active:hover .details {
+    left: 56%;
+  }
+  section.work .owl-carousel .owl-item.active:hover .details .title {
+    font-size: 3.6rem;
+    letter-spacing: -0.05em;
+    line-height: 38px;
+  }
+  section.about h2 {
+    font-size: 5.5rem;
+    line-height: 55px;
+  }
+  section.about p {
+    font-size: 2rem;
+    line-height: 33px;
+  }
+  section.banner .fp-tableCell h1 {
+    font-size: 3rem;
+  }
+  section.banner .fp-tableCell h3 {
+    font-size: 2.6rem;
+  }
+  section.banner .fp-tableCell p {
+    font-size: 1.6rem;
+  }
+  section.contact form .form-group h2 {
+    font-size: 2.8rem;
+  }
+  section.contact form input, section.contact form textarea {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1100px) and (max-width: 1249px) {
@@ -3796,5 +3859,9 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 *:target {
   display: block !important;
+}
+
+.hideImportant {
+  display: none !important;
 }
 /*# sourceMappingURL=style.css.map */

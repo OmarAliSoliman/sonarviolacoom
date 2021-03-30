@@ -22,6 +22,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 //     delay: 10,
 //     time: 2000
 // });
+$('.social li a img ').addClass('invertColor')
 
 $(document).on('click', '.owl-item', function () {
     n = $(this).index();

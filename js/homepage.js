@@ -45,6 +45,15 @@ $('.fullPage').fullpage({
         } else {
             $('#home-video').get(0).pause();
         }
+        if (destination == 5) {
+           $('.social').addClass('hideImportant')
+           $('.withLove').addClass('invertColor');
+        }else{
+           $('.social').removeClass('hideImportant')
+           $('.withLove').removeClass('invertColor');
+
+
+        }
         // $('.videoItem').get(0).pause()
 
         return animationIsFinished;

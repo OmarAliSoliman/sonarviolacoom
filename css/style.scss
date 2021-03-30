@@ -1944,7 +1944,10 @@ section.work .owl-carousel .owl-item.active:hover .details {
   bottom: 160px;
   top: 74%;
 }
-
+.invertColor {
+  // filter: drop-shadow(0px 0px 2px black);
+  filter: invert(1);
+}
 section.work .owl-carousel .owl-item.active:hover .details .title {
   color: #fff;
 }
@@ -1977,6 +1980,7 @@ section.project.fp-section .fp-tableCell .desc h2 {
   text-align: left;
   color: #301464;
   margin-bottom: 40px;
+  
 }
 section.project.fp-section .fp-tableCell .desc h2 {
   @media only screen and (min-width: 1000px) and (max-width:1400px){
@@ -2584,7 +2588,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   align-items: center;
   position: fixed;
   bottom: 10%;
-  right: 20px;
+  right: 35px;
   z-index: 9;
   transition: all .5s;
   opacity: 0;
@@ -2612,4 +2616,8 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 }
  *:target {
   display: block !important;
+}
+
+.hideImportant{
+  display: none !important;
 }
