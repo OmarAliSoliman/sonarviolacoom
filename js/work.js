@@ -38,7 +38,8 @@ $(".back-to-top").click(function (e) {
 });
 
 
-
+$('.social li a img ').addClass('invertColor')
+console.log('sas');
 // let getAllDropdowns = document.querySelectorAll('.hyperLink');
 // for (var i = 0; i < getAllDropdowns.length; i++) {
 //     getAllDropdowns[i].addEventListener('click', function () {
