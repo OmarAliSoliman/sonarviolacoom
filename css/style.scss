@@ -2643,3 +2643,9 @@ section.about .col-md-6:first-child{
   justify-content: center;
   align-items: end;
 }
+
+@media screen and (min-width:1700px) and (max-width:1850px){
+  section.network .fp-tableCell .circle-container{
+    transform: scale(0.8);
+}
+}

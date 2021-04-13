@@ -2884,6 +2884,10 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     width: 310px;
     top: 66%;
   }
+  section.network .fp-tableCell .circle-container {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
 }
 
 @media only screen and (min-width: 1250px) and (max-width: 1440px) {
@@ -3921,5 +3925,12 @@ section.about .col-md-6:first-child {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+}
+
+@media screen and (min-width: 1700px) and (max-width: 1850px) {
+  section.network .fp-tableCell .circle-container {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 /*# sourceMappingURL=style.css.map */
