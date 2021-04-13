@@ -2874,6 +2874,18 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   width: 90% !important;
 }
 
+@media only screen and (min-width: 1441px) and (max-width: 1600px) {
+  section.work .owl-carousel .owl-item .details {
+    left: 46%;
+    width: 310px;
+  }
+  section.work .owl-carousel .owl-item.active:hover .details {
+    left: 46%;
+    width: 310px;
+    top: 66%;
+  }
+}
+
 @media only screen and (min-width: 1250px) and (max-width: 1440px) {
   section.network .fp-tableCell .circle-container .service .model {
     width: 10em;
@@ -2929,6 +2941,15 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   }
   section.contact form input, section.contact form textarea {
     font-size: 2rem;
+  }
+  section.work .owl-carousel .owl-item.active:hover .details {
+    left: 56%;
+    width: 300px;
+    top: 66%;
+  }
+  section.work .owl-carousel .owl-item .details {
+    left: 53%;
+    width: 265px;
   }
 }
 
@@ -3106,6 +3127,15 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   }
   section.work .owl-carousel .owl-item .details {
     left: 55%;
+  }
+  section.work .owl-carousel .owl-item.active:hover .details {
+    left: 56%;
+    width: 300px;
+    top: 66%;
+  }
+  section.work .owl-carousel .owl-item .details {
+    left: 53%;
+    width: 265px;
   }
 }
 
@@ -3863,5 +3893,13 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .hideImportant {
   display: none !important;
+}
+
+section.about .col-md-6:first-child {
+  padding-left: 50px !important;
+}
+
+.statistics:nth-child(3) h3 {
+  left: 40px !important;
 }
 /*# sourceMappingURL=style.css.map */

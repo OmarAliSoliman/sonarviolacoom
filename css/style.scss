@@ -1944,6 +1944,8 @@ section.work .owl-carousel .owl-item.active:hover .details {
   bottom: 160px;
   top: 74%;
 }
+
+
 .invertColor {
   // filter: drop-shadow(0px 0px 2px black);
   filter: invert(1);
@@ -2620,4 +2622,16 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 
 .hideImportant{
   display: none !important;
+}
+
+section.about .col-md-6:first-child{
+  padding-left: 50px !important;
+}
+
+.statistics {
+  &:nth-child(3){
+    h3{
+      left: 40px !important;
+    }
+  }
 }

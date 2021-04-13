@@ -150,3 +150,15 @@ section.work .owl-carousel .owl-item .details .title {
     section.work .owl-carousel .owl-item .details  {
     left: 55%;
   }
+
+
+  section.work .owl-carousel .owl-item.active:hover .details{
+    left: 56%;
+    width: 300px;
+    top: 66%;
+}
+
+    section.work .owl-carousel .owl-item .details{
+    left: 53%;
+    width: 265px;
+    }

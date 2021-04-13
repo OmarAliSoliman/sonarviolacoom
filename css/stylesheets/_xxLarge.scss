@@ -72,3 +72,16 @@ section.contact form .form-group h2{
 section.contact form input, section.contact form textarea{
     font-size: 2rem;
 }
+
+
+
+section.work .owl-carousel .owl-item.active:hover .details{
+    left: 56%;
+    width: 300px;
+    top: 66%;
+}
+
+    section.work .owl-carousel .owl-item .details{
+    left: 53%;
+    width: 265px;
+    }
