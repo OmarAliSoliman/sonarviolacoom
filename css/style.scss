@@ -2635,3 +2635,11 @@ section.about .col-md-6:first-child{
     }
   }
 }
+
+.svg-container{
+  display: none !important;
+
+  svg{
+    display: none;
+  }
+}

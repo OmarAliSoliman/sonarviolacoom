@@ -3413,7 +3413,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     font-size: 2rem;
   }
   section.project.fp-section {
-    height: auto !important;
+    min-height: 1290px;
   }
   section.project.fp-section .fp-tableCell .desc h2 {
     font-size: 3.4rem;
@@ -3901,5 +3901,13 @@ section.about .col-md-6:first-child {
 
 .statistics:nth-child(3) h3 {
   left: 40px !important;
+}
+
+.svg-container {
+  display: none !important;
+}
+
+.svg-container svg {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -163,7 +163,8 @@
 
   // Start Project Page *******
   section.project.fp-section {
-    height: auto !important;
+    // height: auto !important;
+    min-height: 1290px;
   }
 
   section.project.fp-section .fp-tableCell .desc h2 {
