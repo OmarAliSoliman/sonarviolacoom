@@ -1647,10 +1647,6 @@ section.about:nth-of-type(4) .filter a.active {
   background: linear-gradient(#581dc9 0%, #301464 100%);
 }
 
-section.about:nth-of-type(4) .col-md-6:last-child {
-  // padding: calc((100vh - 580px) / 5) 160px;
-}
-
 section.about:nth-of-type(4) .col-md-6:last-child .slick-wrapper {
   width: calc((100vw/2) - 320px);
 
@@ -1747,9 +1743,7 @@ section.about:nth-of-type(4) .col-md-6:last-child .ul li:nth-child(3n+0) {
 section.about:nth-of-type(5) .row{
   width: 100% !important;
 }
-section.about:nth-of-type(5) .col-md-6:first-child {
-  // padding: 0 160px;
-}
+
 
 section.about:nth-of-type(5) ul {
   margin-top: 50px;
@@ -2642,4 +2636,10 @@ section.about .col-md-6:first-child{
   svg{
     display: none;
   }
+}
+
+.blog-list .blogMainItem .overlay{
+  display: flex!important;
+  justify-content: center;
+  align-items: end;
 }

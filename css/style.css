@@ -3910,4 +3910,16 @@ section.about .col-md-6:first-child {
 .svg-container svg {
   display: none;
 }
+
+.blog-list .blogMainItem .overlay {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
 /*# sourceMappingURL=style.css.map */

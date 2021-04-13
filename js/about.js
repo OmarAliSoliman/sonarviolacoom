@@ -75,6 +75,14 @@ responsive: [
             slidesToShow: 2,
             slidesToScroll: 1,
         }
+    },
+    {
+        breakpoint: 1600,
+        settings: {
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+        }
     }
 ]
 });
