@@ -215,59 +215,7 @@
                 </div>
             </form>
     </section>
-    <script>
-          function sendContact() {
-                var valid;	
-                valid = validateContact();
-                if(valid) {
-                    jQuery.ajax({
-                        url: "contact_mail.php",
-                        data:'userName='+$("#userName").val()+'&userEmail='+
-                        $("#userEmail").val()+'&phone='+
-                        $("#userPhone").val()+'&content='+
-                        $(content).val(),
-                        type: "POST",
-                        success:function(data){
-                            $("#mail-status").html(data);
-                        },
-                        error:function (){}
-                    });
-                }
-            }
-
-            function validateContact() {
-                var valid = true;	
-                $(".demoInputBox").css('background-color','');
-                $(".info").html('');
-                if(!$("#userName").val()) {
-                    $("#userName-info").html("*");  
-                    $("#userName").css('border-bottom','2px solid #722382');
-                    valid = false;
-                }
-                if(!$("#userEmail").val()) {
-                    $("#userEmail-info").html("*");
-                    $("#userEmail").css('border-bottom','2px solid #722382');
-                    valid = false;
-                }
-                if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
-                    $("#userEmail-info").html("*");
-                    $("#userEmail").css('border-bottom','2px solid #722382');
-                    valid = false;
-                }
-                if(!$("#userPhone").val()) {
-                    $("#userPhone-info").html("*");
-                    $("#userPhone").css('border-bottom','2px solid #722382');
-                    valid = false;
-                }
-                if(!$("#content").val()) {
-                    $("#content-info").html("*");
-                    $("textarea#content").css('border','2px solid #722382');
-                    valid = false;
-                }
-                return valid;
-            }
-   </script>
-    <footer class=" section fp-auto-height">
+    <footer class="section fp-auto-height">
         <div class="container">
             <div class="row mb-5 mb-xs-0">
                 <div class="col-md-8">
@@ -830,4 +778,56 @@ S456.64,123.881,414.144,81.769z" />
             </g>
         </symbol>
     </svg>
+    <script>
+        function sendContact() {
+              var valid;	
+              valid = validateContact();
+              if(valid) {
+                  jQuery.ajax({
+                      url: "contact_mail.php",
+                      data:'userName='+$("#userName").val()+'&userEmail='+
+                      $("#userEmail").val()+'&phone='+
+                      $("#userPhone").val()+'&content='+
+                      $(content).val(),
+                      type: "POST",
+                      success:function(data){
+                          $("#mail-status").html(data);
+                      },
+                      error:function (){}
+                  });
+              }
+          }
+
+          function validateContact() {
+              var valid = true;	
+              $(".demoInputBox").css('background-color','');
+              $(".info").html('');
+              if(!$("#userName").val()) {
+                  $("#userName-info").html("*");  
+                  $("#userName").css('border-bottom','2px solid #722382');
+                  valid = false;
+              }
+              if(!$("#userEmail").val()) {
+                  $("#userEmail-info").html("*");
+                  $("#userEmail").css('border-bottom','2px solid #722382');
+                  valid = false;
+              }
+              if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+                  $("#userEmail-info").html("*");
+                  $("#userEmail").css('border-bottom','2px solid #722382');
+                  valid = false;
+              }
+              if(!$("#userPhone").val()) {
+                  $("#userPhone-info").html("*");
+                  $("#userPhone").css('border-bottom','2px solid #722382');
+                  valid = false;
+              }
+              if(!$("#content").val()) {
+                  $("#content-info").html("*");
+                  $("textarea#content").css('border','2px solid #722382');
+                  valid = false;
+              }
+              return valid;
+          }
+  </script>
 </div>

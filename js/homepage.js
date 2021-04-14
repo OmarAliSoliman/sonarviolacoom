@@ -51,13 +51,9 @@ $('.fullPage').fullpage({
         }else{
            $('.social').removeClass('hideImportant')
            $('.withLove').removeClass('invertColor');
-
-
         }
         // $('.videoItem').get(0).pause()
-
         return animationIsFinished;
-
 
     },
     afterLoad: function () {

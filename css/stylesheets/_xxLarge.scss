@@ -85,3 +85,31 @@ section.work .owl-carousel .owl-item.active:hover .details{
     left: 53%;
     width: 265px;
     }
+    section.network .fp-tableCell .circle-container .service:hover .model {
+        top: -20px !important;
+        right: -10px !important;
+    }
+    section.network .fp-tableCell .circle-container .service.events .model img:nth-child(2){
+        top: 24% !important;
+    }
+    section.network .fp-tableCell .circle-container{
+        font-size: 1.34rem !important;
+    }
+
+    section.network .fp-tableCell .circle-container .service.adv:hover .model{
+        top: -5px !important;
+    }
+    section.network .fp-tableCell .circle-container p{
+        font-size: 1em !important;
+    }
+  
+    section.network .fp-tableCell .circle-container .service.producers:hover .model {
+        top: 15px ​!important;
+    }
+
+    section.network .fp-tableCell .circle-container .service.events:hover .model{
+        top: 21px !important;
+    }
+    section.network .fp-tableCell .circle-container .service.outdoor:hover .model {
+        top: 15px !important;
+    }
