@@ -3958,4 +3958,8 @@ section.about .col-md-6:first-child {
             transform: scale(0.8);
   }
 }
+
+.csrFullpage .fp-section.fp-table, .csrFullpage .fp-slide.fp-table {
+  background-size: cover !important;
+}
 /*# sourceMappingURL=style.css.map */

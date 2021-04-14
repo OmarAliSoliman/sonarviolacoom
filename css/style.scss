@@ -2650,3 +2650,8 @@ section.about .col-md-6:first-child{
 }
 }
 
+.csrFullpage{
+  .fp-section.fp-table, .fp-slide.fp-table{
+    background-size: cover !important;
+  }
+}
