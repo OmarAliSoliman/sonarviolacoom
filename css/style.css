@@ -3207,6 +3207,9 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   .csrFullpage .fp-controlArrow {
     display: none;
   }
+  footer .locationsList {
+    margin-right: 0px;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -3702,6 +3705,23 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   .csrFullpage .fp-controlArrow {
     display: none;
   }
+  section.banner .fp-tableCell {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.banner .fp-tableCell h1 {
+    text-shadow: 0 0 2px #6f6f6f;
+  }
+  section.banner .fp-tableCell h3 {
+    text-shadow: 0 0 2px #6f6f6f;
+  }
+  section.banner .fp-tableCell p {
+    text-shadow: 0 0 2px #6f6f6f;
+  }
+  section.banner .fp-tableCell .contactButton {
+    width: 140px;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
@@ -3814,6 +3834,47 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   }
   header .menu .coffee img {
     width: 200px;
+  }
+  footer .locationsList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .locationsList li {
+    margin-bottom: 4rem;
+  }
+  header .social {
+    display: none !important;
+  }
+  .copyrightFooter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.banner .fp-tableCell h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 2px #6f6f6f;
+  }
+  section.banner .fp-tableCell h3 {
+    text-shadow: 0 0 2px #6f6f6f;
+    font-size: 3rem;
+  }
+  section.banner .fp-tableCell p {
+    text-shadow: 0 0 2px #6f6f6f;
+  }
+  section.banner .fp-tableCell .contactButton {
+    right: 220px;
+  }
+  header .menu .locationsList {
+    display: none !important;
   }
 }
 
@@ -3961,5 +4022,14 @@ section.about .col-md-6:first-child {
 
 .csrFullpage .fp-section.fp-table, .csrFullpage .fp-slide.fp-table {
   background-size: cover !important;
+}
+
+.blogPostCopy header .logo img {
+  -webkit-filter: invert(0.6);
+          filter: invert(0.6);
+}
+
+header .menu .main-links li a {
+  font-size: 8rem;
 }
 /*# sourceMappingURL=style.css.map */

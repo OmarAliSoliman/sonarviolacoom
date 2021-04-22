@@ -2647,7 +2647,7 @@ section.about .col-md-6:first-child{
 @media screen and (min-width:1700px) and (max-width:1850px){
   section.network .fp-tableCell .circle-container{
     transform: scale(0.8);
-}
+  }
 }
 
 .csrFullpage{
@@ -2655,3 +2655,12 @@ section.about .col-md-6:first-child{
     background-size: cover !important;
   }
 }
+
+.blogPostCopy header .logo img{
+  filter: invert(0.6);
+}
+
+header .menu .main-links li a{
+  font-size: 8rem;
+}
+

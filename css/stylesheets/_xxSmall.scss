@@ -142,3 +142,38 @@ header .menu .coffee {
     }
 
 }
+
+footer .locationsList{
+  flex-direction: column;
+}
+footer .locationsList li{
+  margin-bottom: 4rem;
+}
+header .social{
+  display: none !important;
+}
+.copyrightFooter{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section.banner .fp-tableCell h1{
+  font-size: 3rem;    
+  text-shadow: 0 0 2px #6f6f6f;
+}
+
+section.banner .fp-tableCell h3{
+  text-shadow: 0 0 2px #6f6f6f;
+  font-size: 3rem;  
+}
+section.banner .fp-tableCell p{
+  text-shadow: 0 0 2px #6f6f6f;
+}
+
+section.banner .fp-tableCell .contactButton{
+  right: 220px;
+}
+
+header .menu .locationsList{
+  display: none !important;
+}

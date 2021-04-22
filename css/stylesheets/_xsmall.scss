@@ -588,4 +588,22 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 .csrFullpage .fp-controlArrow {
   display: none;
 }
-  // End point of this Media query
+
+
+section.banner .fp-tableCell{
+  justify-content: center;
+}
+section.banner .fp-tableCell h1{
+  text-shadow: 0 0 2px #6f6f6f;
+}
+
+section.banner .fp-tableCell h3{
+  text-shadow: 0 0 2px #6f6f6f;
+}
+section.banner .fp-tableCell p{
+  text-shadow: 0 0 2px #6f6f6f;
+}
+section.banner .fp-tableCell .contactButton {
+  width: 140px;
+}
+// End point of this Media query
