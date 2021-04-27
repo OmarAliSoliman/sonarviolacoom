@@ -2875,6 +2875,27 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   width: 90% !important;
 }
 
+@media only screen and (min-width: 1442px) and (max-width: 1919px) {
+  section.work .owl-carousel .owl-item .details {
+    left: 46%;
+    width: 310px;
+  }
+  section.work .owl-carousel .owl-item.active:hover .details {
+    left: 46%;
+    width: 310px;
+    top: 66%;
+  }
+  .primary_title--container {
+    position: relative;
+    font-size: 1rem;
+  }
+  .back-to-top {
+    width: 60px;
+    height: 60px;
+    font-size: 2.5rem;
+  }
+}
+
 @media only screen and (min-width: 1250px) and (max-width: 1441px) {
   section.network .fp-tableCell .circle-container .service .model {
     width: 10em;
@@ -3001,6 +3022,11 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   header .menu .locationsList a {
     font-size: 1.7rem;
   }
+  .back-to-top {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1249px) {
@@ -3075,6 +3101,11 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   header .menu .locationsList a {
     font-size: 1.6rem;
   }
+  .back-to-top {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+  }
   .primary_title--container {
     position: relative;
     font-size: 1rem;
@@ -3087,6 +3118,15 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   .primary_title--container .primary_title-sub,
   .primary_title--container .secondary_title {
     text-shadow: 0 0 2px #000000;
+  }
+  section.network .fp-tableCell .circle-container .service .centerLogo {
+    left: 32px !important;
+    top: 23px !important;
+    width: 85px !important;
+  }
+  section.network .fp-tableCell .circle-container .service:hover .centerLogo {
+    top: 39px !important;
+    left: 32px !important;
   }
 }
 
@@ -3426,6 +3466,25 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   .primary_title--container .primary_title-sub,
   .primary_title--container .secondary_title {
     text-shadow: 0 0 2px #000000;
+  }
+  .circle-container .centerLogo {
+    left: 32px;
+    top: 23px;
+    width: 85px;
+  }
+  section.network .fp-tableCell .circle-container .service .centerLogo {
+    left: 32px !important;
+    top: 23px !important;
+    width: 85px !important;
+  }
+  section.network .fp-tableCell .circle-container .service:hover .centerLogo {
+    top: 39px !important;
+    left: 32px !important;
+  }
+  .back-to-top {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
   }
 }
 
@@ -3959,6 +4018,23 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   .primary_title--container .secondary_title {
     text-shadow: 0 0 2px #000000;
   }
+  .withLove {
+    display: block !important;
+  }
+  section.network .fp-tableCell .circle-container .service .centerLogo {
+    left: 32px !important;
+    top: 23px !important;
+    width: 85px !important;
+  }
+  section.network .fp-tableCell .circle-container .service:hover .centerLogo {
+    top: 39px !important;
+    left: 32px !important;
+  }
+  .back-to-top {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
@@ -4097,7 +4173,8 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
             flex-direction: column;
   }
   section.banner .fp-tableCell .contactButton {
-    right: 220px;
+    left: 10px !important;
+    right: auto !important;
   }
   header .menu .locationsList {
     display: none !important;
@@ -4152,6 +4229,15 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   .primary_title--container .primary_title-sub,
   .primary_title--container .secondary_title {
     text-shadow: 0 0 2px #000000;
+  }
+  section.network .fp-tableCell .circle-container .service .centerLogo {
+    left: 32px !important;
+    top: 23px !important;
+    width: 85px !important;
+  }
+  section.network .fp-tableCell .circle-container .service:hover .centerLogo {
+    top: 39px !important;
+    left: 32px !important;
   }
 }
 
@@ -4218,6 +4304,13 @@ header .menu .main-links li a {
 @media screen and (min-width: 1920px) {
   .primary_title--container {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1900px) and (max-width: 2030px) {
+  section.network .fp-tableCell .circle-container {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 /*# sourceMappingURL=style.css.map */

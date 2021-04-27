@@ -2671,3 +2671,8 @@ header .menu .main-links li a{
     font-size: 1.2rem;
   }
 }
+section.network .fp-tableCell .circle-container{
+    @media screen and  (min-width:1900px) and (max-width:2030px){
+      transform: scale(0.8);
+    }
+}

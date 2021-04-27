@@ -160,7 +160,8 @@ header .social{
 
 
 section.banner .fp-tableCell .contactButton{
-  right: 220px;
+  left: 10px !important;
+  right: auto !important;
 }
 
 header .menu .locationsList{
@@ -216,3 +217,20 @@ header .menu p {
 .primary_title--container .secondary_title{
   text-shadow: 0 0 2px #000000 ;
 }
+
+
+
+section.network .fp-tableCell .circle-container .service .centerLogo{
+  left: 32px !important;
+  top: 23px !important;
+  width: 85px !important;
+}
+
+section.network .fp-tableCell .circle-container .service:hover .centerLogo{
+  top: 39px !important;
+  left: 32px !important;
+}
+
+
+
+
