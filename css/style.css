@@ -1036,7 +1036,7 @@ section.banner .fp-tableCell .scrollDown {
 
 section.banner .fp-tableCell h1 {
   font-weight: 900;
-  font-size: 4.5rem;
+  font-size: 4.5em;
   letter-spacing: -0.05em;
   text-transform: uppercase;
   text-align: left;
@@ -1047,7 +1047,7 @@ section.banner .fp-tableCell h1 {
 
 section.banner .fp-tableCell h3 {
   font-weight: 300;
-  font-size: 3.9rem;
+  font-size: 3.9em;
   letter-spacing: -0.01em;
   line-height: 39px;
   text-align: left;
@@ -1059,7 +1059,7 @@ section.banner .fp-tableCell h3 {
 
 section.banner .fp-tableCell p {
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   line-height: 30px;
   text-align: left;
   color: #fff;
@@ -2875,18 +2875,6 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   width: 90% !important;
 }
 
-@media only screen and (min-width: 1442px) and (max-width: 1600px) {
-  section.work .owl-carousel .owl-item .details {
-    left: 46%;
-    width: 310px;
-  }
-  section.work .owl-carousel .owl-item.active:hover .details {
-    left: 46%;
-    width: 310px;
-    top: 66%;
-  }
-}
-
 @media only screen and (min-width: 1250px) and (max-width: 1441px) {
   section.network .fp-tableCell .circle-container .service .model {
     width: 10em;
@@ -2927,15 +2915,6 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   section.about p {
     font-size: 2rem;
     line-height: 33px;
-  }
-  section.banner .fp-tableCell h1 {
-    font-size: 3rem;
-  }
-  section.banner .fp-tableCell h3 {
-    font-size: 2.6rem;
-  }
-  section.banner .fp-tableCell p {
-    font-size: 1.6rem;
   }
   section.contact form .form-group h2 {
     font-size: 2.8rem;
@@ -3095,6 +3074,19 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   }
   header .menu .locationsList a {
     font-size: 1.6rem;
+  }
+  .primary_title--container {
+    position: relative;
+    font-size: 1rem;
+    left: -5%;
+  }
+  .primary_title--container .primary_title {
+    font-size: 4em !important;
+  }
+  .primary_title--container .primary_title,
+  .primary_title--container .primary_title-sub,
+  .primary_title--container .secondary_title {
+    text-shadow: 0 0 2px #000000;
   }
 }
 
@@ -3421,6 +3413,19 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   }
   header .menu .secondary-links {
     width: 300px;
+  }
+  .primary_title--container {
+    position: relative;
+    font-size: 1rem;
+    left: -5%;
+  }
+  .primary_title--container .primary_title {
+    font-size: 4em !important;
+  }
+  .primary_title--container .primary_title,
+  .primary_title--container .primary_title-sub,
+  .primary_title--container .secondary_title {
+    text-shadow: 0 0 2px #000000;
   }
 }
 
@@ -3922,15 +3927,6 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
         -ms-flex-pack: center;
             justify-content: center;
   }
-  section.banner .fp-tableCell h1 {
-    text-shadow: 0 0 2px #6f6f6f;
-  }
-  section.banner .fp-tableCell h3 {
-    text-shadow: 0 0 2px #6f6f6f;
-  }
-  section.banner .fp-tableCell p {
-    text-shadow: 0 0 2px #6f6f6f;
-  }
   section.banner .fp-tableCell .contactButton {
     width: 140px;
   }
@@ -3950,6 +3946,18 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   header .menu .main-links li a {
     font-size: 6rem !important;
     line-height: 56px;
+  }
+  .primary_title--container {
+    position: relative;
+    font-size: 1rem;
+  }
+  .primary_title--container .primary_title {
+    font-size: 4em !important;
+  }
+  .primary_title--container .primary_title,
+  .primary_title--container .primary_title-sub,
+  .primary_title--container .secondary_title {
+    text-shadow: 0 0 2px #000000;
   }
 }
 
@@ -4088,17 +4096,6 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  section.banner .fp-tableCell h1 {
-    font-size: 3rem;
-    text-shadow: 0 0 2px #6f6f6f;
-  }
-  section.banner .fp-tableCell h3 {
-    text-shadow: 0 0 2px #6f6f6f;
-    font-size: 3rem;
-  }
-  section.banner .fp-tableCell p {
-    text-shadow: 0 0 2px #6f6f6f;
-  }
   section.banner .fp-tableCell .contactButton {
     right: 220px;
   }
@@ -4142,6 +4139,19 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     left: auto;
     margin: 0 auto;
     bottom: 25px;
+  }
+  .primary_title--container {
+    position: relative;
+    left: -12%;
+    font-size: 1rem;
+  }
+  .primary_title--container .primary_title {
+    font-size: 3em !important;
+  }
+  .primary_title--container .primary_title,
+  .primary_title--container .primary_title-sub,
+  .primary_title--container .secondary_title {
+    text-shadow: 0 0 2px #000000;
   }
 }
 
@@ -4196,12 +4206,18 @@ section.about .col-md-6:first-child {
   background-size: cover !important;
 }
 
-.blogPostCopy header .logo img {
-  -webkit-filter: invert(0.6);
-          filter: invert(0.6);
-}
-
 header .menu .main-links li a {
   font-size: 8rem;
+}
+
+.primary_title--container {
+  position: relative;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1920px) {
+  .primary_title--container {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

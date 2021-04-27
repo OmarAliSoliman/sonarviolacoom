@@ -157,18 +157,7 @@ header .social{
   align-items: center;
   flex-direction: column;
 }
-section.banner .fp-tableCell h1{
-  font-size: 3rem;    
-  text-shadow: 0 0 2px #6f6f6f;
-}
 
-section.banner .fp-tableCell h3{
-  text-shadow: 0 0 2px #6f6f6f;
-  font-size: 3rem;  
-}
-section.banner .fp-tableCell p{
-  text-shadow: 0 0 2px #6f6f6f;
-}
 
 section.banner .fp-tableCell .contactButton{
   right: 220px;
@@ -209,4 +198,21 @@ header .menu p {
   left: auto; 
   margin: 0 auto; 
   bottom: 25px;
+}
+
+
+// Header in HOME PAGE
+.primary_title--container{
+  position: relative;
+  left: -12%;
+  font-size: 1rem;
+}
+
+.primary_title--container .primary_title{
+  font-size: 3em !important;
+}
+.primary_title--container .primary_title,
+.primary_title--container .primary_title-sub,
+.primary_title--container .secondary_title{
+  text-shadow: 0 0 2px #000000 ;
 }

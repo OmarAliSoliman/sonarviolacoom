@@ -593,16 +593,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 section.banner .fp-tableCell{
   justify-content: center;
 }
-section.banner .fp-tableCell h1{
-  text-shadow: 0 0 2px #6f6f6f;
-}
 
-section.banner .fp-tableCell h3{
-  text-shadow: 0 0 2px #6f6f6f;
-}
-section.banner .fp-tableCell p{
-  text-shadow: 0 0 2px #6f6f6f;
-}
 section.banner .fp-tableCell .contactButton {
   width: 140px;
 }
@@ -641,4 +632,20 @@ header .menu .main-links li a{
   line-height: 56px;
 }
 
+
+
+// Header in HOME PAGE
+.primary_title--container{
+  position: relative;
+  font-size: 1rem;
+}
+
+.primary_title--container .primary_title{
+  font-size: 4em !important;
+}
+.primary_title--container .primary_title,
+.primary_title--container .primary_title-sub,
+.primary_title--container .secondary_title{
+  text-shadow: 0 0 2px #000000 ;
+}
 // End point of this Media query

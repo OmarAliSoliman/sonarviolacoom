@@ -944,7 +944,7 @@ section.banner .fp-tableCell .scrollDown {
 
 section.banner .fp-tableCell h1 {
   font-weight: 900;
-  font-size: 4.5rem;
+  font-size: 4.5em;
   letter-spacing: -0.05em;
   text-transform: uppercase;
   text-align: left;
@@ -955,7 +955,7 @@ section.banner .fp-tableCell h1 {
 
 section.banner .fp-tableCell h3 {
   font-weight: 300;
-  font-size: 3.9rem;
+  font-size: 3.9em;
   letter-spacing: -0.01em;
   line-height: 39px;
   text-align: left;
@@ -967,7 +967,7 @@ section.banner .fp-tableCell h3 {
 
 section.banner .fp-tableCell p {
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   line-height: 30px;
   text-align: left;
   color: #fff;
@@ -2656,11 +2656,18 @@ section.about .col-md-6:first-child{
   }
 }
 
-.blogPostCopy header .logo img{
-  filter: invert(0.6);
-}
 
 header .menu .main-links li a{
   font-size: 8rem;
 }
 
+
+.primary_title--container{
+  position: relative;
+  font-size: 1rem;
+}
+@media screen and (min-width:1920px) {
+  .primary_title--container{
+    font-size: 1.2rem;
+  }
+}

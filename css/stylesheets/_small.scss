@@ -220,3 +220,22 @@ header .menu .locationsList{
 header .menu .secondary-links{
   width: 300px;
 }
+
+
+
+
+// Header in HOME PAGE
+.primary_title--container{
+  position: relative;
+  font-size: 1rem;
+  left: -5%;
+}
+
+.primary_title--container .primary_title{
+  font-size: 4em !important;
+}
+.primary_title--container .primary_title,
+.primary_title--container .primary_title-sub,
+.primary_title--container .secondary_title{
+  text-shadow: 0 0 2px #000000 ;
+}
