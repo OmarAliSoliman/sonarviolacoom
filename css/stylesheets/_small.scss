@@ -180,3 +180,43 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   footer .locationsList{
     margin-right: 0px;
   }
+
+
+
+  
+
+// Side menu Style 
+
+.menu .coffee{
+  width: 28rem !important;
+  height: auto;
+  bottom: auto;
+  left: 48% !important;
+  top: 32% !important;
+  max-height: 30rem;
+}
+header .menu .coffee span{
+  font-size: 1.3rem;
+}
+.menu .coffee img{
+  width: 100% !important;
+  height:auto
+}
+header .menu .main-links li{
+  margin-bottom: 0px !important;
+}
+header .menu .main-links li a{
+  font-size: 7rem !important;
+  line-height: 80px !important;
+}
+header .menu .locationsList li{
+  margin-bottom: 38px;
+}
+header .menu .locationsList{
+  top: 7.5rem;
+  width: 330px;
+  margin-bottom: 0px !important;
+}
+header .menu .secondary-links{
+  width: 300px;
+}

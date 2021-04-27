@@ -177,3 +177,36 @@ section.banner .fp-tableCell .contactButton{
 header .menu .locationsList{
   display: none !important;
 }
+
+
+// Side menu Style 
+
+.menu .coffee{
+  bottom: 4%;
+}
+.menu .main-links{
+  margin-bottom: 212px;
+}
+header .menu .main-links li a{
+  font-size: 6rem !important;
+  line-height: 56px;
+}
+header .menu .secondary-links li{
+  margin-bottom: 0.8rem;
+}
+header .menu .secondary-links {
+  position: absolute;
+  bottom: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  left: 9%;
+}
+header .menu p {
+  position: absolute;
+  right: auto; 
+  left: auto; 
+  margin: 0 auto; 
+  bottom: 25px;
+}
