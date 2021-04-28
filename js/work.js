@@ -1,3 +1,5 @@
+$('header > .logo img').attr('src', 'img/V-beta.svg');
+
 var owl = $('.owl-carousel');
 
 

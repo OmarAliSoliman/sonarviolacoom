@@ -1766,7 +1766,7 @@ section.about:nth-of-type(5) ul li a div {
 section.about:nth-of-type(5) .col-md-6:last-child {
   background: url(../img/Viola-Office.gif) no-repeat 0 center;
   background-size: cover;
-  right: -2rem;
+  right: -1.5rem;
 }
 
 section.work .social {
@@ -2675,4 +2675,18 @@ section.network .fp-tableCell .circle-container{
     @media screen and  (min-width:1900px) and (max-width:2030px){
       transform: scale(0.8);
     }
+}
+
+
+section.project.fp-section .fp-tableCell .innerVideoImage{
+  width: 100% !important;
+  max-height: max-content !important;
+}
+
+
+.project .roi{
+  justify-content: center !important;
+}
+section.project.fp-section .fp-tableCell .statistics > div{
+  margin: 0 4%;
 }

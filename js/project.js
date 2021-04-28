@@ -33,7 +33,7 @@ $('.projectFullPage').fullpage({
     //options here
     autoScrolling: true,
     scrollHorizontally: true,
-    responsiveWidth: 700,
+    responsiveWidth: 1100,
     onLeave: function (origin, destination, direction) {
         //it won't scroll if the destination is the 3rd section
         console.log('asd');

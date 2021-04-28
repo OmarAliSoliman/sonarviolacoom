@@ -119,4 +119,16 @@ section.network .fp-tableCell .circle-container .service .centerLogo{
     left: 32px !important;
   }
   
-  
+  section.work .owl-carousel .owl-item.active:hover .details{
+    left: 56%;
+  }
+
+  .csrFullpage .fp-tableCell .intro h1 {
+    font-size: 3rem;
+    line-height: 1.3;
+}
+.csrFullpage .fp-tableCell .intro p {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}

@@ -266,3 +266,21 @@ section.network .fp-tableCell .circle-container .service:hover .centerLogo{
   height: 50px;
   font-size: 2rem;
 }
+section.work .owl-carousel .owl-item .details {
+  left: 51%;
+}
+
+
+section.work .owl-carousel .owl-item.active:hover .details {
+  top:73%;
+}
+
+.csrFullpage .fp-tableCell .intro h1 {
+  font-size: 3rem;
+  line-height: 1.3;
+}
+.csrFullpage .fp-tableCell .intro p {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}

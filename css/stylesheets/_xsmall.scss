@@ -677,4 +677,32 @@ section.network .fp-tableCell .circle-container .service:hover .centerLogo{
 }
 
 
-// End point of this Media query
+section.about:nth-of-type(5) .row{
+  display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 0;
+    margin: 0;
+}
+section.about:nth-of-type(5) .col-md-6:last-child{
+  right: 0;
+}
+
+
+section.work .owl-carousel .owl-item .details {
+  left: 50%;
+}
+
+.blog-list .col-md-6:last-child .overlay,
+.blog-list .col-md-6 .blogMainItem .overlay{
+  height: 100%;
+}
+
+
+
+section.project.fp-section .fp-tableCell .statisticsContainer{
+  padding: 0 8%;
+  margin-top: 0px !important;
+}

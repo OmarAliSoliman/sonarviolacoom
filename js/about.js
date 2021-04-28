@@ -52,18 +52,24 @@ autoplaySpeed: 1500,
 slidesToShow: 3,
 slidesToScroll: 3,
 responsive: [
-
     {
-        breakpoint: 600,
+        breakpoint: 275,
         settings: {
-
+            slidesToShow:2,
+            dots: true
+        }
+    },
+    {
+        breakpoint: 475,
+        settings: {
+            slidesToShow: 2,
             dots: true
         }
     },
     {
         breakpoint: 769,
         settings: {
-            slidesToShow: 1,
+            slidesToShow: 3,
             slidesToScroll: 1,
             dots: true
         }
