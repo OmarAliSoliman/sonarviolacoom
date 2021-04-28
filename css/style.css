@@ -3146,9 +3146,6 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     font-size: 1.6rem;
     line-height: 1.2;
   }
-  footer .locationsList {
-    margin-top: 20px !important;
-  }
 }
 
 @media only screen and (max-width: 1099px) {
