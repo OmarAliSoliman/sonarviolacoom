@@ -2690,3 +2690,14 @@ section.project.fp-section .fp-tableCell .innerVideoImage{
 section.project.fp-section .fp-tableCell .statistics > div{
   margin: 0 4%;
 }
+
+section.project-details.fp-section .fp-tableCell .projectImages .projectLogoConta{
+  width: 50% !important;
+  height: calc(100vh / 3);
+  overflow: hidden;
+  object-fit: cover;
+  img{
+    width: auto !important;
+    height: auto !important;
+  }
+}

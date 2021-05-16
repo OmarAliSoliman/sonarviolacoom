@@ -75,10 +75,18 @@ responsive: [
         }
     },
     {
+        breakpoint: 1440,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: true
+        }
+    },
+    {
         breakpoint: 1441,
         settings: {
             dots: true,
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 1,
         }
     },

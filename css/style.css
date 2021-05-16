@@ -3033,6 +3033,20 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   section.project.fp-section .fp-tableCell .innerVideoImage {
     width: 100%;
   }
+  section.about:nth-of-type(4) .col-md-6:last-child .slide-item {
+    height: 100px !important;
+    width: 100px !important;
+  }
+  section.project-details.fp-section .fp-tableCell p {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+  section.project-details.fp-section .fp-tableCell .logos svg {
+    width: 90px;
+  }
+  section.project-details.fp-section .fp-tableCell .project-navigation {
+    margin-top: 35px !important;
+  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1249px) {
@@ -4478,5 +4492,18 @@ section.project.fp-section .fp-tableCell .innerVideoImage {
 
 section.project.fp-section .fp-tableCell .statistics > div {
   margin: 0 4%;
+}
+
+section.project-details.fp-section .fp-tableCell .projectImages .projectLogoConta {
+  width: 50% !important;
+  height: calc(100vh / 3);
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.project-details.fp-section .fp-tableCell .projectImages .projectLogoConta img {
+  width: auto !important;
+  height: auto !important;
 }
 /*# sourceMappingURL=style.css.map */

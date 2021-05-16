@@ -163,3 +163,20 @@ header .menu .locationsList a {
   section.project.fp-section .fp-tableCell .innerVideoImage{
       width: 100%;
   }
+    section.about:nth-of-type(4) .col-md-6:last-child .slide-item{
+      height: 100px !important;
+      width: 100px !important;
+    }
+
+    section.project-details.fp-section .fp-tableCell p{
+        font-size: 2rem;
+        line-height: 30px;
+    }
+
+    section.project-details.fp-section .fp-tableCell .logos svg{
+        width: 90px;
+    }
+
+    section.project-details.fp-section .fp-tableCell .project-navigation{
+        margin-top: 35px !important;
+    }
