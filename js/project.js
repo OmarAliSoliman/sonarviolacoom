@@ -52,11 +52,11 @@ $('.projectFullPage').fullpage({
         // var curTime = new Date().getTime();
 
 
-        $('header > .logo img').attr('src', 'img/V-beta.svg');
+        $('header > .logo img').attr('src', 'img/V-logo.svg');
     },
     afterLoad: function (origin, destination, direction) {
         $('header > .withLove').attr('src', 'img/withLoveGray.svg');
-        $('header > .logo img').attr('src', 'img/V-beta.svg');
+        $('header > .logo img').attr('src', 'img/V-logo.svg');
 
         // $('.active svg').removeClass('d-none');
         $('.active .animate__animated').addClass('animate__fadeInLeft d-block').removeClass(

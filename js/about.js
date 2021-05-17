@@ -14,19 +14,19 @@ $('.aboutFullPage').fullpage({
         //     $('.back-to-top').css('opacity', 1);
         // }
         // $('.videoItem').get(0).pause();
-        $('header > .logo img').attr('src', 'img/V-beta.svg');
+        $('header > .logo img').attr('src', 'img/V-logo.svg');
         $('.back-to-top').css('opacity', 1);
         if ($(window).width() < 600) {
-            $('header > .logo img').attr('src', 'img/V-beta-white.svg');
+            $('header > .logo img').attr('src', 'img/V-logo-white.svg');
         }
     },
     afterLoad: function (origin, destination, direction) {
         $('.active .animate__animated').addClass('animate__fadeInLeft d-block');
         // $('.videoItem').get(0).play()
 
-        $('header > .logo img').attr('src', 'img/V-beta.svg');
+        $('header > .logo img').attr('src', 'img/V-logo.svg');
         if ($(window).width() < 600) {
-            $('header > .logo img').attr('src', 'img/V-beta-white.svg');
+            $('header > .logo img').attr('src', 'img/V-logo-white.svg');
         }
         $('.back-to-top').css('opacity', 1);
         console.log('loaded fullpage.js in aboutpage');
