@@ -6,6 +6,7 @@ var delay = 800;
 var timeoutId;
 var isWaiting = false;
 var animationIsFinished = false;
+$('header > .logo img').attr('src', 'img/V-beta.svg');
 
 $('.fullPage').fullpage({
     autoScrolling: true,
