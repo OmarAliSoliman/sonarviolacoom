@@ -6,8 +6,7 @@ var delay = 800;
 var timeoutId;
 var isWaiting = false;
 var animationIsFinished = false;
-// $('header > .logo img').attr('src', 'img/V-beta.svg');
-
+$('header > .logo img').attr('src', 'img/V-logo-white.svg');
 $('.fullPage').fullpage({
     autoScrolling: true,
     scrollHorizontally: true,
@@ -48,6 +47,8 @@ $('.fullPage').fullpage({
         }
         if (destination == 5) {
         //    $('.social').addClass('hideImportant')
+           $('header .leftSocial').addClass('hideImportant');
+
            $('.withLove').addClass('invertColor');
         }else{
            $('.social').removeClass('hideImportant')
