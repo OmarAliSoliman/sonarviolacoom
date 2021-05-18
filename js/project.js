@@ -24,11 +24,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 // });
 $('.social li a img ').addClass('invertColor')
 
-$(document).on('click', '.owl-item', function () {
-    n = $(this).index();
-    console.log(n)
-    window.location.href = "project" + (n + 1) + ".html";
-});
+
 $('.projectFullPage').fullpage({
     //options here
     autoScrolling: true,
@@ -36,7 +32,6 @@ $('.projectFullPage').fullpage({
     responsiveWidth: 1100,
     onLeave: function (origin, destination, direction) {
         //it won't scroll if the destination is the 3rd section
-        console.log('asd');
         if (destination.index !== 0) {
             $('.back-to-top').css('opacity', 1);
 
