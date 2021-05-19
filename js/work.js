@@ -4,7 +4,7 @@ var owl = $('.owl-carousel');
 
 
 owl.owlCarousel({
-    loop: false,
+    loop: true,
     nav: false,
     slideBy: 3,
     responsive: {
