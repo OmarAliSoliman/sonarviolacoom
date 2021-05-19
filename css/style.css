@@ -4506,4 +4506,16 @@ section.project-details.fp-section .fp-tableCell .projectImages .projectLogoCont
   width: auto !important;
   height: auto !important;
 }
+
+@media screen and (max-width: 768px) {
+  .slick-slider {
+    width: 100%;
+  }
+  .slick-slider .slick-list {
+    width: 100%;
+  }
+  section.project-details.fp-section .fp-tableCell .projectImages .projectLogoConta {
+    width: 100% !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */

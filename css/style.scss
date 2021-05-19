@@ -2701,3 +2701,25 @@ section.project-details.fp-section .fp-tableCell .projectImages .projectLogoCont
     height: auto !important;
   }
 }
+
+
+// .slick-slider {
+//   width: 100%;
+//   .slick-list{
+//     width: 100%;
+//   }
+// }
+// section.project-details.fp-section .fp-tableCell .projectImages .projectLogoConta{
+//   width: 100% !important;
+// }
+@media screen and (max-width:768px){
+   .slick-slider {
+     width: 100%;
+      .slick-list{
+       width: 100%;
+    }
+    }
+  section.project-details.fp-section .fp-tableCell .projectImages .projectLogoConta{
+    width: 100% !important;
+  }
+}
