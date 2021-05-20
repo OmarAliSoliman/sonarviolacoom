@@ -71,7 +71,7 @@
                 <!-- Services -------------->
                  
 
-			<li class="nav-item">
+			            <li class="nav-item">
                             <a data-toggle="collapse" href="#services">
                             <!--    <i class="fas fa-sticky-note"></i>   -->
                                 <i class="lni-layers"></i>
@@ -143,6 +143,27 @@
                                     <li>
                                         <a href="blocks.php">
                                             <span class="sub-item">All Blocks</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#partners">
+                                <i class="far fa-handshake"></i>
+                                <p>Partners</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse <?php if(($currentPage =='partners.php?new-partner') || ($currentPage == 'partners.php') ){ echo "show"; }  ?>" id="partners">
+                                <ul class="nav nav-collapse">
+                                    <li>
+                                        <a href="partners.php?new-partner">
+                                            <span class="sub-item">New Partner</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="partners.php">
+                                            <span class="sub-item">All Partners</span>
                                         </a>
                                     </li>
                                 </ul>
