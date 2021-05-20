@@ -169,6 +169,31 @@
                                 </ul>
                             </div>
                         </li>
+
+
+                        <li class="nav-item">
+                            <a data-toggle="collapse" href="#branches">
+                                <!--<i class="fas fa-code-branch"></i>
+                                <i class="fas fa-sitemap"></i>-->
+                                <i class="fas fa-map-marked-alt"></i> 
+                                <p>Branches</p>
+                                <span class="caret"></span>
+                            </a>
+                            <div class="collapse  <?php if(($currentPage =='branches.php?new-branche') || ($currentPage == 'branches.php') ){ echo "show"; }  ?> " id="branches">
+                                <ul class="nav nav-collapse">
+                                    <li>
+                                        <a href="branches.php?new-branche">
+                                            <span class="sub-item">New branche</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="branches.php">
+                                            <span class="sub-item">All branches</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                  
 
                 <!-- Slider -------------->
