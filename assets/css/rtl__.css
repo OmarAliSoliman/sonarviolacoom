@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Tajawal:200,300,400,500,700,800,900&subset=arabic');
+
+body {
+    font-family: 'Tajawal', Cairo;
+    /*direction: rtl;*/
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-size: 16px!important;
+}
+
+.search-bar .inputwithicon i {
+    right: inherit;
+    left: 15px;
+}
+
+
+.search-bar .btn-common {
+    top: 0px;
+    left: 0px;
+    right: inherit;
+    
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    
+}
+
+
+
+/* ---------> Tajawal Arabic Fonts*/
+* #hero-area .contents .head-title, #hero-area .contents p, .category-icon-item .icon-box h4, .category-icon-item .icon-box .categories-listing,
+.section-title, .sub-title, .block-title, .subscribes .subscribes-inner .sub-text h3, .subscribes .subscribes-inner .sub-text p,
+.works-item p, .site_copyright p, .textwidget p, .page-header .breadcrumb-wrapper .product-title, .dashboard-box .dashbord-title,
+.dashboard-wrapper p, .sidebar-box .user .usercontent h3, .sidebar-box .user .usercontent h4,
+.featured-box .feature-content .listing-tagline, .page-sidebar .widget .widget-title, .details-box .ads-details-info h2,
+.details-box .ads-details-info .title-small, .details-sidebar .widget .widget-title, .details-sidebar .posts-list .widget-content a,
+.details-sidebar .widget .widget-title, .details-sidebar .agent-inner .agent-title .agent-details h3 a, .details-box .advertisement li i,
+.dashboardtable tbody tr td, .dashboardtable tbody tr td h3, .login-area h3, .dashboard-sections .contentbox h2, .dashboard-sections .contentbox h3,
+.intro-title, .services-item .services-content h3 a, .services-item .services-content p, #content .contact-form .contact-title, #content .information h3,
+#content .information .contact-datails .info li p, p, .featured-box .feature-content h4 a, .product-item .product-title a
+{
+     font-family: 'Tajawal', Cairo;
+}
+
+/* ---------> Direction LTR  */
+.no-js .owl-carousel, .owl-carousel.owl-loaded{
+    direction: ltr;
+}
+
+
+.search-bar .form-group{
+    float: right;
+    border-right: 1px solid #f1f1f1;
+}
+
+
+.search-bar .form-group .form-control, .search-bar .form-group .select select{
+    padding-right: 30px;
+}
+
+.site_copyright{
+  
+}
+
+
+.section-title:after {
+   
+    margin-right: 20px;
+    margin-left: inherit;
+   
+}
+
+.section-title:before {
+   
+    margin-right: -90px;
+    margin-left: inherit;  
+}
+
+
+.featured-box .feature-content .meta-tag .review-avg{
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+
+.featured-box .feature-content .meta-tag > div {
+    padding-left: 5px;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.featured-box .feature-content .meta-tag > div:before{
+    left: -4px;
+    right: inherit;
+}
+
+.featured-box .feature-content .meta-tag .listing-category a i {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+.product-filter .Show-item {
+    float: left;
+}
+
+.product-filter .nav-tabs {
+    float: left;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.product-filter .Show-item .woocommerce-ordering {
+    float: left;
+}
+
+.product-filter .Show-item span {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.search-btn {
+    right: 0;
+    left: 20px;
+}
+
+.category-counter {
+    float: left;
+}
+
+.page-sidebar .categories-list li a i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.details-box .ads-details-info .details-meta span a i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.details-box .advertisement li i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.details-sidebar .posts-list .widget-thumb {
+    float: right;
+}
+
+.details-sidebar .posts-list .widget-thumb a img {
+    margin: 0px 0 0 15px;
+}
+
+.details-sidebar .posts-list .widget-content {
+    margin-left: 0;
+    margin-right: 55px;
+}
+
+.subscribes .subscribes-inner .icon {
+    float: right;
+}
+
+.subscribes .subscribes-inner .sub-text {
+    float: right;
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+.subscribe .btn {
+    right: inherit;
+    left: 20px;
+}
+
+.subscribe .form-control{
+    padding-right: 25px;
+}
+
+.contact-footer li strong {
+    float: right;
+}
+
+.contact-footer li span {
+    margin-left: 0;
+    margin-right: 40px;
+	direction: ltr;
+}
+
+.custom-control {
+    /*padding-right: 0;*/
+    padding-left: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.featured-ad-box {
+    border-right: 4px solid #ee685d;
+    border-left: none;
+}
+
+.login-area h3 i{
+    margin-left: 5px;
+}
+
+.login-area .login-form .input-icon input {
+    padding-left: 0;
+    padding-right: 40px;
+}
+
+.login-area .login-form .input-icon i {
+    left: inherit;
+    right: 16px;
+}
+
+.custom-file-label::after {
+    left: 0;
+    right: auto;
+    border-left: none;
+    border-right: 1px solid #ced4da;
+    border-radius: .25rem 0 0 .25rem;
+}
+
+.tg-inputwithicon .tg-select:after {
+    right: inherit;
+    left: 15px;
+}
+
+.product-filter .button, .product-filter select {
+    padding-right: 8px;
+}
+
+.product-item .icon {
+    right: inherit;
+    left: 15px;
+}
+
+.product-item .icon i {
+    margin-left: 0;
+    /*margin-right: 10px;*/
+}
+
+.product-item .card-text .icon-wrap {
+    margin-right: 0;
+    margin-left: 5px;
+    float: right;
+}
+
+.product-item .card-text .address i{
+    
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+    text-align: right;
+    float: right;
+}
+
+#content .contact-form .contact-title:before{
+    left: inherit;
+}
+
+
+.login-box{
+    padding: 5px 10px;
+    width: 240px;
+    border: 1px solid;
+    border-radius: 32px;
+    margin-left: 10px;
+}
+
+.dashboard-box .dashbord-title {
+    float: right;
+    padding: 8px 10px 8px 0px;
+}
+
+.dashboard-sections .contentbox {
+    float: right;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.dashboard-sections .contentbox h2 a {
+    padding: 0 0 0 14px;
+}
+
+.dashboard-sections .icon {
+    float: right;
+}
+
+.page-header .breadcrumb-wrapper .breadcrumb li a {
+    color: #fff;
+    padding-right: 0;
+    padding-left: 5px;
+}
+
+.adfields_box{
+    border-right: 3px solid #ee685d;
+	border-left: none;
+}
+
+.services-item {
+    padding: 30px 40px 40px 5px;
+}
+
+.services-item .icon {
+    right: -25px;
+    left: inherit;
+}
+
+.login-area .forgetpassword{
+	float: left;
+}
+
+
+.details-box .ads-details-info .list-specification li i {
+    margin-right: 0;
+    margin-left: 5px;
+    color: #ee685d;
+}
+
+.details-box .ads-details-info .list-specification li{
+	float: right;
+}
+
+.product-item .product-title{
+	direction: rtl;
+}

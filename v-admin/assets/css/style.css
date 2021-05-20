@@ -1,0 +1,476 @@
+/*-------- WMW ---------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Tajawal:200,300,400,500,700,800,900&subset=arabic');
+
+
+.social-icn {
+    border: 1px solid;
+    padding: 6px 5px 5px 5px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+
+.w-150{
+    width: 150px;
+}
+
+
+
+/* ------- PINK Color : #ea3866 ------- */
+.logo-header[data-background-color=blue] {
+    background: #ea3866!important;
+}
+
+.navbar-header[data-background-color=blue2] {
+    background: #ea3866!important;
+}
+
+.sidebar.sidebar-style-2 .nav.nav-primary>.nav-item.active>a {
+    background: #ea3866!important;
+    box-shadow: none!important;
+}
+
+/*--------------------------------------------------*/
+
+
+.ads-sm-img{
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.sml-img{
+    width: 25%;
+    height: 110%;
+    object-fit: cover;
+    margin: 4px;
+}
+
+
+.cat-icn{
+    font-size: 2em;
+    color: #fff;
+    background: #ea3866;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.adcat-bg{
+    text-align: center;
+    border-radius: 2px;
+    width: 80px;
+    padding: 2px;
+    color: #fff;
+}
+
+.rtl{
+    direction: rtl!important;
+    font-family: tajawal;
+}
+
+.imgUploadBg{
+	background: #f2f7fb;
+    border-radius: 3px;
+    padding-bottom: 23px;
+    border: 1px solid #dfeaf3;
+}
+
+@media screen and (min-width: 400px){
+	.mt-10{
+		margin-top : 10em;
+	}
+ 
+}
+
+
+.red-approved-bg{
+	background: #fbf3f3;
+	background: #ffebeb;
+}
+
+
+/*-------------  included from post Ad page style (in frontend) --------------*/
+.adfields_box {
+    background: #f7f7f7;
+    padding: 15px;
+    border-left: 3px solid #ee685d;
+}
+
+.dashboard-box {
+    width: 100%;
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 1px solid #eaedef;
+}
+
+.dashboard-wrapper {
+    padding: 10px 15px;
+}
+
+.inner-box {
+    box-shadow: 0px 0px 10px rgba(175, 175, 175, 0.23);
+}
+
+
+.tg-inputwithicon .tg-select select {
+    border: 0;
+    border-radius: 0;
+    font-size: 14px;
+    width: 100%;
+    font-weight: 400;
+    color: #333;
+    background: #ffffff;
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.tg-inputwithicon .tg-select {
+    color: #666;
+    width: 100%;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.dashboard-wrapper .tg-inputwithicon .tg-select:after {
+    top: 2px;
+}
+
+.tg-inputwithicon .tg-select:after {
+    top: 10px;
+    right: 15px;
+    z-index: 2;
+    color: #666;
+    display: block;
+    content: '\e93a';
+    position: absolute;
+    text-align: center;
+    font-size: inherit;
+    line-height: 40px;
+    font-family: 'LineIcons';
+}
+
+.login-area .login-form {
+    padding: 30px 15px;
+}
+
+
+
+.curr-price {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: #607D8B;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+}
+
+.price-fld {
+    border: 1px solid #607d8b;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.hide {
+    display: none;
+}
+
+
+.admin-login-area{
+	margin-bottom: -150px;
+	    background: #d4d4d4;
+	padding-bottom: 120px;
+}
+
+.login-bg{
+	/*background: #e6e6e6;  */
+	background: #f5f4f4;
+    box-shadow: 0px 1px 4px 0px #adadad;
+}
+
+.gray-bg-hvr{
+	background: transparent;
+}
+
+.gray-bg-hvr:hover{
+	background: #f3f3f3!important;
+}
+
+
+.custom-template .custom-toggle{
+	display: none!important;
+}
+
+
+
+/*  --------------------------------------------------------------------
+    Lawyer Script 
+------------------------------------------------------------------------*/
+
+/* ------- Brown Color : #1a76bc ------- */
+.logo-header[data-background-color=blue] {
+    background: #1a76bc!important;
+}
+
+.navbar-header[data-background-color=blue2] {
+    background: #1a76bc!important;
+}
+
+.sidebar.sidebar-style-2 .nav.nav-primary>.nav-item.active>a {
+    background: #1a76bc!important;
+    box-shadow: none!important;
+}
+
+.logo-lawyer{
+    width: 240px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.ck-editor__editable_inline {
+    min-height: 200px;
+}
+
+
+.height-160{
+    height: 160px;
+}
+
+.slide-thumb-admin{
+    width: 320px;
+    margin: 10px;
+}
+
+.height-120
+{
+    height: 120px;
+    object-fit: cover;
+}
+
+.inactive-slide{
+    background: #f7f0f0;
+    border: 1px solid #eac0c0;
+}
+
+
+.imgUploadBg2 {
+    background: #fffbf4;
+    border-radius: 3px;
+    padding-bottom: 23px;
+    border: 1px solid #1a76bc;
+}
+
+.blck-icn {
+    font-size: 4em;
+    color: #fff;
+    background: #1a76bc;
+    padding: 15px;
+    border-radius: 55px;
+    text-shadow: 1px 2px 2px #13568a;
+    /* font-weight: bold!important; */
+}
+
+
+.blck-icn-sm {
+    font-size: 2em;
+    color: #fff;
+    background: #1a76bc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.iconic-logo{
+    width: 78px;
+    margin: 5px 0px 0 40px;
+
+}
+
+
+/*  --------------------------------------------------------------------
+    Company Script 
+------------------------------------------------------------------------*/
+
+
+.logo-header .logo .navbar-brand {
+    background: #fff;
+    border-radius: 15px;
+	
+	background: #fff;
+    border-radius: 10px;
+    width: 70px;
+    padding: 2px;
+}
+
+.height-160{
+    height: 160px;
+}
+
+.associated-fields{
+	overflow-y: scroll;
+	height: 110px;
+	height: 200px;
+    background: #f7f7f7;
+    padding: 15px 5px 15px 25px;
+    border: 1px solid #ececec;
+    border-radius: 2px;
+}
+
+.form-check-fields{
+	
+}
+
+.form-check-input-fields{
+	
+}
+
+.form-check-label-fields{
+	
+}
+
+.divider{
+	display: block;
+    /*width: 320px;  */
+    height: 1px;
+    background: #e4e4e4;
+}
+
+.sett-head{
+	margin: 0;
+    color: #066c9a;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    border-bottom: 2px solid;
+    width: 100px;
+}
+
+.greenColor{
+	    color: green!important;
+}
+
+.redColor{
+	    color: red!important;
+}
+
+.maxWidth100{
+	max-width: 100%;
+}
+
+.maxWidth60{
+	max-width: 60%;
+}
+
+.cursor-not-allowed{
+	cursor: not-allowed;
+}
+
+
+.portfolio-item-content{
+	width: 100%;
+}
+
+.imgUploadBgGray {
+    background: #f1f3f4;
+}
+
+.form-inline .form-control{
+	width: 100%!important;
+}
+
+.partners-table td{
+	padding: 5px!important;
+}
+
+
+.logo-header .logo .navbar-brand {
+    background: #fff;
+    border-radius: 15px;
+}
+
+.media-thumbnail{
+	object-fit: cover;
+	max-height: 120px;
+	width: 100%;
+}
+
+.thumbnail-button-action{
+	position: absolute;
+    top: 60px;
+    left: 25%;
+    background: #ffffff9e;
+    height: 35px;
+}
+
+.imgUploadBg3{
+	border-radius: 3px;
+    padding-bottom: 23px;
+    border: 1px solid #dfeaf3;
+}
+
+.no-border{
+	border: none!important;
+}
+
+.disableOffer{
+	border: 1px solid #FF9800;
+    background: #fff2de;
+}
+.enableOffer{
+    border: 1px solid #c0d4a9;
+    background: #f2fde7;
+}
+
+.toursContainer .nav-pills>li>.nav-link {
+    margin-left: 40px;
+    border: 1px solid #607D8B;
+    color: #585c5d;
+    padding: 15px 40px;
+}
+
+.toursContainer .nav-pills>li>.nav-link.active {
+    background: #607D8B;
+	color: #fff;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th {
+    padding: 10px!important;
+}
+
+.toursNavTabs{
+	border-top: 1px solid #607d8b;
+    border-bottom: 1px solid #607d8b;
+    /*background: #f6fbfd; */
+}
+
+.msg_content{
+	background: #fff;
+}
+
+.msg_content p{
+	font-family : cairo,tahoma;
+}
+
+.arabicFont{
+	font-family: tajawal, cairo;
+}
+
+.updt-sec{
+	background: #f3faff;
+    border: 1px solid #cadfef;
+    padding-bottom: 20px;
+}
+
+.border-bottom{
+	border-bottom: 1px solid #ddd;
+}
