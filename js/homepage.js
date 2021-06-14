@@ -66,12 +66,12 @@ $('.fullPage').fullpage({
 // $(document).on('click', '.scrollDown', function () {
 //     fullpage_api.moveTo('page2', 1);
 // });
-// $(document).on('click', '.muted', function () {
-//     var useElement = this.getElementsByTagName("use")[0];
-//     $('.videoItem').get(0).muted = !$('.videoItem').get(0).muted
-//     if ($('.videoItem').get(0).muted === true) {
-//         useElement.href.baseVal = "#mute";
-//     } else {
-//         useElement.href.baseVal = "#unmute";
-//     }
-// });
+$(document).on('click', '.muted', function () {
+    var useElement = this.getElementsByTagName("use")[0];
+    $('.videoItem').get(0).muted = !$('.videoItem').get(0).muted
+    if ($('.videoItem').get(0).muted === true) {
+        useElement.href.baseVal = "#mute";
+    } else {
+        useElement.href.baseVal = "#unmute";
+    }
+});
