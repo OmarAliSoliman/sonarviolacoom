@@ -198,7 +198,7 @@
                 <h5 class="heading">UAE 50<sup>th</sup> ANNIVERSARY</h5>
                 <h4 class="heading-cr">CREATIVE</h4>
                 <p class="text">AED 25,000/- & MORE PRIZES TO WIN</p>
-                <a href="https://uaegoldenjubilee.viola.ae/home" target="_blank" class="practice">PARTICIPATE!</a>
+                <a href="" target="_blank" class="practice">PARTICIPATE!</a>
                 <p class="par">
                     Viola Communications is launching a competition for all UAE
                     citizens and residents, giving everyone the opportunity to be
@@ -219,6 +219,12 @@
             $("#videoGallery").trigger('click');
             $("a#videoGallery").fancybox();
         }, 3500);
+
+        document.querySelector("#videoGallery .practice").addEventListener('click', function(){
+            // window.location.replace("https://uaegoldenjubilee.viola.ae/home");
+            window.open('https://uaegoldenjubilee.viola.ae/home', '_blank');
+        })
+
     </script>
 </body>
 
