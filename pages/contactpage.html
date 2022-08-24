@@ -1,9 +1,18 @@
      
-    <script src="js/contact.js"></script>
+   <style>
+     
+    .demoInputBox{padding:10px; border:#F0F0F0 1px solid; border-radius:4px;}
+    .error{background-color: #FF6600;border:#AA4502 1px solid;padding: 5px 10px;border-radius:4px;}
+    .success{background-color: #12CC1A;border:#0FA015 1px solid;padding: 5px 10px;border-radius:4px;}
+    .info{font-size: 2em;color: #FF6600; float: right;}
+    .mail-status{font-size: 2em; color: #FFFF; letter-spacing: 2px; padding-left: 5px; padding-bottom: 17px;}
+    </style>
+   <script src="js/contact.js"></script>
        <section class="contact section d-flex justify-content-center align-items-center">
         
-            <form class="d-flex flex-column justify-content-center align-content-center"
-            id="contactForm">
+            
+            <form class="d-flex form-group flex-column justify-content-center align-content-center"  id="contactForm" method="post" class="myform" action="">
+                <div id="mail-status" class="mail-status"></div>
                 <div class="flex-column text-center ">
                     <div class="form-group animate__animated">
                          <h2 class="animate__animated">
@@ -11,7 +20,8 @@
                     Hello, nice to meet you :)
 
                 </h2>
-                        <input type="text" name="name" placeholder="Your name" />
+                <input type="text" name="userName" id="userName" placeholder="Your name" required class="demoInputBox" />
+                <span id="userName-info" class="info"></span> 
                     </div>
                     <div class="form-group animate__animated">
                          <h2 class="animate__animated">
@@ -19,8 +29,13 @@
                     How can I reach you?
 
                 </h2>
-                        <input type="email" name="email" placeholder="Email" class="mb-4" />
-                        <input type="text" name="phone" placeholder="Phone" />
+                        
+
+                        <input type="email" name="userEmail" id="userEmail" placeholder="Email" class="mb-4"  required class="demoInputBox"/>
+                        <span id="userEmail-info" class="info"></span>
+                        
+                        <input type="text" name="phone" id="userPhone" placeholder="Phone" required class="demoInputBox" />
+                        <span id="userPhone-info" class="info"></span>
                     </div>
                     <div class="form-group animate__animated">
                          <h2 class="animate__animated">
@@ -28,15 +43,12 @@
                     If your project could talk, what would it say?
 
                 </h2>
-                        <textarea type="text" name="message" placeholder="Start typing here"></textarea>
+                        
+                        <textarea type="text" name="content" id="content" placeholder="Start typing here" required class="demoInputBox"></textarea>
+                        <span id="content-info" class="info"></span>
                     </div>
-                    <!-- <button type="button" onclick="sendEmail()" class="sendEmailButton
-                    animate__animated">
-
-                Send Message 💬
-
-            </button> -->
-                    <button type="button" class="sendEmailButton animate__animated">Send Message 💬</button>
+                    
+                    <button type="button" class="sendEmailButton animate__animated" onClick="sendContact();">Send Message 💬</button>
                 </div>
             </form>
         </section>
@@ -472,3 +484,56 @@
                 </g>
             </symbol>
         </svg>
+
+        <script>
+            function sendContact() {
+                  var valid;	
+                  valid = validateContact();
+                  if(valid) {
+                      jQuery.ajax({
+                          url: "contact_mail.php",
+                          data:'userName='+$("#userName").val()+'&userEmail='+
+                          $("#userEmail").val()+'&phone='+
+                          $("#userPhone").val()+'&content='+
+                          $(content).val(),
+                          type: "POST",
+                          success:function(data){
+                              $("#mail-status").html(data);
+                          },
+                          error:function (){}
+                      });
+                  }
+              }
+    
+              function validateContact() {
+                  var valid = true;	
+                  $(".demoInputBox").css('background-color','');
+                  $(".info").html('');
+                  if(!$("#userName").val()) {
+                      $("#userName-info").html("*");  
+                      $("#userName").css('border-bottom','2px solid #722382');
+                      valid = false;
+                  }
+                  if(!$("#userEmail").val()) {
+                      $("#userEmail-info").html("*");
+                      $("#userEmail").css('border-bottom','2px solid #722382');
+                      valid = false;
+                  }
+                  if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+                      $("#userEmail-info").html("*");
+                      $("#userEmail").css('border-bottom','2px solid #722382');
+                      valid = false;
+                  }
+                  if(!$("#userPhone").val()) {
+                      $("#userPhone-info").html("*");
+                      $("#userPhone").css('border-bottom','2px solid #722382');
+                      valid = false;
+                  }
+                  if(!$("#content").val()) {
+                      $("#content-info").html("*");
+                      $("textarea#content").css('border','2px solid #722382');
+                      valid = false;
+                  }
+                  return valid;
+              }
+      </script>

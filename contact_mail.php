@@ -1,47 +1,88 @@
 <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ 
+  $mail_to = "marketing@viola.ae";
+  $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["userName"])));
+  $email = filter_var(trim($_POST["userEmail"]), FILTER_SANITIZE_EMAIL);
+  $phone = trim($_POST["phone"]);
+  $message = trim($_POST["content"]);
+  
+ 
+  use PHPMailer\PHPMailer\PHPMailer;
+  use PHPMailer\PHPMailer\SMTP;
+  use PHPMailer\PHPMailer\Exception;
+  
+  require_once "vendor/autoload.php"; //PHPMailer Object 
+  $mail = new PHPMailer(true); //From email address and name 
 
-      # FIX: Replace this email with recipient email
-      $mail_to = "marketing@viola.ae";
+  
+    //Enable SMTP debugging.
+    // $mail->SMTPDebug = 3;                               
+    //Set PHPMailer to use SMTP.
+    $mail->isSMTP();            
+    //Set SMTP host name                          
+    $mail->Host = "smtp.office365.com";
+    //Set this to true if SMTP host requires authentication to send email
+    $mail->SMTPAuth = true;                          
+    //Provide username and password     
+    $mail->Username = "no-reply@viola.ae";                 
+    $mail->Password = 'BxOmlZpkN14kAbx';                           
+    //If SMTP requires TLS encryption then set it
+    $mail->SMTPSecure = "SSL/TLS";                           
+    //Set TCP port to connect to
+    $mail->Port = 587;  
+    
+    $mail->From = "no-reply@viola.ae"; 
+ 
+    
+      $content = '<html>
+      <head>
+      <title></title>
+      </head>
+      <body><table> 
+      <tr>
+      <td colspan="2">Hello, </td> 
+      </tr>
+      <tr>
+      <td> Name:</td> 
+      <td>'.$name.'</td> 
+      </tr>
+      <tr>
+      <td> Email:</td> 
+      <td>'.$email.'</td> 
+      </tr>
+      <tr>
+      <td> Phone No.:</td> 
+      <td>'.$phone.'</td> 
+      </tr>
+      <tr>
+      <td> Message:</td> 
+      <td>'.$message.'</td> 
+      </tr>
+      </table>
+      </body>
+      </html>';
       
-      # Sender Data
-      $subject = 'Subject';
-      $name = str_replace(array("\r","\n"),array(" "," ") , strip_tags(trim($_POST["userName"])));
-      $email = filter_var(trim($_POST["userEmail"]), FILTER_SANITIZE_EMAIL);
-      $phone = trim($_POST["phone"]);
-      $message = trim($_POST["content"]);
+        
+        $mail->CharSet = 'UTF-8';
+        $mail->addAddress("ahmed.zain@viola.ae", 'Viola Communication'); 
+         
+         
+        $mail->isHTML(true); 
+        $mail->Subject = "Viola Communication - Contact Us"; 
+        $mail->Body = $content;
+        $mail->AltBody = "This is the plain text version of the email content"; 
+       
+        if(!$mail->send()) 
+        {
+             
+                echo 'Oops! Something went wrong, we couldn\'t send your message.';
+              
+        }else{   
+               
+                echo 'Thank You! Your message has been sent.';
+                 
+        }
       
-      if ( empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($phone) OR empty($subject) OR empty($message)) {
-          # Set a 400 (bad request) response code and exit.
-          http_response_code(400);
-          echo "Please complete the form and try again.";
-          exit;
-      }
       
-      # Mail Content
-      $content = "Name: $name\n";
-      $content .= "Email: $email\n\n";
-      $content .= "Phone: $phone\n";
-      $content .= "Message:\n$message\n";
-
-      # email headers.
-      $headers = "From: $name <$email>";
-
-      # Send the email.
-      $success = mail($mail_to, $subject, $content, $headers);
-      if ($success) {
-          # Set a 200 (okay) response code.
-          http_response_code(200);
-          echo "Thank You! Your message has been sent.";
-      } else {
-          # Set a 500 (internal server error) response code.
-          http_response_code(500);
-          echo "Oops! Something went wrong, we couldn't send your message.";
-      }
-
-  } else {
-      # Not a POST request, set a 403 (forbidden) response code.
-      http_response_code(403);
-      echo "There was a problem with your submission, please try again.";
-  }
+        
   ?>
