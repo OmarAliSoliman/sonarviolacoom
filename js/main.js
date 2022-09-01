@@ -80,7 +80,7 @@
             'aboutpage',
             'blog-list-page',
             'blog1',
-            'blog1copy',
+            'blog3',
             'blog2',
             'blogpage',
             'contactpage',

@@ -2449,12 +2449,22 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
 .csrFullpage .fp-tableCell p:last-child {
   margin-bottom: 100px;
 }
+
+
+.section.blog-list{
+  min-height: 100vh;
+  height: auto;
+  padding: 150px;
+  @media screen and (max-width:400px) {
+    padding: 150px 20px;
+  }
+}
+
 .blog-list {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
 
 .blog-list .mainTitle {
@@ -2701,6 +2711,127 @@ section.project-details.fp-section .fp-tableCell .projectImages .projectLogoCont
     height: auto !important;
   }
 }
+
+
+
+#videoGallery .header {
+  padding: 84px 67px;
+  padding-bottom: 219px;
+  border-radius: 19px;
+  position: relative;
+  overflow: hidden;
+  min-height: 683px;
+}
+
+#videoGallery .header .panner {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+}
+
+#videoGallery .header .header-content h5,
+#videoGallery .header .header-content h4,
+#videoGallery .header .header-content p {
+  color: #fff;
+}
+
+#videoGallery .header .header-content .heading {
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+  color: #f47e01;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 4;
+}
+
+#videoGallery .header .header-content .heading sup {
+  font-size: 22px;
+  text-transform: none;
+  position: relative;
+  z-index: 4;
+}
+
+#videoGallery .header .header-content .heading-cr {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 0;
+  color: #f47e01;
+  position: relative;
+  z-index: 4;
+}
+
+#videoGallery .header .header-content .text {
+  font-size: 27px;
+  color: #b59e82;
+  font-weight: normal;
+  margin-top: 5px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 4;
+}
+
+#videoGallery .header .header-content .par {
+  width: 450px;
+  max-width: 100%;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 20px;
+  margin: 0;
+  margin-top: 24px;
+  position: relative;
+  z-index: 4;
+  color: #606060;
+}
+
+#videoGallery .header .header-content .practice {
+  margin-top: 25px;
+  display: inline-block;
+  background-color: #f47e01;
+  border-radius: 28px;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 6px 26px;
+  position: relative;
+  z-index: 4;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+#videoGallery .header .header-content .practice:focus{
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+#videoGallery.fancybox-content {
+  padding: 0;
+  border-radius: 19px;
+  width: 1100px;
+  max-width: 90%;
+  margin: auto;
+}
+
+@media (max-width: 991px) {
+  #videoGallery .header {
+    padding: 84px 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  #videoGallery .header .panner {
+    width: 600px;
+  }
+  #videoGallery  .header .header-content .heading, .header-parent .header .header-content .heading-cr{
+    font-size: 30px;
+  }
+  #videoGallery .header .header-content .text{
+    font-size: 20px;
+  }
+}
+
 
 
 // .slick-slider {
