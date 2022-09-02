@@ -116,6 +116,34 @@
             if (checkPageName === '') {
                $("#siteContainer").load("pages/homepage.html")
             }
+
+            if(checkPageName === 'blog1'){
+                $('meta[property=og:title]').attr('content', "Content - what's it all about?");
+                $('meta[property=og:type]').attr('content', "article");
+                $('meta[property=og:image]').attr('content', "https://viola.ae/img/content.jpg");
+                $('meta[property=og:url]').attr('content', "https://viola.ae/?blog1");
+                $('meta[name=twitter:card]').attr('content', "summary_large_image");
+                $('meta[property=og:description]').attr('content', "Content is a strange word - I looked it up in the dictionary: happy, calm, tranquil, peaceful, and satisfying - then I realized I was on the wrong page. I Googled™ “Head of Content” and that was also a mistake, because there were about 7,600,000,000 results.");
+                $('meta[name=twitter:image:alt]').attr('content', "Content - what's it all about?");
+            }
+            if(checkPageName === 'blog2'){
+                $('meta[property=og:title]').attr('content', "The 2nd wave and work list to post and what we have to learn in Viola Communications");
+                $('meta[property=og:type]').attr('content', "article");
+                $('meta[property=og:image]').attr('content', "https://viola.ae/img/blog-2.jpg");
+                $('meta[property=og:url]').attr('content', "https://viola.ae/?blog2");
+                $('meta[name=twitter:card]').attr('content', "summary_large_image");
+                $('meta[property=og:description]').attr('content', "The 2nd wave and work list to post and what we have to learn in Viola Communications");
+                $('meta[name=twitter:image:alt]').attr('content', "The 2nd wave and work list to post and what we have to learn in Viola Communications");
+            }
+            if(checkPageName === 'blog3'){
+                $('meta[property=og:title]').attr('content', "PR and Events - working hand in hand to reinforce the spirit of community");
+                $('meta[property=og:type]').attr('content', "article");
+                $('meta[property=og:image]').attr('content', "https://viola.ae/img/blog3.jpg");
+                $('meta[property=og:url]').attr('content', "https://viola.ae/?blog3");
+                $('meta[name=twitter:card]').attr('content', "summary_large_image");
+                $('meta[property=og:description]').attr('content', "PR and Events - working hand in hand to reinforce the spirit of community");
+                $('meta[name=twitter:image:alt]').attr('content', "PR and Events - working hand in hand to reinforce the spirit of community");
+            }
         }
         
         $(document).ready(function(){
