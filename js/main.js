@@ -144,6 +144,15 @@
                 $('meta[property="og:description"]').attr('content', "PR and Events - working hand in hand to reinforce the spirit of community");
                 $('meta[name="twitter:image:alt"]').attr('content', "PR and Events - working hand in hand to reinforce the spirit of community");
             }
+            if(checkPageName === 'blog4'){
+                $('meta[property="og:title"]').attr('content', "The shape of things to come or back to basics?");
+                $('meta[property="og:type"]').attr('content', "article");
+                $('meta[property="og:image"]').attr('content', "https://viola.ae/img/blog4.jpg");
+                $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog4");
+                $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+                $('meta[property="og:description"]').attr('content', "The shape of things to come or back to basics?");
+                $('meta[name="twitter:image:alt"]').attr('content', "The shape of things to come or back to basics?");
+            }
         }
         
         $(document).ready(function(){
