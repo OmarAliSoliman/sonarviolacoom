@@ -83,6 +83,7 @@
             'blog2',
             'blog3',
             'blog4',
+            'blog5',
             'blogpage',
             'contactpage',
             'csrpage',
@@ -153,6 +154,15 @@
                 $('meta[name="twitter:card"]').attr('content', "summary_large_image");
                 $('meta[property="og:description"]').attr('content', "The shape of things to come or back to basics?");
                 $('meta[name="twitter:image:alt"]').attr('content', "The shape of things to come or back to basics?");
+            }
+            if(checkPageName === 'blog5'){
+                $('meta[property="og:title"]').attr('content', "The New Found Strength of Outdoor Media in the UAE");
+                $('meta[property="og:type"]').attr('content', "article");
+                $('meta[property="og:image"]').attr('content', "https://viola.ae/img/blog5_new.jpg");
+                $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog5");
+                $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+                $('meta[property="og:description"]').attr('content', "The New Found Strength of Outdoor Media in the UAE");
+                $('meta[name="twitter:image:alt"]').attr('content', "The New Found Strength of Outdoor Media in the UAE");
             }
         }
         
