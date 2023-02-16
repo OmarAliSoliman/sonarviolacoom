@@ -84,6 +84,8 @@
             'blog3',
             'blog4',
             'blog5',
+            'blog6',
+            'blog7',
             'blogpage',
             'contactpage',
             'csrpage',
@@ -163,6 +165,24 @@
                 $('meta[name="twitter:card"]').attr('content', "summary_large_image");
                 $('meta[property="og:description"]').attr('content', "The New Found Strength of Outdoor Media in the UAE");
                 $('meta[name="twitter:image:alt"]').attr('content', "The New Found Strength of Outdoor Media in the UAE");
+            }
+            if(checkPageName === 'blog6'){
+                $('meta[property="og:title"]').attr('content', "V-I-O-L-A —Viola —Viola Outdoor Joins WOO");
+                $('meta[property="og:type"]').attr('content', "article");
+                $('meta[property="og:image"]').attr('content', "https://viola.ae/img/blog6.jpg");
+                $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog6");
+                $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+                $('meta[property="og:description"]').attr('content', "V-I-O-L-A —Viola —Viola Outdoor Joins WOO");
+                $('meta[name="twitter:image:alt"]').attr('content', "V-I-O-L-A —Viola —Viola Outdoor Joins WOO");
+            }
+            if(checkPageName === 'blog7'){
+                $('meta[property="og:title"]').attr('content', "The fear of AI and its place in content creation – by Viola’s Chris Moran");
+                $('meta[property="og:type"]').attr('content', "article");
+                $('meta[property="og:image"]').attr('content', "https://viola.ae/img/blog7.jpg");
+                $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog7");
+                $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+                $('meta[property="og:description"]').attr('content', "The fear of AI and its place in content creation – by Viola’s Chris Moran");
+                $('meta[name="twitter:image:alt"]').attr('content', "The fear of AI and its place in content creation – by Viola’s Chris Moran");
             }
         }
         
