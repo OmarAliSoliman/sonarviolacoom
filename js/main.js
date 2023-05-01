@@ -86,6 +86,7 @@
             'blog5',
             'blog6',
             'blog7',
+            'blog8',
             'blogpage',
             'contactpage',
             'csrpage',
@@ -183,6 +184,15 @@
                 $('meta[name="twitter:card"]').attr('content', "summary_large_image");
                 $('meta[property="og:description"]').attr('content', "The fear of AI and its place in content creation – by Viola’s Chris Moran");
                 $('meta[name="twitter:image:alt"]').attr('content', "The fear of AI and its place in content creation – by Viola’s Chris Moran");
+            }
+            if(checkPageName === 'blog8'){
+                $('meta[property="og:title"]').attr('content', "The Shift Towards Sustainable Events");
+                $('meta[property="og:type"]').attr('content', "article");
+                $('meta[property="og:image"]').attr('content', "https://viola.ae/img/blog8.jpg");
+                $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog8");
+                $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+                $('meta[property="og:description"]').attr('content', "The Shift Towards Sustainable Events");
+                $('meta[name="twitter:image:alt"]').attr('content', "The Shift Towards Sustainable Events");
             }
         }
         
