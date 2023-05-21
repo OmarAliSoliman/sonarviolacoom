@@ -33,8 +33,6 @@ $(window).load(function () {
     if (window.location.href.indexOf("contact") > -1) {
         $('.contact .animate__animated').addClass('animate__fadeInLeft');
     }
-
-    
 });
 function showTest() {
     $('.coffee').addClass('hover')
@@ -210,14 +208,6 @@ function checkPages() {
 
 $(document).ready(function () {
     checkPages();
-    $(".blog .blog-list").niceScroll({
-        cursorcolor: "red",
-        cursorwidth: "5px",
-        cursorborder: "none",
-        cursorborderradius: "5px",
-        autohidemode: false,
-        railpadding: { top: 0, right: 3, left: 3, bottom: 0 }
-    });
 });
 
 
