@@ -1,0 +1,5 @@
+.blog .position-fixed .blog-list{
+  height: 78vh;
+  overflow-y: auto;
+  justify-content: flex-start;
+}
