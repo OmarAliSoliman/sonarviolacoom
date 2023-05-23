@@ -198,7 +198,7 @@ function checkPages() {
     if (checkPageName === 'blog9') {
         $('meta[property="og:title"]').attr('content', "Viola Events wins at Eventex Awards 2023 ");
         $('meta[property="og:type"]').attr('content', "article");
-        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/blog9.jpg");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/blog9new.jpg");
         $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog9");
         $('meta[name="twitter:card"]').attr('content', "summary_large_image");
         $('meta[property="og:description"]').attr('content', "Viola Events wins at Eventex Awards 2023 ");
