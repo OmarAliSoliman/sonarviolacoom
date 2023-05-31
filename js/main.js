@@ -19,6 +19,7 @@ $(document).ready(function () {
     });
     $(".back-to-top").click(function (e) {
         e.preventDefault();
+        $.fn.fullpage.moveTo(1);
         // fullpage_api.moveTo(1);
     });
 });
@@ -29,10 +30,13 @@ $(window).load(function () {
         lottie.stop()
         $('.banner .animate__animated').addClass('animate__fadeInLeft');
         $('.banner ').addClass('animate-banner');
+        initializeNiceScroll();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
     }, 3000);
     if (window.location.href.indexOf("contact") > -1) {
         $('.contact .animate__animated').addClass('animate__fadeInLeft');
     }
+    
 });
 function showTest() {
     $('.coffee').addClass('hover')
@@ -41,7 +45,6 @@ function hideText() {
     $('.coffee').removeClass('hover')
 }
 $('.hyperLink').on('click', function () {
-
     if (typeof $.fn.fullpage.destroy == 'function') {
         $.fn.fullpage.destroy('all');
     }
@@ -66,13 +69,22 @@ function loadPage(getAttr) {
         setTimeout(() => {
             lottie.stop();
             $('.overlay').fadeOut();
+            initializeNiceScroll();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
         }, 3000);
         $('.hyperLinkInner').on('click', function () {
-
             getAttr = $(this).attr('data-link-to-page');
             loadPagefromURL(getAttr)
+            console.log("hi")
+            initializeNiceScroll();
         })
+        
+        $(".back-to-top").click(function (e) {
+            e.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
     });
+    $("html, body").animate({ scrollTop: 0 }, "slow");
 }
 // $("#siteContainer").load("pages/homepage.html");
 
@@ -131,6 +143,7 @@ function checkPages() {
         $('meta[name="twitter:card"]').attr('content', "summary_large_image");
         $('meta[property="og:description"]').attr('content', "Content is a strange word - I looked it up in the dictionary: happy, calm, tranquil, peaceful, and satisfying - then I realized I was on the wrong page. I Googled™ “Head of Content” and that was also a mistake, because there were about 7,600,000,000 results.");
         $('meta[name="twitter:image:alt"]').attr('content', "Content - what's it all about?");
+       
     }
     if (checkPageName === 'blog2') {
         $('meta[property="og:title"]').attr('content', "The 2nd wave and work list to post and what we have to learn in Viola Communications");
@@ -203,11 +216,24 @@ function checkPages() {
         $('meta[name="twitter:card"]').attr('content', "summary_large_image");
         $('meta[property="og:description"]').attr('content', "Viola Events wins at Eventex Awards 2023 ");
         $('meta[name="twitter:image:alt"]').attr('content', "Viola Events wins at Eventex Awards 2023 ");
+       
     }
 }
 
 $(document).ready(function () {
     checkPages();
 });
+
+
+function initializeNiceScroll() {
+    $(".blog .blog-list").niceScroll({
+        cursorcolor: "#301464",
+        cursorwidth: "5px",
+        cursorborder: "none",
+        cursorborderradius: "5px",
+        autohidemode: false,
+        railpadding: { top: 0, right: 3, left: 3, bottom: 0 }
+    });
+}
 
 

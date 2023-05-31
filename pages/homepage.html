@@ -366,10 +366,10 @@
                                 Us </a>
 
                         </li>
-                        <li><a href="blog-list.html">Blog</a>
+                        <li><a href="javascript:void(0)" data-link-to-page='blog-list-page' class="hyperLink">Blog</a>
 
                         </li>
-                        <li><a href="csr.html">CSR</a>
+                        <li><a href="javascript:void(0)" data-link-to-page='csrpage' class="hyperLink">CSR</a>
 
                         </li>
                     </ul>
@@ -949,6 +949,57 @@ S456.64,123.881,414.144,81.769z" />
         </symbol>
     </svg>
     <script>
+        if ($("footer").length) {
+            $('.hyperLink').on('click', function () {
+                if (typeof $.fn.fullpage.destroy == 'function') {
+                    $.fn.fullpage.destroy('all');
+                }
+                let getAttr = $(this).attr('data-link-to-page');
+                loadPagefromURL(getAttr)
+            })
+
+            function loadPagefromURL(value) {
+                window.history.pushState(value, {}, "?" + value);
+                let getPage = window.history.state;
+                loadPage(getPage)
+            }
+
+            function loadPage(getAttr) {
+                lottie.play();
+                $('.overlay').fadeIn(0);
+                $("#siteContainer").load('pages/' + getAttr + ".html", function () {
+                    setTimeout(() => {
+                        lottie.stop();
+                        $('.overlay').fadeOut();
+                        initializeNiceScroll();
+                    }, 3000);
+                    $('.hyperLinkInner').on('click', function () {
+
+                        getAttr = $(this).attr('data-link-to-page');
+                        loadPagefromURL(getAttr)
+                        initializeNiceScroll();
+                    })
+                });
+            }
+
+            function initializeNiceScroll() {
+                $(".blog .blog-list").niceScroll({
+                    cursorcolor: "#301464",
+                    cursorwidth: "5px",
+                    cursorborder: "none",
+                    cursorborderradius: "5px",
+                    autohidemode: false,
+                    railpadding: {
+                        top: 0,
+                        right: 3,
+                        left: 3,
+                        bottom: 0
+                    }
+                });
+            }
+        }
+
+
         function sendContact() {
             var valid;
             valid = validateContact();
