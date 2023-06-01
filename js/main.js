@@ -45,20 +45,6 @@ function hideText() {
     $('.coffee').removeClass('hover')
 }
 
-function addLinkListener(){
-    var link = $('.hyperLink2');
-    if(link.length > 0){
-        $('.hyperLink2').on('click', function () {
-            if (typeof $.fn.fullpage.destroy == 'function') {
-                $.fn.fullpage.destroy('all');
-            }
-            let getAttr = $(this).attr('data-link-to-page');
-            loadPagefromURL(getAttr)
-        })
-    }else{
-        addLinkListener();
-    }
-}
 
 $(window).on('load', function () {
 
@@ -73,7 +59,16 @@ $(window).on('load', function () {
         $('.coffee').toggleClass('visiable')
         loadPagefromURL(getAttr)
     })
-    addLinkListener();
+    $('.hyperLink2').on('load', function (e) {
+        console.log(e);
+        $('.hyperLink2').on('click', function () {
+            if (typeof $.fn.fullpage.destroy == 'function') {
+                $.fn.fullpage.destroy('all');
+            }
+            let getAttr = $(this).attr('data-link-to-page');
+            loadPagefromURL(getAttr)
+        })
+    })
 })
 
 function loadPagefromURL(value) {
