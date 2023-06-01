@@ -45,31 +45,50 @@ function hideText() {
     $('.coffee').removeClass('hover')
 }
 
-
-$(window).on('load', function () {
-
-    $('.hyperLink').on('click', function () {
-        if (typeof $.fn.fullpage.destroy == 'function') {
-            $.fn.fullpage.destroy('all');
-        }
-        let getAttr = $(this).attr('data-link-to-page');
-        $('#nav-icon').toggleClass('open');
-        $('.menu').toggleClass('open');
-        $('.menu').toggleClass('flexVisiable');
-        $('.coffee').toggleClass('visiable')
-        loadPagefromURL(getAttr)
-    })
-    $('.hyperLink2').on('load', function (e) {
-        console.log(e);
-        $('.hyperLink2').on('click', function () {
-            if (typeof $.fn.fullpage.destroy == 'function') {
-                $.fn.fullpage.destroy('all');
-            }
-            let getAttr = $(this).attr('data-link-to-page');
-            loadPagefromURL(getAttr)
-        })
-    })
+$('.hyperLink').on('click', function () {
+    if (typeof $.fn.fullpage.destroy == 'function') {
+        $.fn.fullpage.destroy('all');
+    }
+    let getAttr = $(this).attr('data-link-to-page');
+    $('#nav-icon').toggleClass('open');
+    $('.menu').toggleClass('open');
+    $('.menu').toggleClass('flexVisiable');
+    $('.coffee').toggleClass('visiable')
+    loadPagefromURL(getAttr)
 })
+
+
+// $(window).on('load', function () {
+
+    
+//     // $('.hyperLink2').on('load', function (e) {
+//     //     console.log(e);
+//     //     $('.hyperLink2').on('click', function () {
+//     //         if (typeof $.fn.fullpage.destroy == 'function') {
+//     //             $.fn.fullpage.destroy('all');
+//     //         }
+//     //         let getAttr = $(this).attr('data-link-to-page');
+//     //         loadPagefromURL(getAttr)
+//     //     })
+//     // })
+//     // $('.hyperLink2').on('click', function (e) {
+//     //     console.log(e);
+//     //     if (typeof $.fn.fullpage.destroy == 'function') {
+//     //         $.fn.fullpage.destroy('all');
+//     //     }
+//     //     let getAttr = $(this).attr('data-link-to-page');
+//     //     loadPagefromURL(getAttr)
+//     // })
+// })
+
+$('body').on('click', '.hyperLink2', function (e) {
+    console.log(e);
+    if (typeof $.fn.fullpage.destroy == 'function') {
+        $.fn.fullpage.destroy('all');
+    }
+    let getAttr = $(this).attr('data-link-to-page');
+    loadPagefromURL(getAttr)
+});
 
 function loadPagefromURL(value) {
     window.history.pushState(value, {}, "?" + value);
