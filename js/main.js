@@ -36,7 +36,7 @@ $(window).load(function () {
     if (window.location.href.indexOf("contact") > -1) {
         $('.contact .animate__animated').addClass('animate__fadeInLeft');
     }
-    
+
 });
 function showTest() {
     $('.coffee').addClass('hover')
@@ -44,17 +44,30 @@ function showTest() {
 function hideText() {
     $('.coffee').removeClass('hover')
 }
-$('.hyperLink').on('click', function () {
-    if (typeof $.fn.fullpage.destroy == 'function') {
-        $.fn.fullpage.destroy('all');
-    }
-    let getAttr = $(this).attr('data-link-to-page');
-    $('#nav-icon').toggleClass('open');
-    $('.menu').toggleClass('open');
-    $('.menu').toggleClass('flexVisiable');
-    $('.coffee').toggleClass('visiable')
-    loadPagefromURL(getAttr)
+
+$(window).on('load', function () {
+
+    $('.hyperLink').on('click', function () {
+        if (typeof $.fn.fullpage.destroy == 'function') {
+            $.fn.fullpage.destroy('all');
+        }
+        let getAttr = $(this).attr('data-link-to-page');
+        $('#nav-icon').toggleClass('open');
+        $('.menu').toggleClass('open');
+        $('.menu').toggleClass('flexVisiable');
+        $('.coffee').toggleClass('visiable')
+        loadPagefromURL(getAttr)
+    })
+
+    $('.hyperLink2').on('click', function () {
+        if (typeof $.fn.fullpage.destroy == 'function') {
+            $.fn.fullpage.destroy('all');
+        }
+        let getAttr = $(this).attr('data-link-to-page');
+        loadPagefromURL(getAttr)
+    })
 })
+
 function loadPagefromURL(value) {
     window.history.pushState(value, {}, "?" + value);
     let getPage = window.history.state;
@@ -78,7 +91,7 @@ function loadPage(getAttr) {
             console.log("hi")
             initializeNiceScroll();
         })
-        
+
         $(".back-to-top").click(function (e) {
             e.preventDefault();
             $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -143,7 +156,7 @@ function checkPages() {
         $('meta[name="twitter:card"]').attr('content', "summary_large_image");
         $('meta[property="og:description"]').attr('content', "Content is a strange word - I looked it up in the dictionary: happy, calm, tranquil, peaceful, and satisfying - then I realized I was on the wrong page. I Googled™ “Head of Content” and that was also a mistake, because there were about 7,600,000,000 results.");
         $('meta[name="twitter:image:alt"]').attr('content', "Content - what's it all about?");
-       
+
     }
     if (checkPageName === 'blog2') {
         $('meta[property="og:title"]').attr('content', "The 2nd wave and work list to post and what we have to learn in Viola Communications");
@@ -216,7 +229,7 @@ function checkPages() {
         $('meta[name="twitter:card"]').attr('content', "summary_large_image");
         $('meta[property="og:description"]').attr('content', "Viola Events wins at Eventex Awards 2023 ");
         $('meta[name="twitter:image:alt"]').attr('content', "Viola Events wins at Eventex Awards 2023 ");
-       
+
     }
 }
 
