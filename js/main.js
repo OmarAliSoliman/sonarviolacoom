@@ -135,6 +135,7 @@ let pages = [
     'blog7',
     'blog8',
     'blog9',
+    'blog10',
     'blogpage',
     'contactpage',
     'csrpage',
@@ -251,6 +252,16 @@ function checkPages() {
         $('meta[name="twitter:card"]').attr('content', "summary_large_image");
         $('meta[property="og:description"]').attr('content', "Viola Events wins at Eventex Awards 2023 ");
         $('meta[name="twitter:image:alt"]').attr('content', "Viola Events wins at Eventex Awards 2023 ");
+
+    }
+    if (checkPageName === 'blog10') {
+        $('meta[property="og:title"]').attr('content', "Viola Outdoor launches taxi-top digital media screens ");
+        $('meta[property="og:type"]').attr('content', "article");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/blog10.jpg");
+        $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog10");
+        $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+        $('meta[property="og:description"]').attr('content', "Viola Outdoor launches taxi-top digital media screens ");
+        $('meta[name="twitter:image:alt"]').attr('content', "Viola Outdoor launches taxi-top digital media screens ");
 
     }
 }
