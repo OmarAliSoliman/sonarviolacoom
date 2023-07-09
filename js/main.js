@@ -136,6 +136,7 @@ let pages = [
     'blog8',
     'blog9',
     'blog10',
+    'blog11',
     'blogpage',
     'contactpage',
     'csrpage',
@@ -262,6 +263,16 @@ function checkPages() {
         $('meta[name="twitter:card"]').attr('content', "summary_large_image");
         $('meta[property="og:description"]').attr('content', "Viola Outdoor launches taxi-top digital media screens ");
         $('meta[name="twitter:image:alt"]').attr('content', "Viola Outdoor launches taxi-top digital media screens ");
+
+    }
+    if (checkPageName === 'blog10') {
+        $('meta[property="og:title"]').attr('content', "People are complicated, but connections are simple");
+        $('meta[property="og:type"]').attr('content', "article");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/blog9new.jpg");
+        $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog11");
+        $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+        $('meta[property="og:description"]').attr('content', "People are complicated, but connections are simple");
+        $('meta[name="twitter:image:alt"]').attr('content', "People are complicated, but connections are simple");
 
     }
 }
