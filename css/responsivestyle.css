@@ -1,0 +1,45 @@
+.csrFullpage .fp-tableCell .overlayTop{
+  height: 100%;
+}
+
+.csrFullpage .fp-tableCell{
+  align-items: unset;
+}
+
+.csrFullpage .fp-tableCell .intro{
+  padding-top: 300px;
+}
+
+.blog-list .blogMainItem .overlay .authDetails{
+  position:absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.blog .position-fixed .blog-list{
+  padding-bottom: 30px;
+}
+
+.withLove{
+  bottom: 35px;
+  right: 40px;
+  display: inline-block;
+  position: fixed;
+  z-index: 9;
+}
+
+.backtopTopactive{
+  opacity: 1;
+}
+
+section.work .owl-carousel .owl-item.active:nth-child(even) .art{
+  width: 80%;
+}
+
+header .menu .main-links li{
+  width: 300px;
+}
+
+@media(max-width: 1800px){
+  
+}

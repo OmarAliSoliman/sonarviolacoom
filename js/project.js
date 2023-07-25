@@ -43,6 +43,15 @@ $('.projectFullPage').fullpage({
 
         }
 
+        if (destination > 1) {
+            $('.back-to-top').css('opacity', 1);
+            $('.back-to-top').css('bottom', "3%");
+            $('.withLove').addClass('d-none');
+        } else {
+            $('.back-to-top').css('opacity', 0);
+            $('.withLove').removeClass('d-none');
+        }
+
 
         // var curTime = new Date().getTime();
 
@@ -58,5 +67,11 @@ $('.projectFullPage').fullpage({
             'd-none');
 
         $(".active svg").attr("class", " d-block");
+
+        $(".back-to-top").click(function (e) {
+            e.preventDefault();
+            $.fn.fullpage.moveTo(1);
+            // fullpage_api.moveTo(1);
+        });
     },
 });
