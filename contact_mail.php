@@ -64,7 +64,7 @@
       
         
         $mail->CharSet = 'UTF-8';
-        $mail->addAddress("omar.soliman@viola.ae", 'Viola Communication'); 
+        $mail->addAddress("marketing@viola.ae", 'Viola Communication'); 
          
          
         $mail->isHTML(true); 
