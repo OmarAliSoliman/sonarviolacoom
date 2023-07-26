@@ -1,26 +1,23 @@
-.csrFullpage .fp-tableCell .overlayTop{
+.csrFullpage .fp-tableCell .overlayTop {
   height: 100%;
 }
 
-.csrFullpage .fp-tableCell{
+.csrFullpage .fp-tableCell {
   align-items: unset;
 }
 
-.csrFullpage .fp-tableCell .intro{
-  padding-top: 300px;
-}
 
-.blog-list .blogMainItem .overlay .authDetails{
-  position:absolute;
+.blog-list .blogMainItem .overlay .authDetails {
+  position: absolute;
   bottom: 20px;
   right: 20px;
 }
 
-.blog .position-fixed .blog-list{
+.blog .position-fixed .blog-list {
   padding-bottom: 30px;
 }
 
-.withLove{
+.withLove {
   bottom: 35px;
   right: 40px;
   display: inline-block;
@@ -28,18 +25,209 @@
   z-index: 9;
 }
 
-.backtopTopactive{
-  opacity: 1;
+.aboutback {
+  opacity: 0 !important;
 }
 
-section.work .owl-carousel .owl-item.active:nth-child(even) .art{
+.backtopTopactive {
+  opacity: 1 !important;
+}
+
+
+.position-fixed .nicescroll-cursors{
+  height: 280px !important;
+}
+
+
+section.work .owl-carousel .owl-item.active:nth-child(even) .art {
   width: 80%;
 }
 
-header .menu .main-links li{
+header .menu .main-links li {
   width: 300px;
 }
 
-@media(max-width: 1800px){
-  
+section.about p {
+  font-size: 2rem;
+  line-height: 35px;
+}
+
+section.about h2 {
+  font-size: 6rem;
+}
+
+section.about:nth-of-type(4) .col-md-6:last-child .slide-item {
+  width: 135px !important;
+  height: 135px !important;
+  margin-bottom: 25px;
+}
+
+section.contact form textarea {
+  padding: 10px !important;
+}
+
+section.project.fp-section .fp-tableCell .desc h2,
+section.project.fp-section .fp-tableCell .statisticsTitle {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  line-height: 50px;
+}
+
+section.project.fp-section .fp-tableCell .desc p,
+section.project-details.fp-section .fp-tableCell p {
+  line-height: 30px;
+  font-size: 1.6rem;
+}
+
+section.project-details.fp-section .fp-tableCell .logos svg {
+  width: 100px;
+}
+
+section.project-details.fp-section .fp-tableCell .project-navigation .nav-button {
+  font-size: 2.2rem;
+}
+
+section.project-details.fp-section .fp-tableCell .project-navigation .nav-button img {
+  width: 20px;
+}
+
+
+.projectFullPage section,
+.projectFullPage .fp-slide,
+.projectFullPage .fp-tableCell {
+  height: auto !important;
+}
+
+section.project.fp-section .fp-tableCell .statistics h3,
+section.project.fp-section .fp-tableCell .statistics span.counter {
+  display: inline;
+  line-height: 45px;
+  font-size: 2.5rem;
+}
+section.project.fp-section .fp-tableCell .statistics span{
+  font-size: 2.5rem;
+}
+
+section.project.fp-section .fp-tableCell .statisticsContainer{
+  padding: 0 9%;
+}
+
+section.project-details.fp-section .fp-tableCell .logos svg{
+  height:100px
+}
+
+section.project-details.fp-section .fp-tableCell .project-navigation{
+  margin-top: 80px;
+}
+
+.csrFullpage .fp-tableCell{
+  align-items: center;
+}
+
+.csrFullpage .fp-tableCell p{
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  line-height: 25px;
+}
+
+.csrFullpage .fp-tableCell h1{
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 50px;
+}
+
+.csrFullpage .fp-tableCell p:last-child{
+  margin-bottom: 0;
+}
+
+
+
+.projectFullPage2 .project, .projectFullPage .project{
+  padding-bottom: 50px;
+}
+
+section.contact form button{
+  font-size: 1.5rem;
+  width: 250px;
+  height: 50px;
+}
+
+section.contact form{
+  margin-bottom: 0;
+}
+
+section.contact form textarea{
+  margin-bottom: 0;
+  height: 115px;
+}
+
+header .menu .locationsList{
+  margin-top: -40px;
+}
+
+section.about h2{
+  font-size: 5rem;
+  line-height: 60px;
+}
+
+
+@media(max-width: 1800px) {
+  section.network .fp-tableCell .circle-container .service a {
+    font-size: .8rem;
+  }
+
+  /* section.network .fp-tableCell .circle-container .service .model img{
+    width: 70% !important;
+  } */
+  section.network .fp-tableCell .circle-container .service.events .model {
+    height: 90px;
+    width: 10em;
+    top: 5px !important;
+    right: -27px !important;
+  }
+
+  section.network .fp-tableCell .circle-container .service p {
+    font-size: 1em;
+  }
+
+  section.network .fp-tableCell .circle-container .service .model {
+    height: 140px;
+  }
+}
+
+@media(max-width: 1600px) {
+  section.contact form .form-group h2 {
+    margin-bottom: 10px;
+  }
+
+  section.contact form .form-group {
+    margin-bottom: 16px;
+  }
+
+  section.contact form .form-group h2 {
+    font-size: 2.2rem;
+  }
+
+  section.contact form input,
+  section.contact form textarea {
+    font-size: 1.9rem;
+  }
+}
+
+@media(max-width: 1500px) {
+  section.about p {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+
+  section.about h2 {
+    font-size: 5rem;
+  }
+
+  section.about:nth-of-type(4) .col-md-6:last-child .slide-item {
+    width: 120px !important;
+    height: 120px !important;
+    margin-bottom: 20px;
+  }
 }

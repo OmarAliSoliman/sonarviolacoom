@@ -25,17 +25,28 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 $('.social li a img ').addClass('invertColor')
 
 
+$(window).on('scroll', function(){
+    if($(this).scrollTop() > 10){
+       $(".projectFullPage .back-to-top").addClass("backtopTopactive")
+       $(".projectFullPage .back-to-top").css("bottom", "3%")
+    }else{
+       $(".projectFullPage .back-to-top").removeClass("backtopTopactive")
+    }
+ })
+
 $('.projectFullPage').fullpage({
     //options here
     autoScrolling: true,
-    scrollHorizontally: true,
-    responsiveWidth: 1100,
+    scrollHorizontally: false,
+    responsiveWidth: 4650,
+    // scrollOverflow: true,
+
     onLeave: function (origin, destination, direction) {
         //it won't scroll if the destination is the 3rd section
-        if (destination.index !== 0) {
-            $('.back-to-top').css('opacity', 1);
+        // if (destination.index !== 0) {
+        //     $('.back-to-top').css('opacity', 1);
 
-        }
+        // }
         if (destination.index !== 0 || origin.index == 0) {
             $('.back-to-top').css('opacity', 0);
         // $('header > .logo img').attr('src', 'img/V-beta-white.svg');
@@ -43,14 +54,14 @@ $('.projectFullPage').fullpage({
 
         }
 
-        if (destination > 1) {
-            $('.back-to-top').css('opacity', 1);
-            $('.back-to-top').css('bottom', "3%");
-            $('.withLove').addClass('d-none');
-        } else {
-            $('.back-to-top').css('opacity', 0);
-            $('.withLove').removeClass('d-none');
-        }
+        // if (destination > 1) {
+        //     $('.back-to-top').css('opacity', 1);
+        //     $('.back-to-top').css('bottom', "3%");
+        //     $('.withLove').addClass('d-none');
+        // } else {
+        //     $('.back-to-top').css('opacity', 0);
+        //     $('.withLove').removeClass('d-none');
+        // }
 
 
         // var curTime = new Date().getTime();
@@ -75,3 +86,5 @@ $('.projectFullPage').fullpage({
         });
     },
 });
+
+// $('.projectFullPage').fullpage('destroy');

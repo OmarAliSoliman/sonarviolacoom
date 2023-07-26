@@ -32,7 +32,7 @@ $('.fullPage').fullpage({
         }
         if (destination > 1) {
             $('.back-to-top').css('opacity', 1);
-            $('.back-to-top').css('bottom', "3%");
+            $('.back-to-top').css('bottom', "5%");
             $('.withLove').addClass('d-none');
         } else {
             $('.back-to-top').css('opacity', 0);
