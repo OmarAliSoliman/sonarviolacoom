@@ -75,11 +75,13 @@
         if(!$mail->send()) 
         {
              
-                echo 'Oops! Something went wrong, we couldn\'t send your message.';
+          $data = ['message' => 'Please try again later', 'status' => 'error'];
+          echo json_encode($data);
               
         }else{   
                
-                echo 'Thank You! Your message has been sent.';
+          $data = ['message' => 'Thank you', 'status' => 'success'];
+          echo json_encode($data);
                  
         }
       
