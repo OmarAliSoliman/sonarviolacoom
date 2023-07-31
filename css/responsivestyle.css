@@ -7,6 +7,20 @@
 }
 
 
+header .menu .main-links li a {
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+section.work .owl-carousel .owl-item .details .title {
+  font-size: 3.5rem !important;
+  line-height: 40px;
+}
+
+section.work .owl-carousel .owl-item .details {
+  top: 60%;
+}
+
 .blog-list .blogMainItem .overlay .authDetails {
   position: absolute;
   bottom: 20px;
@@ -34,7 +48,7 @@
 }
 
 
-.position-fixed .nicescroll-cursors{
+.position-fixed .nicescroll-cursors {
   height: 280px !important;
 }
 
@@ -104,69 +118,71 @@ section.project.fp-section .fp-tableCell .statistics span.counter {
   line-height: 45px;
   font-size: 2.5rem;
 }
-section.project.fp-section .fp-tableCell .statistics span{
+
+section.project.fp-section .fp-tableCell .statistics span {
   font-size: 2.5rem;
 }
 
-section.project.fp-section .fp-tableCell .statisticsContainer{
+section.project.fp-section .fp-tableCell .statisticsContainer {
   padding: 0 9%;
 }
 
-section.project-details.fp-section .fp-tableCell .logos svg{
-  height:100px
+section.project-details.fp-section .fp-tableCell .logos svg {
+  height: 100px
 }
 
-section.project-details.fp-section .fp-tableCell .project-navigation{
+section.project-details.fp-section .fp-tableCell .project-navigation {
   margin-top: 80px;
 }
 
-.csrFullpage .fp-tableCell{
+.csrFullpage .fp-tableCell {
   align-items: center;
 }
 
-.csrFullpage .fp-tableCell p{
+.csrFullpage .fp-tableCell p {
   margin-bottom: 10px;
   font-size: 1.6rem;
   line-height: 25px;
 }
 
-.csrFullpage .fp-tableCell h1{
+.csrFullpage .fp-tableCell h1 {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 5rem;
   line-height: 50px;
 }
 
-.csrFullpage .fp-tableCell p:last-child{
+.csrFullpage .fp-tableCell p:last-child {
   margin-bottom: 0;
 }
 
 
 
-.projectFullPage2 .project, .projectFullPage .project{
+.projectFullPage2 .project,
+.projectFullPage .project {
   padding-bottom: 50px;
 }
 
-section.contact form button{
+section.contact form button {
   font-size: 1.5rem;
   width: 250px;
   height: 50px;
 }
 
-section.contact form{
+section.contact form {
   margin-bottom: 0;
 }
 
-section.contact form textarea{
+section.contact form textarea {
   margin-bottom: 0;
   height: 115px;
 }
 
-header .menu .locationsList{
+header .menu .locationsList {
   margin-top: -40px;
 }
 
-section.about h2{
+section.about h2 {
   font-size: 5rem;
   line-height: 60px;
 }
@@ -213,6 +229,30 @@ section.about h2{
   section.contact form textarea {
     font-size: 1.9rem;
   }
+
+  section.about h2 {
+    font-size: 4rem;
+  }
+
+  section.about p {
+    font-size: 1.7rem;
+    line-height: 30px;
+  }
+
+  section.about:nth-of-type(4) .col-md-6:last-child .slide-item {
+    width: 115px !important;
+    height: 115px !important;
+  }
+  section.about:nth-of-type(5) ul{
+    margin-top: 10px;
+  }
+  section.about:nth-of-type(5) ul li a h4{
+    font-size: 2rem;
+  }
+  .blog-list .mainTitle{
+    font-size: 6rem;
+  }
+
 }
 
 @media(max-width: 1500px) {
