@@ -15,6 +15,7 @@ $(document).ready(function () {
         $(this).toggleClass('open');
         $('.menu').toggleClass('open');
         $('.menu').toggleClass('flexVisiable');
+        $("html").toggleClass("openmenue");
         $('.coffee').toggleClass('visiable')
     });
     $(".back-to-top").click(function (e) {
@@ -53,6 +54,7 @@ $('.hyperLink').on('click', function () {
     $('#nav-icon').toggleClass('open');
     $('.menu').toggleClass('open');
     $('.menu').toggleClass('flexVisiable');
+    $("html").toggleClass("openmenue");
     $('.coffee').toggleClass('visiable')
     loadPagefromURL(getAttr)
 })
