@@ -300,6 +300,23 @@ section.work .owl-carousel .owl-item .art {
 
 }
 
+@media(max-width: 1600px) {
+  section.network .fp-tableCell .circle-container .service p {
+    font-size: .9em;
+  }
+
+  section.network .fp-tableCell .circle-container .service a {
+    font-size: .7rem;
+  }
+  /* section.network .fp-tableCell .circle-container .service.events .model{
+    width: 9em;
+    right: -4px !important;
+  }
+  section.network .fp-tableCell .circle-container > *{
+    margin: -9em;
+  } */
+}
+
 @media(max-width: 1500px) {
   section.about p {
     font-size: 1.5rem;
@@ -618,22 +635,7 @@ section.work .owl-carousel .owl-item .art {
   }
 }
 
-@media(max-width: 1600px) {
-  section.network .fp-tableCell .circle-container .service p {
-    font-size: .9em;
-  }
 
-  section.network .fp-tableCell .circle-container .service a {
-    font-size: .7rem;
-  }
-  section.network .fp-tableCell .circle-container .service.events .model{
-    width: 9em;
-    right: -4px !important;
-  }
-  section.network .fp-tableCell .circle-container > *{
-    margin: -9em;
-  }
-}
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .csrFullpage .fp-controlArrow {
