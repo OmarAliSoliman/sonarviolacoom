@@ -3,7 +3,7 @@
 $('.aboutFullPage').fullpage({
     autoScrolling: true,
     scrollHorizontally: true,
-    // responsiveWidth: 1100,
+    responsiveWidth: 1100,
     onLeave: function (origin, destination, direction) {
         // if (destination.index == 0) {
         //     $('.back-to-top').css('opacity', 0);
