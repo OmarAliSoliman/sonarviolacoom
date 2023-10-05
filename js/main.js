@@ -169,8 +169,20 @@ window.addEventListener('popstate', function (event) {
 
 
 function checkPages() {
+    // let checkPageName = window.location.search.replace('?', '');
+    // pages.includes(checkPageName) ? loadPage(checkPageName) : !pages.includes(checkPageName) ? $("#siteContainer").load("pages/404.html") : loadPage(checkPageName);
+
     let checkPageName = window.location.search.replace('?', '');
-    pages.includes(checkPageName) ? loadPage(checkPageName) : !pages.includes(checkPageName) ? $("#siteContainer").load("pages/404.html") : loadPage(checkPageName);
+
+    if (checkPageName === '' || checkPageName === 'index') {
+    loadPage('index');
+    } else if (pages.includes(checkPageName)) {
+    loadPage(checkPageName);
+    } else {
+    $("#siteContainer").load("pages/404.html");
+    }
+
+
     if (checkPageName === '') {
         $("#siteContainer").load("pages/homepage.html")
     }
