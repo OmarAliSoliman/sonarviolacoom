@@ -185,8 +185,52 @@ function checkPages() {
 
 
     if (checkPageName === '') {
-        $("#siteContainer").load("pages/homepage.html")
+        $("#siteContainer").load("pages/homepage.html");
+        $('meta[property="og:title"]').attr('content', "Viola Communications");
+        $('meta[property="og:type"]').attr('content', "article");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/content.jpg");
+        $('meta[property="og:url"]').attr('content', "https://viola.ae");
+        $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+        $('meta[property="og:description"]').attr('content', "Viola Communications is a well-established and fast-growing UAE based group specializing in providing fully integrated marketing and communications solutions.");
+        $('meta[name="twitter:image:alt"]').attr('content', "Viola Communications");
     }
+    
+
+    if (checkPageName === 'aboutpage') {
+        $('meta[property="og:title"]').attr('content', "Viola Communications | About Us");
+        $('meta[property="og:type"]').attr('content', "article");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/banner/V land.png");
+        $('meta[property="og:url"]').attr('content', "https://viola.ae/?aboutpage");
+        $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+        $('meta[property="og:description"]').attr('content', "Content is a strange word - I looked it up in the dictionary: happy, calm, tranquil, peaceful, and satisfying - then I realized I was on the wrong page. I Googled™ “Head of Content” and that was also a mistake, because there were about 7,600,000,000 results.");
+        $('meta[name="twitter:image:alt"]').attr('content', "Viola Communications | About Us");
+
+    }
+
+
+    if (checkPageName === 'workpage') {
+        $('meta[property="og:title"]').attr('content', "Viola Communications | Work");
+        $('meta[property="og:type"]').attr('content', "article");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/banner/V land.png");
+        $('meta[property="og:url"]').attr('content', "https://viola.ae/?workpage");
+        $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+        $('meta[property="og:description"]').attr('content', "We believe in a holistic fusion of approaches to brand transformation; integrating innovation and forward-thinking strategies to create impact.");
+        $('meta[name="twitter:image:alt"]').attr('content', "Viola Communications | Work");
+
+    }
+
+
+    if (checkPageName === 'contactpage') {
+        $('meta[property="og:title"]').attr('content', "Viola Communications | Contact");
+        $('meta[property="og:type"]').attr('content', "article");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/banner/V land.png");
+        $('meta[property="og:url"]').attr('content', "https://viola.ae/?contactpage");
+        $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+        $('meta[property="og:description"]').attr('content', "If your project could talk, what would it say?");
+        $('meta[name="twitter:image:alt"]').attr('content', "Viola Communications | Contact");
+
+    }
+
 
     if (checkPageName === 'blog1') {
         $('meta[property="og:title"]').attr('content', "Content - what's it all about?");
