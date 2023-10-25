@@ -25,7 +25,7 @@
     $mail->SMTPAuth = true;                          
     //Provide username and password     
     $mail->Username = "no-reply@viola.ae";                 
-    $mail->Password = 'Pub76944';                           
+    $mail->Password = 'Yuv20978';                           
     //If SMTP requires TLS encryption then set it
     $mail->SMTPSecure = "SSL/TLS";                           
     //Set TCP port to connect to
