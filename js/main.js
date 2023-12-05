@@ -143,6 +143,7 @@ let pages = [
     'blog13',
     'blog14',
     'blog15',
+    'blog16',
     'blogpage',
     'contactpage',
     'csrpage',
@@ -327,7 +328,7 @@ function checkPages() {
         $('meta[name="twitter:image:alt"]').attr('content', "Viola Outdoor launches taxi-top digital media screens ");
 
     }
-    if (checkPageName === 'blog10') {
+    if (checkPageName === 'blog11') {
         $('meta[property="og:title"]').attr('content', "People are complicated, but connections are simple");
         $('meta[property="og:type"]').attr('content', "article");
         $('meta[property="og:image"]').attr('content', "https://viola.ae/img/blog9new.jpg");
@@ -335,6 +336,65 @@ function checkPages() {
         $('meta[name="twitter:card"]').attr('content', "summary_large_image");
         $('meta[property="og:description"]').attr('content', "People are complicated, but connections are simple");
         $('meta[name="twitter:image:alt"]').attr('content', "People are complicated, but connections are simple");
+
+    }
+
+
+    if (checkPageName === 'blog12') {
+        $('meta[property="og:title"]').attr('content', "How to use ChatGPT and other AI-based tools responsibly");
+        $('meta[property="og:type"]').attr('content', "article");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/blog12c.jpg");
+        $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog12");
+        $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+        $('meta[property="og:description"]').attr('content', "How to use ChatGPT and other AI-based tools responsibly");
+        $('meta[name="twitter:image:alt"]').attr('content', "How to use ChatGPT and other AI-based tools responsibly");
+
+    }
+
+
+    if (checkPageName === 'blog13') {
+        $('meta[property="og:title"]').attr('content', "MENA Power List 2023: Seizing opportunities, overcoming challenges by Viola Communications’ Ammar Sharaf");
+        $('meta[property="og:type"]').attr('content', "article");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/blog13cupdate1.jpg");
+        $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog13");
+        $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+        $('meta[property="og:description"]').attr('content', "MENA Power List 2023: Seizing opportunities, overcoming challenges by Viola Communications’ Ammar Sharaf");
+        $('meta[name="twitter:image:alt"]').attr('content', "MENA Power List 2023: Seizing opportunities, overcoming challenges by Viola Communications’ Ammar Sharaf");
+
+    }
+
+
+    if (checkPageName === 'blog14') {
+        $('meta[property="og:title"]').attr('content', "OOH Industry Snapshot: Viola Comms’ Ammar Sharaf ");
+        $('meta[property="og:type"]').attr('content', "article");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/inner-photo14.jpg");
+        $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog14");
+        $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+        $('meta[property="og:description"]').attr('content', "OOH Industry Snapshot: Viola Comms’ Ammar Sharaf ");
+        $('meta[name="twitter:image:alt"]').attr('content', "OOH Industry Snapshot: Viola Comms’ Ammar Sharaf ");
+
+    }
+
+
+    if (checkPageName === 'blog15') {
+        $('meta[property="og:title"]').attr('content', "Viola “With You”: advancing an open and supportive corporate culture");
+        $('meta[property="og:type"]').attr('content', "article");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/inner-photo.jpg");
+        $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog15");
+        $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+        $('meta[property="og:description"]').attr('content', "Viola “With You”: advancing an open and supportive corporate culture");
+        $('meta[name="twitter:image:alt"]').attr('content', "Viola “With You”: advancing an open and supportive corporate culture");
+
+    }
+
+    if (checkPageName === 'blog16') {
+        $('meta[property="og:title"]').attr('content', "Nurturing Potential in Our People");
+        $('meta[property="og:type"]').attr('content', "article");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/cover-photoblog16.jpg");
+        $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog16");
+        $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+        $('meta[property="og:description"]').attr('content', "Nurturing Potential in Our People");
+        $('meta[name="twitter:image:alt"]').attr('content', "Nurturing Potential in Our People");
 
     }
 }
