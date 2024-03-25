@@ -1046,7 +1046,7 @@ S456.64,123.881,414.144,81.769z" />
         // }
 
 
-        function sendContact() {
+        function sendContact() {  
             $('#mail-status_success').hide();
             $('#mail-status_error').hide();
 
@@ -1092,11 +1092,16 @@ S456.64,123.881,414.144,81.769z" />
             var valid = true;
             $(".demoInputBox").css('background-color', '');
             $(".info").html('');
+            
             if (!$("#userName").val()) {
                 $("#userName-info").html("*");
                 $("#userName").css('border-bottom', '2px solid #722382');
                 valid = false;
-            }else{
+            } else if (!isValidUserName($("#userName").val())) {
+                $("#userName-info").html("* Username can only contain letters and spaces");
+                $("#userName").css('border-bottom', '2px solid #722382');
+                valid = false;
+            } else {
                 $("#userName").css('border-bottom', '2px solid #fff');
             }
 
@@ -1128,12 +1133,19 @@ S456.64,123.881,414.144,81.769z" />
                 $("#content-info").html("*");
                 $("textarea#content").css('border', '2px solid #722382');
                 valid = false;
-            }else{
+            } else if (!isValidContent($("#content").val())) {
+                $("#content-info").html("* Content cannot contain script or HTML tags");
+                $("textarea#content").css('border', '2px solid #722382');
+                valid = false;
+            } else {
                 $("textarea#content").css('border', '2px solid #fff');
             }
+
             return valid;
         }
 
+        
+        
         function sendNews() {
             var valid;
             valid = validateNews();
@@ -1192,6 +1204,15 @@ function validateNews() {
               return re.test(String(emailAddress).toLowerCase()); 
             }; 
 
+            function isValidContent(content) {
+                // Regular expression to check if content contains script or HTML tags
+                return !/<(.*?)script(.*?)>|<(.*?)\/(.*?)script(.*?)>|<(.*?)style(.*?)>|<(.*?)\/(.*?)style(.*?)>|<.*?>/.test(content);
+            }  
             
+            function isValidUserName(name) {
+                // Regular expression to check if username contains only letters and spaces
+                return /^[A-Za-z\s]+$/.test(name);
+            }
+
     </script>
 </div>

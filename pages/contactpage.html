@@ -26,7 +26,7 @@
             border-radius: 5px;" id="mail-status_error"> Please Try Again Later </p>
             <div class="form-group animate__animated">
                 <h2 class="animate__animated">
-                    Hello, nice to meet you :)
+                   2 Hello, nice to meet you :)
                 </h2>
                 <input type="text" name="userName" id="userName" placeholder="Your name" required
                     class="demoInputBox" pattern="^[a-zA-Z][\sa-zA-Z]*" />
@@ -57,7 +57,7 @@
                 Send Message 💬
 
                 </button> -->
-            <button type="button" class="sendEmailButton animate__animated send-button" onClick="sendContact();">Send Message
+            <button type="button" class="sendEmailButton animate__animated send-button" onClick="sendContact();">Send Message 
                 💬</button>
                 <div class="spinner-border" role="status" id="mail-status" style="display:none;">
                     <span  style="color: white; font-size: 15px;">Loading...</span>
@@ -501,7 +501,7 @@
         <script>
            
 
-        function sendContact() {
+        function sendContact() {  
             $('#mail-status_success').hide();
             $('#mail-status_error').hide();
 
@@ -547,11 +547,16 @@
             var valid = true;
             $(".demoInputBox").css('background-color', '');
             $(".info").html('');
+
             if (!$("#userName").val()) {
                 $("#userName-info").html("*");
                 $("#userName").css('border-bottom', '2px solid #722382');
                 valid = false;
-            }else{
+            } else if (!isValidUserName($("#userName").val())) {
+                $("#userName-info").html("* Username can only contain letters and spaces");
+                $("#userName").css('border-bottom', '2px solid #722382');
+                valid = false;
+            } else {
                 $("#userName").css('border-bottom', '2px solid #fff');
             }
 
@@ -583,10 +588,32 @@
                 $("#content-info").html("*");
                 $("textarea#content").css('border', '2px solid #722382');
                 valid = false;
-            }else{
+            } else if (!isValidContent($("#content").val())) {
+                $("#content-info").html("* Content cannot contain script or HTML tags");
+                $("textarea#content").css('border', '2px solid #722382');
+                valid = false;
+            } else {
                 $("textarea#content").css('border', '2px solid #fff');
             }
+
             return valid;
         }
 
+           
+           function isValidUserName(name) {  
+                // Regular expression to check if username contains only letters and spaces
+                return /^[A-Za-z\s]+$/.test(name);
+            }
+
+            function isValidEmail(emailAddress) {
+              const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+              return re.test(String(emailAddress).toLowerCase()); 
+            }; 
+
+            function isValidContent(content) {
+                // Regular expression to check if content contains script or HTML tags
+                return !/<(.*?)script(.*?)>|<(.*?)\/(.*?)script(.*?)>|<(.*?)style(.*?)>|<(.*?)\/(.*?)style(.*?)>|<.*?>/.test(content);
+            }
+
+            
       </script>
