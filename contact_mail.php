@@ -1,6 +1,6 @@
 <?php
 
-$mail_to = "ahmed.zain@viola.ae";
+$mail_to = "marketing@viola.ae";
 $name = str_replace(array("\r", "\n"), array(" ", " "), strip_tags(trim($_POST["userName"])));
 $email = filter_var(trim($_POST["userEmail"]), FILTER_SANITIZE_EMAIL);
 $phone = trim($_POST["phone"]);
@@ -29,6 +29,12 @@ if (!preg_match('/^[0-9+\-() ]+$/', $phone)) {
     $data = ['message' => 'Invalid phone number format', 'status' => 'error'];
     echo json_encode($data);
     exit;
+}
+
+if (!isValidContent($message)) {
+  $data = ['message' => 'Content cannot contain script or HTML tags', 'status' => 'error'];
+  echo json_encode($data);
+  exit;
 }
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -92,5 +98,10 @@ try {
 } catch (Exception $e) {
     $data = ['message' => 'Please try again later', 'status' => 'error'];
     echo json_encode($data);
+}
+
+function isValidContent($content) {
+  // Regular expression to check if content contains script or HTML tags
+  return !preg_match('/<(.*?)script(.*?)>|<(.*?)\/(.*?)script(.*?)>|<(.*?)style(.*?)>|<(.*?)\/(.*?)style(.*?)>|<.*?>/', $content);
 }
 ?>
