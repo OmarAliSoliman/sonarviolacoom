@@ -11,6 +11,8 @@ $('.fullPage').fullpage({
     autoScrolling: true,
     scrollHorizontally: true,
     responsiveWidth: 1100,
+    normalScrollElements: '#iti-0__country-listbox',
+    scrollOverflow:true,
     anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
     onLeave: function (origin, destination, direction) {
         $('.banner').addClass('zoomAnimation');

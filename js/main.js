@@ -32,6 +32,9 @@ $(window).load(function () {
         $('.banner .animate__animated').addClass('animate__fadeInLeft');
         $('.banner ').addClass('animate-banner');
         initializeNiceScroll();
+
+ 
+
         $("html, body").animate({ scrollTop: 0 }, "slow");
     }, 3000);
     if (window.location.href.indexOf("contact") > -1) {
@@ -62,7 +65,7 @@ $('.hyperLink').on('click', function () {
 
 // $(window).on('load', function () {
 
-    
+
 //     // $('.hyperLink2').on('load', function (e) {
 //     //     console.log(e);
 //     //     $('.hyperLink2').on('click', function () {
@@ -181,11 +184,11 @@ function checkPages() {
     let checkPageName = window.location.search.replace('?', '');
 
     if (checkPageName === '' || checkPageName === 'index') {
-    loadPage('index');
+        loadPage('index');
     } else if (pages.includes(checkPageName)) {
-    loadPage(checkPageName);
+        loadPage(checkPageName);
     } else {
-    $("#siteContainer").load("pages/404.html");
+        $("#siteContainer").load("pages/404.html");
     }
 
 
@@ -199,7 +202,7 @@ function checkPages() {
         $('meta[property="og:description"]').attr('content', "Viola Communications is a well-established and fast-growing UAE based group specializing in providing fully integrated marketing and communications solutions.");
         $('meta[name="twitter:image:alt"]').attr('content', "Viola Communications");
     }
-    
+
 
     if (checkPageName === 'aboutpage') {
         $('meta[property="og:title"]').attr('content', "Viola Communications | About Us");
