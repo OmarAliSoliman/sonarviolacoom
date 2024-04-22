@@ -23,7 +23,7 @@
     .info {
         font-size: 1.7em;
         color: #FF6600;
-        float: left;
+        float: right;
         margin: 5px 0;
         display: block;
     }
@@ -49,6 +49,7 @@
 
     .contact-form-country .iti {
         display: block;
+        margin-top: 25px;
     }
 
     .contact-form-country .iti button {
@@ -84,6 +85,24 @@
 
     .contact-form-country .iti--show-selected-dial-code .iti__selected-country {
         background: #fff;
+    }
+
+    @media(max-width:1600px) {
+        .contact-form-country .iti button {
+            font-size: 1rem;
+            height: 30px;
+        }
+
+        .contact-form-country .iti__country-container {
+            bottom: 9px;
+        }
+
+        .contact-form-country #userPhone {
+            padding-left: 90px !important;
+        }
+        .info {
+            font-size: 1em;
+        }
     }
 
     @media(max-width: 600px) {
@@ -1209,11 +1228,11 @@ S456.64,123.881,414.144,81.769z" />
             $(".info").html('');
 
             if (!$("#userName").val()) {
-                $("#userName-info").html("* Username is required");
+                $("#userName-info").html("Username is required *");
                 $("#userName").css('border-bottom', '2px solid #722382');
                 valid = false;
             } else if (!isValidUserName($("#userName").val())) {
-                $("#userName-info").html("* Username can only contain letters and spaces");
+                $("#userName-info").html("Username can only contain letters and spaces *");
                 $("#userName").css('border-bottom', '2px solid #722382');
                 valid = false;
             } else {
@@ -1221,7 +1240,7 @@ S456.64,123.881,414.144,81.769z" />
             }
 
             if (!$("#userEmail").val()) {
-                $("#userEmail-info").html("* Email is required");
+                $("#userEmail-info").html("Email is required *");
                 $("#userEmail").css('border-bottom', '2px solid #722382');
                 valid = false;
             } else {
@@ -1229,19 +1248,19 @@ S456.64,123.881,414.144,81.769z" />
             }
 
             if (!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
-                $("#userEmail-info").html("* Email not valid");
+                $("#userEmail-info").html("Email not valid *");
                 $("#userEmail").css('border-bottom', '2px solid #722382');
                 valid = false;
             } else {
-                $("#userEmail").css('border-bottom', '2px solid #fff');
+                // $("#userEmail").css('border-bottom', '2px solid #fff');
             }
 
             if (!$("#userPhone").val()) {
-                $("#userPhone-info").html("* Phone is required");
+                $("#userPhone-info").html("Phone is required *");
                 $("#userPhone").css('border-bottom', '2px solid #722382');
                 valid = false;
             } else if (!isValidPhoneNumber()) {
-                $("#userPhone-info").html("* Phone not valid");
+                $("#userPhone-info").html("Phone not valid *");
                 $("#userPhone").css('border-bottom', '2px solid #722382');
                 valid = false;
             } else {
@@ -1249,11 +1268,11 @@ S456.64,123.881,414.144,81.769z" />
             }
 
             if (!$("#content").val()) {
-                $("#content-info").html("* Content is required");
+                $("#content-info").html("Content is required *");
                 $("textarea#content").css('border', '2px solid #722382');
                 valid = false;
             } else if (!isValidContent($("#content").val())) {
-                $("#content-info").html("* Content cannot contain script or HTML tags");
+                $("#content-info").html("Content cannot contain script or HTML tags *");
                 $("textarea#content").css('border', '2px solid #722382');
                 valid = false;
             } else {
@@ -1339,8 +1358,8 @@ S456.64,123.881,414.144,81.769z" />
         function isValidPhoneNumber(value) {
 
             var input = document.querySelector("#userPhone");
-            console.log(phoneInput.isValidNumber())
-            if (phoneInput.isValidNumber()) {
+            console.log(phoneInput.isValidNumberPrecise())
+            if (phoneInput.isValidNumberPrecise()) {
                 return true;
             } else {
                 return false;
