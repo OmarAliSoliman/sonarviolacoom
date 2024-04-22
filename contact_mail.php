@@ -85,8 +85,8 @@ try {
       </html>';
 
     $mail->CharSet = 'UTF-8';
-    // $mail->addAddress("marketing@viola.ae", 'Viola Communication');
-    $mail->addAddress("nada.bahgat@viola.ae", 'Viola Communication');
+    $mail->addAddress("marketing@viola.ae", 'Viola Communication');
+    // $mail->addAddress("nada.bahgat@viola.ae", 'Viola Communication');
     $mail->isHTML(true);
     $mail->Subject = "Viola Communication - Contact Us";
     $mail->Body = $content;
