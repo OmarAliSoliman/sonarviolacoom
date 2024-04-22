@@ -1,34 +1,5 @@
 <script>
-    const input = document.querySelector("#userPhone");
-    window.intlTelInput(input, {
-        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.5/build/js/utils.js",
-        initialCountry: "ae",
-        nationalMode: true,
-        showSelectedDialCode: true,
-        strictMode: true,
-    });
 
-    // $(".iti__selected-country").on('click', function(){
-    //     if($(".iti__dropdown-content").hasClass("iti__hide")){
-    //         $.fn.fullpage.setAllowScrolling(true);
-    //         console.log("yes")
-    //     }else{
-    //         $.fn.fullpage.setAllowScrolling(false);
-    //         console.log("no")
-    //     }
-    // })
-
-    $('#iti-0__country-listbox').on('mouseenter', function () {
-        $.fn.fullpage.setAllowScrolling(false);
-        console.log("Yes")
-    });
-
-    // Enable full-page scrolling when mouse leaves the country list
-    $('#iti-0__country-listbox').on('mouseleave', function () {
-        $.fn.fullpage.setAllowScrolling(true);
-        console.log("No")
-
-    });
 </script>
 
 
@@ -767,6 +738,36 @@
 </svg>
 
 <script>
+    const input = document.querySelector("#userPhone");
+    const phoneInput = window.intlTelInput(input, {
+        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@21.2.5/build/js/utils.js",
+        initialCountry: "ae",
+        nationalMode: true,
+        showSelectedDialCode: true,
+        strictMode: true,
+    });
+    // $(".iti__selected-country").on('click', function(){
+    //     if($(".iti__dropdown-content").hasClass("iti__hide")){
+    //         $.fn.fullpage.setAllowScrolling(true);
+    //         console.log("yes")
+    //     }else{
+    //         $.fn.fullpage.setAllowScrolling(false);
+    //         console.log("no")
+    //     }
+    // })
+
+    $('#iti-0__country-listbox').on('mouseenter', function () {
+        $.fn.fullpage.setAllowScrolling(false);
+        console.log("Yes")
+    });
+
+    // Enable full-page scrolling when mouse leaves the country list
+    $('#iti-0__country-listbox').on('mouseleave', function () {
+        $.fn.fullpage.setAllowScrolling(true);
+        console.log("No")
+
+    });
+
     function sendContact() {
         $('#mail-status_success').hide();
         $('#mail-status_error').hide();
@@ -846,10 +847,13 @@
             $("#userPhone-info").html("*");
             $("#userPhone").css('border-bottom', '2px solid #722382');
             valid = false;
+        } else if (!isValidPhoneNumber()) {
+            $("#userPhone-info").html("* phone ");
+            $("#userPhone").css('border-bottom', '2px solid #722382');
+            valid = false;
         } else {
             $("#userPhone").css('border-bottom', '2px solid #fff');
         }
-
         if (!$("#content").val()) {
             $("#content-info").html("*");
             $("textarea#content").css('border', '2px solid #722382');
@@ -861,7 +865,6 @@
         } else {
             $("textarea#content").css('border', '2px solid #fff');
         }
-
         return valid;
     }
 
@@ -869,6 +872,17 @@
     function isValidUserName(name) {
         // Regular expression to check if username contains only letters and spaces
         return /^[A-Za-z\s]+$/.test(name);
+    }
+
+    function isValidPhoneNumber(value) {
+
+        var input = document.querySelector("#userPhone");
+        console.log(phoneInput.isValidNumber())
+        if (phoneInput.isValidNumber()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     function isValidEmail(emailAddress) {
