@@ -27,7 +27,7 @@
     .info {
         font-size: 1.7em;
         color: #FF6600;
-        float: left;
+        float: right;
         margin: 5px 0;
         display: block;
     }
@@ -81,6 +81,11 @@
         background: #fff;
     }
 
+    .contact-form-country .iti {
+        display: block;
+        margin-top: 25px;
+    }
+
     @media(max-width:1600px) {
         .contact-form-country .iti button {
             font-size: 1rem;
@@ -95,7 +100,7 @@
             padding-left: 90px !important;
         }
         .info {
-            font-size: 1em;
+            font-size: 1.4em;
         }
     }
 
@@ -159,7 +164,7 @@
                 <h2 class="animate__animated">
                     How can I reach you?
                 </h2>
-                <input type="email" name="userEmail" id="userEmail" placeholder="Email" class="mb-4 demoInputBox"
+                <input type="email" name="userEmail" id="userEmail" placeholder="Email" class="demoInputBox"
                     required class="demoInputBox" />
                 <span id="userEmail-info" class="info"></span>
 
@@ -858,7 +863,7 @@
             $("#userEmail").css('border-bottom', '2px solid #722382');
             valid = false;
         } else {
-            $("#userEmail").css('border-bottom', '2px solid #fff');
+            // $("#userEmail").css('border-bottom', '2px solid #fff');
         }
 
         if (!$("#userPhone").val()) {
