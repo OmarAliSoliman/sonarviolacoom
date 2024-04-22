@@ -99,6 +99,7 @@
         .contact-form-country #userPhone {
             padding-left: 90px !important;
         }
+
         .info {
             font-size: 1.4em;
         }
@@ -133,6 +134,22 @@
         .contact-form-country .form-group-zIndex .iti {
             margin-top: 20px;
         }
+
+        #mail-status_success {
+            margin-bottom: 2%;
+            font-size: initial;
+            color: green;
+            text-align: -webkit-center;
+            border: 1px solid rgb(255, 255, 255);
+            padding: 7px !important;
+            background: rgb(255, 255, 255);
+            /* display: none; */
+            font-size: 1.1rem !important;
+            width: 60%;
+            margin: 10px auto;
+            border-radius: 20px !important;
+
+        }
     }
 </style>
 <script src="js/contact.js"></script>
@@ -164,8 +181,8 @@
                 <h2 class="animate__animated">
                     How can I reach you?
                 </h2>
-                <input type="email" name="userEmail" id="userEmail" placeholder="Email" class="demoInputBox"
-                    required class="demoInputBox" />
+                <input type="email" name="userEmail" id="userEmail" placeholder="Email" class="demoInputBox" required
+                    class="demoInputBox" />
                 <span id="userEmail-info" class="info"></span>
 
                 <input type="text" name="phone" id="userPhone" placeholder="" required class="demoInputBox" />
