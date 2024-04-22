@@ -149,6 +149,7 @@ let pages = [
     'blog16',
     'blog17',
     'blog18',
+    'blog19',
     'blogpage',
     'contactpage',
     'csrpage',
@@ -400,6 +401,39 @@ function checkPages() {
         $('meta[name="twitter:card"]').attr('content', "summary_large_image");
         $('meta[property="og:description"]').attr('content', "Nurturing Potential in Our People");
         $('meta[name="twitter:image:alt"]').attr('content', "Nurturing Potential in Our People");
+
+    }
+
+    if (checkPageName === 'blog17') {
+        $('meta[property="og:title"]').attr('content', "Mitigating the Resolution Curse: Piloting a New Year of Success in Marcomms");
+        $('meta[property="og:type"]').attr('content', "article");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/cover17.jpeg");
+        $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog17");
+        $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+        $('meta[property="og:description"]').attr('content', "Mitigating the Resolution Curse: Piloting a New Year of Success in Marcomms");
+        $('meta[name="twitter:image:alt"]').attr('content', "Mitigating the Resolution Curse: Piloting a New Year of Success in Marcomms");
+
+    }
+
+    if (checkPageName === 'blog18') {
+        $('meta[property="og:title"]').attr('content', "MULTIPLY GROUP’S VIOLA COMMUNICATIONS INKS 10-YEAR PARTNERSHIP WITH ADNOC");
+        $('meta[property="og:type"]').attr('content', "article");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/cover-18.png");
+        $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog18");
+        $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+        $('meta[property="og:description"]').attr('content', "MULTIPLY GROUP’S VIOLA COMMUNICATIONS INKS 10-YEAR PARTNERSHIP WITH ADNOC");
+        $('meta[name="twitter:image:alt"]').attr('content', "MULTIPLY GROUP’S VIOLA COMMUNICATIONS INKS 10-YEAR PARTNERSHIP WITH ADNOC");
+
+    }
+
+    if (checkPageName === 'blog19') {
+        $('meta[property="og:title"]').attr('content', "Viola Outdoor expands its reach to Dubai through the first pan-Emirate network in the region");
+        $('meta[property="og:type"]').attr('content', "article");
+        $('meta[property="og:image"]').attr('content', "https://viola.ae/img/blog6.jpg");
+        $('meta[property="og:url"]').attr('content', "https://viola.ae/?blog19");
+        $('meta[name="twitter:card"]').attr('content', "summary_large_image");
+        $('meta[property="og:description"]').attr('content', "Viola Outdoor expands its reach to Dubai through the first pan-Emirate network in the region");
+        $('meta[name="twitter:image:alt"]').attr('content', "Viola Outdoor expands its reach to Dubai through the first pan-Emirate network in the region");
 
     }
 }
