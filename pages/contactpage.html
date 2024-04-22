@@ -135,7 +135,7 @@
                 </h2>
                 <input type="text" name="userName" id="userName" placeholder="Your name" required class="demoInputBox"
                     pattern="^[a-zA-Z][\sa-zA-Z]*" />
-                <span id="userName-info" class="info">Name is required</span>
+                <span id="userName-info" class="info"></span>
             </div>
             <div class="form-group animate__animated form-group-zIndex">
                 <h2 class="animate__animated">
@@ -143,10 +143,10 @@
                 </h2>
                 <input type="email" name="userEmail" id="userEmail" placeholder="Email" class="mb-4 demoInputBox"
                     required class="demoInputBox" />
-                <span id="userEmail-info" class="info">Email is required</span>
+                <span id="userEmail-info" class="info"></span>
 
                 <input type="text" name="phone" id="userPhone" placeholder="" required class="demoInputBox" />
-                <span id="userPhone-info" class="info">Phone is required</span>
+                <span id="userPhone-info" class="info"></span>
             </div>
             <div class="form-group animate__animated">
                 <h2 class="animate__animated">
@@ -816,7 +816,7 @@
         $(".info").html('');
 
         if (!$("#userName").val()) {
-            $("#userName-info").html("*");
+            $("#userName-info").html("* Username is required");
             $("#userName").css('border-bottom', '2px solid #722382');
             valid = false;
         } else if (!isValidUserName($("#userName").val())) {
@@ -828,7 +828,7 @@
         }
 
         if (!$("#userEmail").val()) {
-            $("#userEmail-info").html("*");
+            $("#userEmail-info").html("* Email is required");
             $("#userEmail").css('border-bottom', '2px solid #722382');
             valid = false;
         } else {
@@ -836,7 +836,7 @@
         }
 
         if (!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
-            $("#userEmail-info").html("*");
+            $("#userEmail-info").html("* Email not valid");
             $("#userEmail").css('border-bottom', '2px solid #722382');
             valid = false;
         } else {
@@ -844,18 +844,18 @@
         }
 
         if (!$("#userPhone").val()) {
-            $("#userPhone-info").html("*");
+            $("#userPhone-info").html("* Phone is required");
             $("#userPhone").css('border-bottom', '2px solid #722382');
             valid = false;
         } else if (!isValidPhoneNumber()) {
-            $("#userPhone-info").html("* phone ");
+            $("#userPhone-info").html("* Phone not valid ");
             $("#userPhone").css('border-bottom', '2px solid #722382');
             valid = false;
         } else {
             $("#userPhone").css('border-bottom', '2px solid #fff');
         }
         if (!$("#content").val()) {
-            $("#content-info").html("*");
+            $("#content-info").html("* Content is required");
             $("textarea#content").css('border', '2px solid #722382');
             valid = false;
         } else if (!isValidContent($("#content").val())) {
