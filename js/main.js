@@ -150,6 +150,7 @@ let pages = [
     'blog17',
     'blog18',
     'blog19',
+    'blog20',
     'blogpage',
     'contactpage',
     'csrpage',
