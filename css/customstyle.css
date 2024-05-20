@@ -50,6 +50,9 @@
   letter-spacing: 1px;
 }
 
+.blog .blog-post p{
+  margin-bottom: 25px !important;
+}
 
 @media(max-width: 1600px) {
   .blog-list .blogMainItem .overlay h1 {
