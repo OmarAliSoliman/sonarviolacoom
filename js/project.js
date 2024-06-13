@@ -25,14 +25,14 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 $('.social li a img ').addClass('invertColor')
 
 
-$(window).on('scroll', function(){
-    if($(this).scrollTop() > 10){
-       $(".projectFullPage .back-to-top").addClass("backtopTopactive")
-       $(".projectFullPage .back-to-top").css("bottom", "3%")
-    }else{
-       $(".projectFullPage .back-to-top").removeClass("backtopTopactive")
-    }
- })
+// $(window).on('scroll', function(){
+//     if($(this).scrollTop() > 10){
+//        $(".projectFullPage .back-to-top").addClass("backtopTopactive")
+//        $(".projectFullPage .back-to-top").css("bottom", "3%")
+//     }else{
+//        $(".projectFullPage .back-to-top").removeClass("backtopTopactive")
+//     }
+//  })
 
 $('.projectFullPage').fullpage({
     //options here

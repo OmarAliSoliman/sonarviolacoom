@@ -104,7 +104,7 @@
     <!-- Footer Section End --> 
 
     <!-- Go to Top Link -->
-    <a href="#" class="back-to-top">
+    <a href="#" class="back-to-top" style="display: none !important;">
       <i class="lni-chevron-up"></i>
     </a>
 

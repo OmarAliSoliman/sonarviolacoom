@@ -7,11 +7,11 @@ if(document.body.classList.contains('blogPostCopy')){
 
 }
 
-$(window).on('scroll', function(){
-   if($(this).scrollTop() > 40){
-      $(".blog .back-to-top").addClass("backtopTopactive")
-      $(".blog .back-to-top").css("bottom", "3%")
-   }else{
-      $(".blog .back-to-top").removeClass("backtopTopactive")
-   }
-})
+// $(window).on('scroll', function(){
+//    if($(this).scrollTop() > 40){
+//       $(".blog .back-to-top").addClass("backtopTopactive")
+//       $(".blog .back-to-top").css("bottom", "3%")
+//    }else{
+//       $(".blog .back-to-top").removeClass("backtopTopactive")
+//    }
+// })

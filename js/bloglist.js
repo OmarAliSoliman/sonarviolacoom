@@ -8,11 +8,11 @@ if(document.body.classList.contains('bloglist')){
 }
 
 
-$(window).on('scroll', function(){
-   if($(this).scrollTop() > 40){
-      $(".blog-list .back-to-top").addClass("backtopTopactive")
-      $(".blog-list .back-to-top").css("bottom", "3%")
-   }else{
-      $(".blog-list .back-to-top").removeClass("backtopTopactive")
-   }
-})
+// $(window).on('scroll', function(){
+//    if($(this).scrollTop() > 40){
+//       $(".blog-list .back-to-top").addClass("backtopTopactive")
+//       $(".blog-list .back-to-top").css("bottom", "3%")
+//    }else{
+//       $(".blog-list .back-to-top").removeClass("backtopTopactive")
+//    }
+// })

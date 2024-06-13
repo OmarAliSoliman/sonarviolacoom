@@ -20,15 +20,15 @@ $('.aboutFullPage').fullpage({
             $('header > .logo img').attr('src', 'img/V-logo-white.svg');
         }
 
-        if (destination > 1) {
-            $('.back-to-top').addClass('backtopTopactive');
-            $('.back-to-top').css('bottom', "5%");
-            $('.withLove').addClass('d-none');
-        } else {
-            $('.back-to-top').removeClass('backtopTopactive');
+        // if (destination > 1) {
+        //     $('.back-to-top').addClass('backtopTopactive');
+        //     $('.back-to-top').css('bottom', "5%");
+        //     $('.withLove').addClass('d-none');
+        // } else {
+        //     $('.back-to-top').removeClass('backtopTopactive');
 
-            $('.withLove').removeClass('d-none');
-        }
+        //     $('.withLove').removeClass('d-none');
+        // }
     },
     afterLoad: function (origin, destination, direction) {
         $('.active .animate__animated').addClass('animate__fadeInLeft d-block');
