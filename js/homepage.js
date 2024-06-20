@@ -11,7 +11,7 @@ $('.fullPage').fullpage({
     autoScrolling: true,
     scrollHorizontally: true,
     responsiveWidth: 1100,
-    normalScrollElements: '#iti-0__country-listbox',
+    normalScrollElements: '#iti-0__country-listbox, #contactForm',
     // normalScrollElementTouchThreshold: 200,
     // touchSensitivity: 50,
     scrollOverflow:true,

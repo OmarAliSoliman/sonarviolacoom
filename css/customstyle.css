@@ -125,19 +125,24 @@
 }
 
 section.contact {
-  padding: 600px 0;
+  /* padding: 600px 0; */
 }
 
 .choose_department .choose_department_cards_wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+}
+
+section.contact form input,
+section.contact form textarea {
+  height: 50px;
 }
 
 .choose_department .form-group {
   /* margin-top: 3px ; */
   margin-bottom: 19px !important;
-  width: calc(100% / 3);
+  width: calc(100% / 4);
 }
 
 .choose_department label {
@@ -300,10 +305,11 @@ section.about:nth-of-type(5) .col-md-6:last-child {
   transition: all .3s ease-in-out;
 }
 
-.about_awards_section .mobile_arrow{
+.about_awards_section .mobile_arrow {
   display: none;
 }
-.about_awards_section .desltop_arrow{
+
+.about_awards_section .desltop_arrow {
   display: block;
 }
 
@@ -320,19 +326,17 @@ section.about:nth-of-type(5) .col-md-6:last-child {
   fill: #881EB2;
 }
 
-.home_contact_form_padding{
+.home_contact_form_padding {
   /* padding-top: 150px !important;
   padding-bottom: 50px !important; */
 }
 
-#contactForm{
-  /* height: 70%;
-  overflow-y: auto; */
+/* #contactForm{
   padding-top: 150px;
   padding-bottom: 50px;
-}
+} */
 
-.home_contact_form_padding .fp-scrollable{
+.home_contact_form_padding .fp-scrollable {
   padding-right: 30px;
 }
 
@@ -344,11 +348,12 @@ section.about:nth-of-type(5) .col-md-6:last-child {
   }
 
   section.contact {
-    padding: 500px 0;
+    /* padding: 500px 0; */
   }
 
-  .choose_department h2 {
-    font-size: 2.2rem;
+  .choose_department h2,
+  .form-group h2 {
+    font-size: 2.2rem !important;
   }
 }
 
@@ -442,7 +447,7 @@ section.about:nth-of-type(5) .col-md-6:last-child {
   }
 
   .choose_department .form-group {
-    width: calc(100% / 2);
+    width: calc(100% / 2) !important;
   }
 
   section.contact {
@@ -478,12 +483,13 @@ section.about:nth-of-type(5) .col-md-6:last-child {
     align-items: flex-start !important;
     margin: 20px 0;
   }
+
   .about_awards_section .ward_sider_arrow li {
     width: 50px;
     height: 50px;
   }
 
-  .about_awards_section .ward_sider_arrow li svg{
+  .about_awards_section .ward_sider_arrow li svg {
     height: 25px;
   }
 
@@ -494,24 +500,33 @@ section.about:nth-of-type(5) .col-md-6:last-child {
   .about_awards_section .award_content .card_title {
     font-size: 2.5rem;
   }
-  .about_awards_section .award_content .card_icon img{
+
+  .about_awards_section .award_content .card_icon img {
     width: 120px;
   }
-  .order1mobile{
+
+  .order1mobile {
     order: 1;
   }
-  .order2mobile{
+
+  .order2mobile {
     order: 2;
   }
-  .about_awards_section .mobile_arrow{
+
+  .about_awards_section .mobile_arrow {
     display: block !important;
     margin-top: 60px !important;
   }
-  .about_awards_section .mobile_arrow li{
+
+  .about_awards_section .mobile_arrow li {
     margin: 0 15px !important;
   }
-  .about_awards_section .desltop_arrow{
+
+  .about_awards_section .desltop_arrow {
     display: none !important;
+  }
+  .home_contact_form_padding{
+    padding: 500px 0 !important;
   }
 }
 
@@ -533,10 +548,38 @@ section.about:nth-of-type(5) .col-md-6:last-child {
   }
 }
 
+@media(max-width: 1930px) {
+
+  section.contact form .form-group h2,
+  .choose_department h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 40px;
+    margin-bottom: 11px;
+  }
+
+  section.contact form textarea {
+    margin-bottom: 0;
+    height: 91px;
+  }
+
+  .choose_department .form-group {
+    width: calc(100% / 4);
+  }
+
+  section.contact form textarea {
+    margin-bottom: 0;
+    height: 84px !important;
+  }
+}
+
 @media (max-width: 1800px) {
   section.about p {
     font-size: 1.6rem !important;
     line-height: 28px !important;
+  }
+  .cinatc_info .con_card {
+    margin-bottom: 9px !important;
   }
 }
 
@@ -577,6 +620,32 @@ section.about:nth-of-type(5) .col-md-6:last-child {
     width: 215px;
     height: 215px;
   }
+
+  .home_contact_form_padding #contactForm {
+    /* padding-top: 60px !important;
+    padding-bottom: 50px !important; */
+  }
+
+  section.contact form input,
+  section.contact form textarea {
+    height: 41px;
+  }
+
+  section.contact form textarea {
+    margin-bottom: 0;
+    height: 70px !important;
+  }
+
+  section.contact form button {
+    font-size: 1.5rem;
+    width: 250px;
+    height: 40px !important;
+  }
+  .choose_department h2,
+  .form-group h2 {
+    font-size: 2.2rem !important;
+  }
+
 }
 
 @media (max-width: 991px) {
