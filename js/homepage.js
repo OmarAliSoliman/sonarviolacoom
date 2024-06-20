@@ -11,9 +11,9 @@ $('.fullPage').fullpage({
     autoScrolling: true,
     scrollHorizontally: true,
     responsiveWidth: 1100,
-    normalScrollElements: '#iti-0__country-listbox, #contactForm',
-    normalScrollElementTouchThreshold: 200,
-    touchSensitivity: 50,
+    normalScrollElements: '#iti-0__country-listbox',
+    // normalScrollElementTouchThreshold: 200,
+    // touchSensitivity: 50,
     scrollOverflow:true,
     anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
     onLeave: function (origin, destination, direction) {
