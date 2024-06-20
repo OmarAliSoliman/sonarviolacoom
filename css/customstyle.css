@@ -42,7 +42,7 @@
   font-size: 1.8rem;
 }
 
-.blog-list .blogMainItem .overlay .authDetails img{
+.blog-list .blogMainItem .overlay .authDetails img {
   margin-right: 13px;
 }
 
@@ -50,7 +50,7 @@
   letter-spacing: 1px;
 }
 
-.blog .blog-post p{
+.blog .blog-post p {
   margin-bottom: 25px !important;
 }
 
@@ -58,11 +58,297 @@
   margin-bottom: 50px !important;
 }
 
+.cinatc_info {
+  text-align: left;
+}
+
+.cinatc_info .con_card {
+  margin-right: 60px;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cinatc_info .con_card span {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.cinatc_info .con_card img {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.choose_department {
+  text-align: left;
+}
+
+.choose_department h2 {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 26px;
+  font-weight: bold;
+}
+
+
+.choose_department .choose_department_card {
+  display: flex;
+  align-items: center;
+}
+
+.choose_department .choose_department_card p {
+  color: #9388BA;
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.choose_department .choose_department_card .sqiare_selector {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid #fff;
+  flex: none;
+}
+
+.choose_department .choose_department_card .sqiare_selector .color {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+section.contact {
+  padding: 600px 0;
+}
+
+.choose_department .choose_department_cards_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.choose_department .form-group {
+  /* margin-top: 3px ; */
+  margin-bottom: 19px !important;
+  width: calc(100% / 3);
+}
+
+.choose_department label {
+  cursor: pointer;
+  position: relative;
+}
+
+.choose_department label input {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.choose_department label input[type="radio"]:checked~.choose_department_card .sqiare_selector .color {
+  background-color: #fff !important;
+}
+
+.choose_department label input[type="radio"]:checked~.choose_department_card p {
+  color: #fff !important;
+}
+
+section.about:nth-of-type(5) .col-md-6:last-child {
+  right: 0 !important;
+  background: url(../img/About-ViolaLogo-bg.jpg) no-repeat center !important;
+  background-size: cover !important;
+}
+
+.about_clients_section .members_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about_clients_section .members_cards .member_card_wrapper {
+  width: 50%;
+  margin-top: 60px;
+}
+
+.about_clients_section .members_cards .member_card_wrapper .member_card {
+  width: 240px;
+  height: 240px;
+  background-color: #fff !important;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_clients_section .members_cards .member_card_wrapper .member_card img {
+  width: 75%;
+}
+
+.about_awards_section .clients_section {
+  padding-top: 200px;
+  z-index: 4;
+}
+
+.about_awards_section .new_bg {
+  background: url(../images/awards-big-img-left.png) !important;
+  background-size: cover !important;
+  padding: 0 130px;
+}
+
+.about_awards_section .clients_section_stripe {
+  position: absolute;
+  height: 100%;
+  right: 0;
+}
+
+.about_awards_section .clients_section .card_img {
+  width: 100%;
+  height: 500px;
+  max-height: 90%;
+  position: relative;
+}
+
+.about_awards_section .clients_section .card_img .img_parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about_awards_section .clients_section .card_img .img_parent img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about_awards_section .col-md-12:first-child {
+  padding-left: 50px !important;
+  padding-right: 90px;
+}
+
+.about_awards_section .award_content {
+  margin-bottom: 15px;
+}
+
+
+.about_awards_section .award_content .card_icon {
+  margin-right: 30px;
+  flex: none;
+}
+
+.about_awards_section .award_content .card_icon img {
+  width: 155px;
+}
+
+.about_awards_section .award_content .card_title {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+  margin-right: auto;
+  padding-left: 0;
+}
+
+.about_awards_section .awards_slider_wrapper {
+  padding-top: 50px;
+}
+
+.about_awards_section .award_content p {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.about_awards_section .awards_slider .slider_item h5 {
+  font-size: 8.1rem;
+  font-weight: bold;
+  color: #EFEFEF;
+  text-align: center;
+  transition: all .3s ease-in-out;
+}
+
+.about_awards_section .awards_slider .slick-current h5 {
+  color: #301464;
+  font-size: 9.5rem !important;
+}
+
+.about_awards_section .ward_sider_arrow {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.about_awards_section .ward_sider_arrow li {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #9324BF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  border: 1px solid #881EB2;
+  transition: all .3s ease-in-out;
+}
+
+.about_awards_section .mobile_arrow{
+  display: none;
+}
+.about_awards_section .desltop_arrow{
+  display: block;
+}
+
+
+.about_awards_section .ward_sider_arrow li svg rect {
+  transition: all .3s ease-in-out;
+}
+
+.about_awards_section .ward_sider_arrow li:hover {
+  background-color: #fff;
+}
+
+.about_awards_section .ward_sider_arrow li:hover svg rect {
+  fill: #881EB2;
+}
+
+.home_contact_form_padding{
+  /* padding-top: 150px !important;
+  padding-bottom: 50px !important; */
+}
+
+#contactForm{
+  /* height: 70%;
+  overflow-y: auto; */
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.home_contact_form_padding .fp-scrollable{
+  padding-right: 30px;
+}
+
 @media(max-width: 1600px) {
   .blog-list .blogMainItem .overlay h1 {
     font-size: 2.4rem;
     line-height: 31px;
     height: 96px;
+  }
+
+  section.contact {
+    padding: 500px 0;
+  }
+
+  .choose_department h2 {
+    font-size: 2.2rem;
   }
 }
 
@@ -73,6 +359,7 @@
     height: 76px;
   }
 }
+
 
 @media(max-width: 991px) {
   .blog .position-fixed {
@@ -122,6 +409,8 @@
   }
 }
 
+
+
 @media(max-width: 600px) {
   .blog .blog-post h1 {
     font-size: 3rem !important;
@@ -142,12 +431,87 @@
     height: 44px;
     -webkit-line-clamp: 2;
   }
+
   .blog-list .blogMainItem .overlay .authDetails img {
     width: 40px;
     height: 40px;
   }
-  .blog-list .blogMainItem .overlay .authDetails h6{
+
+  .blog-list .blogMainItem .overlay .authDetails h6 {
     font-size: 1.4rem;
+  }
+
+  .choose_department .form-group {
+    width: calc(100% / 2);
+  }
+
+  section.contact {
+    padding: 550px 0;
+  }
+
+  .choose_department .choose_department_card p {
+    font-size: 14px;
+  }
+
+  .cinatc_info .con_card {
+    margin-bottom: 12px;
+    margin-top: 10px;
+  }
+
+  .about_awards_section {
+    overflow: hidden;
+  }
+
+  .about_awards_section .new_bg {
+    flex-direction: column;
+    padding: 20px !important;
+  }
+
+  .about_awards_section .ward_sider_arrow {
+    position: unset;
+    transform: none !important;
+    left: 0;
+  }
+
+  .about_awards_section .award_content {
+    flex-direction: column;
+    align-items: flex-start !important;
+    margin: 20px 0;
+  }
+  .about_awards_section .ward_sider_arrow li {
+    width: 50px;
+    height: 50px;
+  }
+
+  .about_awards_section .ward_sider_arrow li svg{
+    height: 25px;
+  }
+
+  .about_awards_section .award_content .card_icon img {
+    margin-bottom: 20px;
+  }
+
+  .about_awards_section .award_content .card_title {
+    font-size: 2.5rem;
+  }
+  .about_awards_section .award_content .card_icon img{
+    width: 120px;
+  }
+  .order1mobile{
+    order: 1;
+  }
+  .order2mobile{
+    order: 2;
+  }
+  .about_awards_section .mobile_arrow{
+    display: block !important;
+    margin-top: 60px !important;
+  }
+  .about_awards_section .mobile_arrow li{
+    margin: 0 15px !important;
+  }
+  .about_awards_section .desltop_arrow{
+    display: none !important;
   }
 }
 
@@ -160,5 +524,64 @@
   .blog .articleDetails {
     flex-direction: column;
     align-items: flex-start !important;
+  }
+}
+
+@media (max-width: 1800px) {
+  section.about h2 {
+    font-size: 3.3rem !important;
+  }
+}
+
+@media (max-width: 1800px) {
+  section.about p {
+    font-size: 1.6rem !important;
+    line-height: 28px !important;
+  }
+}
+
+@media(max-height: 768px) {
+  .about_awards_section .awards_slider_wrapper {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 1700px) {
+  section.about h2 {
+    font-size: 3rem !important;
+  }
+
+
+
+  .about_awards_section .awards_slider .slider_item h5 {
+    font-size: 7.1rem;
+  }
+
+  .about_awards_section .awards_slider .slick-current h5 {
+    font-size: 8.5rem !important;
+  }
+
+}
+
+@media (max-width: 1700px) {
+  section.about p {
+    font-size: 1.5rem !important;
+    line-height: 26px !important;
+  }
+
+  .about_clients_section .members_cards .member_card_wrapper {
+    margin-top: 40px;
+  }
+
+  .about_clients_section .members_cards .member_card_wrapper .member_card {
+    width: 215px;
+    height: 215px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about_clients_section .members_cards .member_card_wrapper .member_card {
+    width: 130px;
+    height: 130px;
   }
 }
