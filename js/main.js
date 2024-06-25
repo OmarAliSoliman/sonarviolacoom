@@ -155,7 +155,7 @@ let pages = [
     'blog22',
     'blogpage',
     'contactpage',
-    'csrpage',
+    'violawithyou',
     'homepage',
     'project1',
     'project2',
