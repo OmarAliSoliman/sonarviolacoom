@@ -202,7 +202,7 @@
                 <div class="choose_department_cards_wrapper">
                     <div class="form-group">
                         <label for="choose-1">
-                            <input type="checkbox" id="choose-1" name="chosedepar" id="">
+                            <input type="checkbox" id="choose-1" name="chosedepar[]" value="Viola Outdoor">
                             <div class="choose_department_card">
                                 <div class="sqiare_selector"><span class="color"></span></div>
                                 <p>Viola Outdoor</p>
@@ -211,7 +211,7 @@
                     </div>
                     <div class="form-group">
                         <label for="choose-2">
-                            <input type="checkbox" id="choose-2" name="chosedepar" id="">
+                            <input type="checkbox" id="choose-2" name="chosedepar[]" value="Viola Advertising">
                             <div class="choose_department_card">
                                 <div class="sqiare_selector"><span class="color"></span></div>
                                 <p>Viola Advertising</p>
@@ -220,7 +220,7 @@
                     </div>
                     <div class="form-group">
                         <label for="choose-3">
-                            <input type="checkbox" id="choose-3" name="chosedepar" id="">
+                            <input type="checkbox" id="choose-3" name="chosedepar[]" value="Viola PR">
                             <div class="choose_department_card">
                                 <div class="sqiare_selector"><span class="color"></span></div>
                                 <p>Viola PR</p>
@@ -230,7 +230,7 @@
 
                     <div class="form-group">
                         <label for="choose-4">
-                            <input type="checkbox" id="choose-4" name="chosedepar" id="">
+                            <input type="checkbox" id="choose-4" name="chosedepar[]" value="Viola Producers">
                             <div class="choose_department_card">
                                 <div class="sqiare_selector"><span class="color"></span></div>
                                 <p>Viola Producers</p>
@@ -240,7 +240,7 @@
 
                     <div class="form-group">
                         <label for="choose-5">
-                            <input type="checkbox" id="choose-5" name="chosedepar" id="">
+                            <input type="checkbox" id="choose-5" name="chosedepar[]" value="Viola Events">
                             <div class="choose_department_card">
                                 <div class="sqiare_selector"><span class="color"></span></div>
                                 <p>Viola Events</p>
@@ -250,7 +250,7 @@
 
                     <div class="form-group">
                         <label for="choose-6">
-                            <input type="checkbox" id="choose-6" name="chosedepar" id="">
+                            <input type="checkbox" id="choose-6" name="chosedepar[]" value="Viola Interactive">
                             <div class="choose_department_card">
                                 <div class="sqiare_selector"><span class="color"></span></div>
                                 <p>Viola Interactive</p>
@@ -260,7 +260,7 @@
 
                     <div class="form-group">
                         <label for="choose-7">
-                            <input type="checkbox" id="choose-7" name="chosedepar" id="">
+                            <input type="checkbox" id="choose-7" name="chosedepar[]" value="Viola Planning and Consultancy">
                             <div class="choose_department_card">
                                 <div class="sqiare_selector"><span class="color"></span></div>
                                 <p>Viola Planning & Consultancy</p>
@@ -902,13 +902,25 @@
             $('.send-button').hide();
             $("#mail-status").show();
 
+
+            var formData = $('#contactForm').serialize();
+
+
+            // var form = document.getElementById('contactForm');
+            // var formData = new FormData(form);
+
+            console.log('Posting the following: ', formData);
+
+
+
             jQuery.ajax({
                 url: "contact_mail.php",
-                data: 'userName=' + $("#userName").val() + '&userEmail=' +
-                    $("#userEmail").val() + '&phone=' +
-                    $("#userPhone").val() + '&content=' +
-                    $(content).val(),
+                // data: 'userName=' + $("#userName").val() + '&userEmail=' +
+                //     $("#userEmail").val() + '&phone=' +
+                //     $("#userPhone").val() + '&content=' +
+                //     $(content).val(),
                 type: "POST",
+                data: formData,
                 success: function (data) {
                     // $("#mail-status").html(data);
 

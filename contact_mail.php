@@ -133,8 +133,8 @@ if ($stmt->execute()) {
         </html>';
   
       $mail->CharSet = 'UTF-8';
-      // $mail->addAddress("marketing@viola.ae", 'Viola Communication');
-      $mail->addAddress("hossam.hosny@viola.ae", 'Viola Communication');
+      $mail->addAddress("marketing@viola.ae", 'Viola Communication');
+      // $mail->addAddress("hossam.hosny@viola.ae", 'Viola Communication');
       $mail->isHTML(true);
       $mail->Subject = "Viola Communication - Contact Us";
       $mail->Body = $content;
