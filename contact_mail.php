@@ -1,17 +1,17 @@
 <?php
 
-// // Database Live configuration
-// $servername = "localhost";
-// $username = "urkkqqzuzk";
-// $password = "xPtQDTN3GA";
-// $dbname = "urkkqqzuzk";
+// Database Live configuration
+$servername = "localhost";
+$username = "urkkqqzuzk";
+$password = "xPtQDTN3GA";
+$dbname = "urkkqqzuzk";
 
 
 // Database Local configuration
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "viola_comm";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $dbname = "viola_comm";
 
 
 // Create connection
