@@ -1,10 +1,18 @@
 <?php
 
-// Database configuration
+// // Database Live configuration
+// $servername = "localhost";
+// $username = "urkkqqzuzk";
+// $password = "xPtQDTN3GA";
+// $dbname = "urkkqqzuzk";
+
+
+// Database Local configuration
 $servername = "localhost";
-$username = "urkkqqzuzk";
-$password = "xPtQDTN3GA";
-$dbname = "urkkqqzuzk";
+$username = "root";
+$password = "";
+$dbname = "viola_comm";
+
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
