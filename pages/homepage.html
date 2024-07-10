@@ -1298,14 +1298,15 @@ S456.64,123.881,414.144,81.769z" />
 
                 $('.send-button').hide();
                 $("#mail-status").show();
-
+                var formData = new FormData(document.getElementById('contactForm'));
                 jQuery.ajax({
                     url: "contact_mail.php",
-                    data: 'userName=' + $("#userName").val() + '&userEmail=' +
-                        $("#userEmail").val() + '&phone=' +
-                        $("#userPhone").val() + '&content=' +
-                        $(content).val(),
+                    // data: 'userName=' + $("#userName").val() + '&userEmail=' +
+                    //     $("#userEmail").val() + '&phone=' +
+                    //     $("#userPhone").val() + '&content=' +
+                    //     $(content).val(),
                     type: "POST",
+                    data: formData,
                     success: function (data) {
                         // $("#mail-status").html(data);
 
