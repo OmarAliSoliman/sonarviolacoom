@@ -137,11 +137,11 @@ if ($stmt->execute()) {
       $data = ['message' => 'Thank you', 'status' => 'success'];
       echo json_encode($data);
   } catch (Exception $e) {
-      $data = ['message' => 'Please try again later', 'status' => 'error'];
+      $data = ['message' => 'Could not send email. Please try again later'.$e, 'status' => 'error'];
       echo json_encode($data);
   }
 } else {
-  $data = ['message' => 'Please try again later', 'status' => 'error'];
+  $data = ['message' => 'Could not save to database. Please try again later'.$e, 'status' => 'error'];
   echo json_encode($data);
 }
 
