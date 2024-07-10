@@ -130,7 +130,7 @@ function loadPage(getAttr) {
 
 let pages = [
     'aboutpage',
-    'blog-list-page',
+    'news-insight-page',
     'blog1',
     'blog2',
     'blog3',
