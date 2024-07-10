@@ -66,7 +66,7 @@ require_once "vendor/autoload.php";
 // Save data to database
 $sql = "INSERT INTO contact_form (userName, userEmail, userPhone, departments, content) VALUES (?, ?, ?, ?, ?)";
 $stmt = $conn->prepare($sql);
-$stmt->bind_param("sssss", $userName, $userEmail, $userPhone, $departmentsStr, $content);
+$stmt->bind_param("sssss", $name, $email, $phone, $departmentsStr, $message);
 
 
 
