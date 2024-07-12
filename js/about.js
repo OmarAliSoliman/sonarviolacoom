@@ -13,11 +13,18 @@ $('.aboutFullPage').fullpage({
         //     $('header > .logo img').attr('src', 'img/V-beta.svg');
         //     $('.back-to-top').css('opacity', 1);
         // }
-        // $('.videoItem').get(0).pause();
         $('header > .logo img').attr('src', 'img/V-logo.svg');
         // $('.back-to-top').css('opacity', 1);
         if ($(window).width() < 600) {
             $('header > .logo img').attr('src', 'img/V-logo-white.svg');
+        }
+
+        console.log("Origin: "+origin);
+        console.log("Destination: "+destination);
+        console.log("Direction: "+direction);
+        if (origin == 3) {
+            $('#bgvid').get(0).pause();
+            $('#bgvidtop').get(0).pause();
         }
 
         // if (destination > 1) {
@@ -32,7 +39,15 @@ $('.aboutFullPage').fullpage({
     },
     afterLoad: function (origin, destination, direction) {
         $('.active .animate__animated').addClass('animate__fadeInLeft d-block');
-        // $('.videoItem').get(0).play()
+
+
+        console.log("Origin: "+origin);
+        console.log("Destination: "+destination);
+        console.log("Direction: "+direction);
+        if(destination == 3){
+            $('#bgvid').get(0).play()
+            $('#bgvidtop').get(0).play()
+        }
 
         $('header > .logo img').attr('src', 'img/V-logo.svg');
         if ($(window).width() < 600) {
