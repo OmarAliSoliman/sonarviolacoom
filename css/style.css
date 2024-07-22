@@ -1917,6 +1917,17 @@ section.about:nth-of-type(5) ul {
           justify-content: space-between;
 }
 
+section.about:nth-of-type(5) .card_bod ul, section.about:nth-of-type(5) .card_body ul {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 section.about:nth-of-type(5) ul li a {
   font-weight: 500;
   font-size: 3rem;
