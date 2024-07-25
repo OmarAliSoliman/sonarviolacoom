@@ -1,4 +1,4 @@
-<script src="js/homepage.js?v=1.9" type="text/javascript"></script>
+<script src="js/homepage.js?v=1.13" type="text/javascript"></script>
 <style>
     .demoInputBox {
         padding: 10px;
@@ -211,11 +211,14 @@
         </button>
     </section>
     <section class="video section" id="section2">
-        <svg class="muted">
+        <!-- <svg class="muted">
             <use xlink:href="#mute" />
-        </svg>
-        <video id="home-video" class="videoItem" pause muted playsinline>
-            <source src="./img/home_video.webm" type="video/webm">
+        </svg> -->
+        <video id="home-video" class="videoItem d-none d-md-block" pause muted playsinline loop>
+            <source src="./img/home_video_horizontal_desktop.webm" type="video/webm">
+            <!-- <source src="movie.ogg" type="video/ogg"> -->Your browser does not support the video tag.</video>
+        <video id="home-video-mobile" class="videoItem d-md-none" pause muted playsinline loop>
+            <source src="./img/home_video_vertical_mobile.webm" type="video/webm">
             <!-- <source src="movie.ogg" type="video/ogg"> -->Your browser does not support the video tag.</video>
     </section>
     <section class="network section ">

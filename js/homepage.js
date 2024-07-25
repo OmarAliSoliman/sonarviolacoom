@@ -77,6 +77,21 @@ $('.fullPage').fullpage({
     }
 });
 
+$(document).ready(function(){
+    var windowsize = $(window).width();
+    console.log("Window loaded!");
+    console.log(windowsize);
+    if(windowsize < 768)
+    {
+        console.log("Width less than 768");
+        setTimeout(() => {
+            $('#home-video-mobile').get(0).play();
+            console.log("Play video!!");
+        }, 3000);
+        
+    }
+});
+
 // $(document).on('click', '.scrollDown', function () {
 //     fullpage_api.moveTo('page2', 1);
 // });
