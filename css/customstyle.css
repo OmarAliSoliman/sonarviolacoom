@@ -532,6 +532,9 @@ header .menu .secondary-links li:first-child {
 .csrFullpage .slide_img_content .slide_img_first img {
   width: 50%;
 }
+.csrFullpage .slide_img_content .violawithyou_logo img {
+  width: 30%;
+}
 
 .csrFullpage .slide_img_content .slide_img_second img {
   width: 243px;
@@ -553,7 +556,7 @@ header .menu .secondary-links li:first-child {
 
 .csrFullpage .slide_img_content .slide_img_second .slide_img_body h5,
 .csrFullpage .slide_img_content .slide_img_second .slide_img_body p {
-  text-align: left;
+  /* text-align: left; */
   width: 100%;
 }
 
@@ -868,6 +871,10 @@ footer .sub-menu {
   }
   .csrFullpage .slide_img_content .slide_img_first{
     padding-top: 100px;
+  }
+  .csrFullpage .slide_img_content .violawithyou_logo{
+    display: none;
+    padding-top: 0px;
   }
 
 }
