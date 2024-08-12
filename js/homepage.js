@@ -87,7 +87,7 @@ $(document).ready(function(){
         setTimeout(() => {
             $('#home-video-mobile').get(0).play();
             console.log("Play video!!");
-        }, 3000);
+        }, 5000);
         
     }
 });

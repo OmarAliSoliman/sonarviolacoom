@@ -25,6 +25,7 @@
   overflow: hidden;
   display: -webkit-box;
   text-overflow: ellipsis;
+  line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   height: 105px;
@@ -121,10 +122,6 @@
   transform: translate(-50%, -50%);
   background-color: transparent;
   border-radius: 3px;
-}
-
-section.contact {
-  /* padding: 600px 0; */
 }
 
 .choose_department .choose_department_cards_wrapper {
@@ -289,11 +286,6 @@ section.about:nth-of-type(5) .col-md-6:last-child {
   font-weight: bold;
 }
 
-.about_awards_section .awards_slider {
-  /* border: 1px solid #000; */
-  /* height: 100%; */
-}
-
 .about_awards_section .awards_slider .slick-list {
   padding: 0 0 !important;
   /* border: 1px solid red; */
@@ -302,13 +294,6 @@ section.about:nth-of-type(5) .col-md-6:last-child {
 .about_awards_section .awards_slider .slick-slide {
   height: auto;
 }
-
-/* .about_awards_section .awards_slider .slick-track {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: stretch;
-} */
 
 .about_awards_section .awards_slider .slider_item h5 {
   font-size: 9.1rem;
@@ -377,15 +362,44 @@ section.about:nth-of-type(5) .col-md-6:last-child {
   fill: #881eb2;
 }
 
-.home_contact_form_padding {
-  /* padding-top: 150px !important;
-  padding-bottom: 50px !important; */
+
+section.about .bgvidparent {
+  position: relative; 
+  display: flex; 
+  justify-content: center; 
+  overflow: hidden;
+}
+section.about .bgvidholder{
+  width: 100%; 
+  height: 100%;
+}
+section.about .bgvid{
+  object-fit: cover; 
+  object-position: center; 
+  height: auto; 
+  width: 110%; 
+  filter: blur(4px); 
+  transform: scale(1.03);
+}
+section.about .bgvidoverlay{
+  width: 100%;
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  z-index: 3;
+}
+section.about .bgvidtop{
+  object-fit: cover; 
+  object-position: center; 
+  height: 100%; 
+  width: auto; 
+  position: absolute; 
+  z-index: 10;
 }
 
-/* #contactForm{
-  padding-top: 150px;
-  padding-bottom: 50px;
-} */
+
 
 .home_contact_form_padding .fp-scrollable {
   padding-right: 30px;
@@ -610,10 +624,6 @@ footer .sub-menu {
     height: 96px;
   }
 
-  section.contact {
-    /* padding: 500px 0; */
-  }
-
   .choose_department h2,
   .form-group h2 {
     font-size: 2.2rem !important;
@@ -678,9 +688,6 @@ footer .sub-menu {
     top: 40px;
   }
 
-  .blog .articleDetails {
-    /* flex-direction: column; */
-  }
 
   .blog .blog-post .articleDetails .authorImage {
     margin-right: 13px;
@@ -701,6 +708,24 @@ footer .sub-menu {
   .csrFullpage .slide_img_content .slide_img_first img {
     margin-bottom: 15px;
   }
+
+  section.about .bgvidparent {
+    position: relative; 
+    display: table-cell; 
+    justify-content: center; 
+    overflow: auto;
+    background: none;
+    padding: 0;
+  }
+  section.about .bgvidholder{
+    display: none;
+  }
+  section.about .bgvidtop {
+    height: auto;
+    position: relative;
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -721,6 +746,7 @@ footer .sub-menu {
     font-size: 1.8rem;
     line-height: 21px;
     height: 44px;
+    line-clamp: 2;
     -webkit-line-clamp: 2;
   }
 
@@ -790,6 +816,16 @@ footer .sub-menu {
 
   .about_awards_section .award_content .card_icon img {
     width: 120px;
+  }
+
+
+  section.about .bgvidparent {
+    position: relative; 
+    display: table-cell; 
+    justify-content: center; 
+    overflow: auto;
+    background: none !important;
+    padding: 0 !important;
   }
 
   .order1mobile {
@@ -973,11 +1009,6 @@ footer .sub-menu {
   .about_clients_section .members_cards .member_card_wrapper .member_card {
     width: 215px;
     height: 215px;
-  }
-
-  .home_contact_form_padding #contactForm {
-    /* padding-top: 60px !important;
-    padding-bottom: 50px !important; */
   }
 
   section.contact form input,

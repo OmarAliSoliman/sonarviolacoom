@@ -193,7 +193,7 @@ function checkPages() {
     let checkPageName = window.location.search.replace('?', '');
 
     if (checkPageName === '' || checkPageName === 'index') {
-        loadPage('index');
+        //loadPage('index');
     } else if (pages.includes(checkPageName)) {
         loadPage(checkPageName);
     } else {

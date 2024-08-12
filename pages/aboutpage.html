@@ -597,15 +597,15 @@
             <br>
             <p class="animate__animated d-none animate__delay-1s">Our commitment to digital transformation is evident through Viola Outdoor, where we lead with first-of-their-kind digital out-of-home solutions. Our launch of several new DOOH media platforms in Abu Dhabi underscores our commitment to staying ahead of the industry.</p>
         </div>
-        <div class="col-6 video_section" style="position: relative; display: flex; justify-content: center; overflow: hidden;">
-            <div style="width: 100%; height: 100%;">
-                <video playsinline autoplay muted loop poster="./img/about_section3.gif" id="bgvid" style="object-fit: cover; object-position: center; height: auto; width: 110%; filter: blur(4px); transform: scale(1.03);">
+        <div class="col-md-6 video_section bgvidparent">
+            <div class="bgvidholder">
+                <video playsinline autoplay muted loop poster="./img/about_section3.gif" class="bgvid" id="bgvid">
                     <source src="./img/about_section3.webm" type="video/webm">
                     <source src="./img/about_section3.mp4" type="video/mp4">
                 </video>
-                <div style="width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; right: 0; z-index: 3;"></div>
+                <div class="bgvidoverlay"></div>
             </div>
-            <video playsinline autoplay muted loop poster="./img/about_section3.gif" id="bgvidtop" style="object-fit: cover; object-position: center; height: 100%; width: auto; position: absolute; z-index: 10;">
+            <video playsinline autoplay muted loop poster="./img/about_section3.gif" class="bgvidtop" id="bgvidtop">
                 <source src="./img/about_section3.webm" type="video/webm">
                 <source src="./img/about_section3.mp4" type="video/mp4">
             </video>
