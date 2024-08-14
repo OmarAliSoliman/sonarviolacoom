@@ -77,7 +77,7 @@ $('.projectFullPage').fullpage({
         $('.active .animate__animated').addClass('animate__fadeInLeft d-block').removeClass(
             'd-none');
 
-        $(".active svg").attr("class", " d-block");
+        $(".active img").attr("class", "d-block");
 
         $(".back-to-top").click(function (e) {
             e.preventDefault();

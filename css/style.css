@@ -2353,13 +2353,13 @@ section.project.fp-section .fp-tableCell .statistics span.counter {
   font-size: 3.5rem;
 }
 
-section.project-details.fp-section .fp-tableCell .logos svg {
+section.project-details.fp-section .fp-tableCell .logos img {
   width: 140px;
   height: auto;
   margin-right: 18px;
 }
 
-section.project-details.fp-section .fp-tableCell .logos svg:nth-child(1) {
+section.project-details.fp-section .fp-tableCell .logos #events {
   fill: #c2d500;
 }
 
@@ -2381,6 +2381,15 @@ section.project-details.fp-section .fp-tableCell .logos svg:nth-child(5) {
 
 section.project-details.fp-section .fp-tableCell .logos svg:nth-child(6) {
   fill: #ff6c0e;
+}
+section.project-details.fp-section .fp-tableCell .logos svg:nth-child(7) {
+  fill: #003a5d;
+}
+section.project-details.fp-section .fp-tableCell .logos svg:nth-child(7) .cls-1 {
+  fill: #8c9091;
+}
+section.project-details.fp-section .fp-tableCell .logos svg:nth-child(7) .cls-2 {
+  fill: #003a5d;
 }
 
 section.project-details.fp-section .fp-tableCell .project-navigation {
@@ -4660,6 +4669,12 @@ section.project-details.fp-section .fp-tableCell .projectImages .projectLogoCont
   section.project-details.fp-section .fp-tableCell .projectImages .projectLogoConta {
     width: 100% !important;
   }
+
+  section.video video {
+    height: 100%;
+    object-fit: contain;
+  }
+
 }
 
 

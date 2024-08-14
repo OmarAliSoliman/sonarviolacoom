@@ -111,7 +111,7 @@ section.project-details.fp-section .fp-tableCell p {
   font-size: 1.6rem;
 }
 
-section.project-details.fp-section .fp-tableCell .logos svg {
+section.project-details.fp-section .fp-tableCell .logos img {
   width: 100px;
 }
 
@@ -145,7 +145,7 @@ section.project.fp-section .fp-tableCell .statisticsContainer {
   padding: 0 9%;
 }
 
-section.project-details.fp-section .fp-tableCell .logos svg {
+section.project-details.fp-section .fp-tableCell .logos img {
   height: 100px
 }
 
@@ -408,7 +408,7 @@ section.work .owl-carousel .owl-item .art {
     bottom: 90px;
   }
 
-  section.project-details.fp-section .fp-tableCell .logos svg {
+  section.project-details.fp-section .fp-tableCell .logos img {
     width: 85px;
   }
 
