@@ -45,10 +45,16 @@ $('.fullPage').fullpage({
             $('.contact .animate__animated').addClass('animate__fadeInLeft');
         }
         if (destination == 2) {
+            var windowsize = $(window).width();
             $('.network .animate__animated').addClass('animate__fadeInLeft');
-            $('#home-video').get(0).play();
+            if(windowsize < 768) {
+                $('#home-video-mobile').get(0).play();
+            } else {
+                $('#home-video').get(0).play();
+            }
         } else {
             $('#home-video').get(0).pause();
+            $('#home-video-mobile').get(0).pause();
         }
         if (destination == 5) {
             //    $('.social').addClass('hideImportant')
