@@ -1359,7 +1359,7 @@ section.network .fp-tableCell .circle-container .service .centerLogo {
   height: auto;
   opacity: 0;
   position: absolute;
-  left: 50%;
+   
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1419,7 +1419,7 @@ section.network .fp-tableCell .circle-container .service:hover a {
 section.network .fp-tableCell .circle-container .service:hover .centerLogo {
   margin-bottom: 30px;
   top: 53px;
-  left: 47px;
+  
   -webkit-transform: none;
           transform: none;
   opacity: 1;
@@ -2522,7 +2522,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   color: #301464;
   position: relative;
   margin-bottom: 28px;
-  text-transform: uppercase;
+   
 }
 
 .blog .blog-list-title:after {
