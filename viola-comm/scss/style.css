@@ -1558,7 +1558,7 @@ section.network .fp-tableCell .circle-container .service:hover .model {
   section.network .fp-tableCell .circle-container .service .centerLogo {
     margin-bottom: 30px;
     top: 7px;
-    left: 45px;
+    
     -webkit-transform: none;
             transform: none;
     opacity: 1;

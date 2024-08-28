@@ -3172,13 +3172,13 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     text-shadow: 0 0 2px #000000;
   }
   section.network .fp-tableCell .circle-container .service .centerLogo {
-    left: 32px !important;
+    
     top: 23px !important;
     width: 85px !important;
   }
   section.network .fp-tableCell .circle-container .service:hover .centerLogo {
     top: 39px !important;
-    left: 32px !important;
+     
   }
   section.work .owl-carousel .owl-item.active:hover .details {
     left: 56%;
@@ -3252,7 +3252,7 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
   section.network .fp-tableCell .circle-container .service .centerLogo {
     margin-bottom: 30px;
     top: 7px;
-    left: 45px;
+     
     -webkit-transform: none;
             transform: none;
     opacity: 1;
@@ -3537,13 +3537,13 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     width: 85px;
   }
   section.network .fp-tableCell .circle-container .service .centerLogo {
-    left: 32px !important;
+     
     top: 23px !important;
     width: 85px !important;
   }
   section.network .fp-tableCell .circle-container .service:hover .centerLogo {
     top: 39px !important;
-    left: 32px !important;
+     
   }
   .back-to-top {
     width: 50px;
@@ -4101,13 +4101,13 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     display: block !important;
   }
   section.network .fp-tableCell .circle-container .service .centerLogo {
-    left: 32px !important;
+     
     top: 23px !important;
     width: 85px !important;
   }
   section.network .fp-tableCell .circle-container .service:hover .centerLogo {
     top: 39px !important;
-    left: 32px !important;
+    
   }
   .back-to-top {
     width: 50px;
@@ -4344,13 +4344,13 @@ section.project-details.fp-section .fp-tableCell .project-navigation .nav-button
     text-shadow: 0 0 2px #000000;
   }
   section.network .fp-tableCell .circle-container .service .centerLogo {
-    left: 32px !important;
+    
     top: 23px !important;
     width: 85px !important;
   }
   section.network .fp-tableCell .circle-container .service:hover .centerLogo {
     top: 39px !important;
-    left: 32px !important;
+     
   }
   section.about .col-md-6 {
     max-width: none;
