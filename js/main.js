@@ -165,6 +165,7 @@ let pages = [
     'contactpage',
     'violawithyou',
     'homepage',
+    'homepage2',
     'project1',
     'project2',
     'project3',
